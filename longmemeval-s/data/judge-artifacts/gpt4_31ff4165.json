@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 748.5652079922147,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many health-related devices do I use in a day?\n\nCorrect Answer: 4\n\nModel Response: You use 4 distinct health-related device types in a day: your Fitbit Versa 3, Phonak BTE hearing aids, Accu-Chek Aviva Nano system, and nebulizer machine. The hearing aids are counted as one device set.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "gpt4_31ff4165",
+  "request_id": "chatcmpl-E7WHV2Uz5RgrDwbob1SP3HF5uDTBV",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 173,
+    "total_tokens": 175
+  }
+}

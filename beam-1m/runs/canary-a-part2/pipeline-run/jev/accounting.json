@@ -1,0 +1,13 @@
+{
+  "attempts": 843,
+  "non200": 0,
+  "knownInputTokens": 21150014,
+  "unknownUsageAttempts": 0,
+  "estimatedAttemptCost": 0.888300588,
+  "pricing": {
+    "inputPerMillion": 0.042,
+    "outputPerMillion": 0,
+    "source": "https://docs.typesafe.ai/models",
+    "checked": "2026-09-19"
+  }
+}

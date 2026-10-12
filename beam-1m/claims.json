@@ -1,0 +1,169 @@
+{
+ "claim": "BEAM-1M (all 700 questions), frozen R9 configuration, official BEAM evaluator (pinned commit 3e12035, gpt-4.1-mini, temperature 0)",
+ "generated": "2026-10-12T19:26:49+05:30",
+ "results": {
+  "ALL 700": {
+   "questions": 700,
+   "official_pinned": 76.83,
+   "official_half_credit": 77.39,
+   "rubric_average_beam_judge": 82.23,
+   "vectorize_rubric_average": 78.18
+  },
+  "Canary A (100, development)": {
+   "questions": 100,
+   "official_pinned": 77.71,
+   "official_half_credit": 78.19,
+   "rubric_average_beam_judge": 83.28,
+   "vectorize_rubric_average": 79.51
+  },
+  "Canary B (260, sealed)": {
+   "questions": 260,
+   "official_pinned": 75.97,
+   "official_half_credit": 76.49,
+   "rubric_average_beam_judge": 81.19,
+   "vectorize_rubric_average": 77.48
+  },
+  "Fresh75 histories (260, development)": {
+   "questions": 260,
+   "official_pinned": 77.58,
+   "official_half_credit": 78.0,
+   "rubric_average_beam_judge": 82.46,
+   "vectorize_rubric_average": 77.91
+  },
+  "Expansion (80, sealed)": {
+   "questions": 80,
+   "official_pinned": 76.09,
+   "official_half_credit": 77.37,
+   "rubric_average_beam_judge": 83.5,
+   "vectorize_rubric_average": 79.71
+  },
+  "Unseen: Canary B + expansion (340)": {
+   "questions": 340,
+   "official_pinned": 76.0,
+   "official_half_credit": 76.7,
+   "rubric_average_beam_judge": 81.74,
+   "vectorize_rubric_average": 78.0
+  },
+  "Remaining 340 run (Fresh75 + expansion)": {
+   "questions": 340,
+   "official_pinned": 77.23,
+   "official_half_credit": 77.85,
+   "rubric_average_beam_judge": 82.7,
+   "vectorize_rubric_average": 78.34
+  }
+ },
+ "by_ability_all_700": {
+  "abstention": {
+   "official_pinned": 83.6,
+   "official_half_credit": 83.6,
+   "rubric_average_beam_judge": 83.6,
+   "vectorize_rubric_average": 68.6
+  },
+  "contradiction_resolution": {
+   "official_pinned": 81.1,
+   "official_half_credit": 81.1,
+   "rubric_average_beam_judge": 81.1,
+   "vectorize_rubric_average": 67.5
+  },
+  "event_ordering": {
+   "official_pinned": 28.7,
+   "official_half_credit": 28.7,
+   "rubric_average_beam_judge": 77.0,
+   "vectorize_rubric_average": 71.3
+  },
+  "information_extraction": {
+   "official_pinned": 90.0,
+   "official_half_credit": 90.7,
+   "rubric_average_beam_judge": 90.7,
+   "vectorize_rubric_average": 92.0
+  },
+  "instruction_following": {
+   "official_pinned": 98.6,
+   "official_half_credit": 98.9,
+   "rubric_average_beam_judge": 98.9,
+   "vectorize_rubric_average": 97.7
+  },
+  "knowledge_update": {
+   "official_pinned": 82.9,
+   "official_half_credit": 82.9,
+   "rubric_average_beam_judge": 82.9,
+   "vectorize_rubric_average": 86.4
+  },
+  "multi_session_reasoning": {
+   "official_pinned": 77.7,
+   "official_half_credit": 79.4,
+   "rubric_average_beam_judge": 79.4,
+   "vectorize_rubric_average": 73.9
+  },
+  "preference_following": {
+   "official_pinned": 93.8,
+   "official_half_credit": 94.5,
+   "rubric_average_beam_judge": 94.5,
+   "vectorize_rubric_average": 91.1
+  },
+  "summarization": {
+   "official_pinned": 82.0,
+   "official_half_credit": 83.8,
+   "rubric_average_beam_judge": 83.8,
+   "vectorize_rubric_average": 79.0
+  },
+  "temporal_reasoning": {
+   "official_pinned": 50.0,
+   "official_half_credit": 50.4,
+   "rubric_average_beam_judge": 50.4,
+   "vectorize_rubric_average": 54.3
+  }
+ },
+ "conversation_scores_official": {
+  "n": 35,
+  "mean": 76.83,
+  "sd": 5.51,
+  "min": 61.11,
+  "max": 86.81
+ },
+ "vectorize_pass_fail": {
+  "questions": 360,
+  "correct": 275,
+  "accuracy": 76.4,
+  "note": "Canary A + Canary B only; gemini-3.5-flash judge"
+ },
+ "runs": {
+  "canary-a-part1": {
+   "run_folder": "runs/a6/canary-a-screen20-hive-r9",
+   "started_utc": "2026-10-10T19:44:24.299Z",
+   "git_commit_at_start": "f3961ce7",
+   "frozen_files_sha256_at_start": "fb2baea2867f62f449d690b679d81861bc1344fa120c7444869fe5fbaf877a5e",
+   "resumes": 0,
+   "questions": 20
+  },
+  "canary-a-part2": {
+   "run_folder": "runs/a6/canary-a-other80-hive-r9",
+   "started_utc": "2026-10-10T20:32:18.629Z",
+   "git_commit_at_start": "f3961ce7",
+   "frozen_files_sha256_at_start": "fb2baea2867f62f449d690b679d81861bc1344fa120c7444869fe5fbaf877a5e",
+   "resumes": 3,
+   "questions": 80
+  },
+  "canary-b": {
+   "run_folder": "runs/canary-b-r9-20261011/canary-b",
+   "started_utc": "2026-10-11T12:21:10.055Z",
+   "git_commit_at_start": "595a2e28",
+   "frozen_files_sha256_at_start": "fb2baea2867f62f449d690b679d81861bc1344fa120c7444869fe5fbaf877a5e",
+   "resumes": 13,
+   "questions": 260
+  },
+  "remaining-340": {
+   "run_folder": "runs/final-700-r9-20261012/remaining-340",
+   "started_utc": "2026-10-11T19:53:38.042Z",
+   "git_commit_at_start": "595a2e28",
+   "frozen_files_sha256_at_start": "8f117895b4ce47409fc1e0e35989b63f88ca550c19ed9d4a3aff4a10cdb1cef6",
+   "resumes": 5,
+   "questions": 340
+  }
+ },
+ "source_files": {
+  "scores": "data/scores/scores.csv",
+  "official_judge_outputs": "data/judge/*.judge.json",
+  "answers": "data/answers/answers.jsonl"
+ }
+}

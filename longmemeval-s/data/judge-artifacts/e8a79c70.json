@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 691.7159580043517,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: I was going through our previous conversation about making a classic French omelette, and I wanted to confirm - how many eggs did you say we need for the recipe?\n\nCorrect Answer: 2-3 eggs\n\nModel Response: For the classic French omelette, I said you need 2\u20133 eggs. The separate 3-egg omelette recipe used 3 large eggs.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "e8a79c70",
+  "request_id": "chatcmpl-E7WHaNdVECLbwYHDNiVVY8j0QVjWT",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 178,
+    "total_tokens": 180
+  }
+}

@@ -1,0 +1,72 @@
+{
+ "claim": "LongMemEval-S, all 500 questions, Architecture 0008, one fresh run on 31 Jul 2026, judged by gpt-4o-2024-08-06 with LongMemEval's own prompts",
+ "result": {
+  "correct": 457,
+  "accuracy": 91.4,
+  "task_averaged_accuracy": 92.74,
+  "abstention_correct": 26,
+  "abstention_count": 30,
+  "by_type": {
+   "knowledge-update": {
+    "correct": 74,
+    "count": 78
+   },
+   "multi-session": {
+    "correct": 116,
+    "count": 133
+   },
+   "single-session-assistant": {
+    "correct": 56,
+    "count": 56
+   },
+   "single-session-preference": {
+    "correct": 27,
+    "count": 30
+   },
+   "single-session-user": {
+    "correct": 68,
+    "count": 70
+   },
+   "temporal-reasoning": {
+    "correct": 116,
+    "count": 133
+   }
+  }
+ },
+ "by_exposure": {
+  "development": [
+   251,
+   273
+  ],
+  "never_named": [
+   206,
+   227
+  ]
+ },
+ "performance": {
+  "cost": {
+   "list_usd_total": 23.62,
+   "per_question_list_usd": 0.047,
+   "by_stage_list_usd": {
+    "session notes": 11.58,
+    "retrieval": 6.9,
+    "extraction and answer": 4.9,
+    "judge": 0.23
+   },
+   "basis": "Generation prices are the run configuration. Judge estimate assumes GPT-4o input $2.50/M and output $10/M. Computed from logged tokens; provider bills may differ."
+  },
+  "per_question_model_time_seconds": {
+   "n": 500,
+   "p50": 22.0,
+   "p90": 33.8,
+   "mean": 23.1
+  },
+  "elapsed_minutes": {
+   "session notes (19,195 sessions)": 18.39,
+   "retrieval": 4.3,
+   "extraction and answer": 7.25,
+   "judge": 0.18,
+   "total": 30.1
+  }
+ }
+}

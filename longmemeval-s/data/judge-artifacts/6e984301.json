@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 789.5175000012387,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. In addition, do not penalize off-by-one errors for the number of days. If the question asks for the number of days/weeks/months, etc., and the model makes off-by-one errors (e.g., predicting 19 days when the answer is 18), the model's response is still correct. \n\nQuestion: How many weeks have I been taking sculpting classes when I invested in my own set of sculpting tools?\n\nCorrect Answer: 3\n\nModel Response: Using the stated start date of 2023/02/11 and the tool-investment date of 2023/03/04, you had been taking sculpting classes for 3 weeks.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "6e984301",
+  "request_id": "chatcmpl-E7WHZk3aqzatWuLhZk0ZgMN63D8R0",
+  "response": "Yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 236,
+    "total_tokens": 237
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "bundle_id": "full500-from-scratch-20260731T004831Z",
+  "downstream_run_id": "arch0008-full500-from-scratch-20260731T004831Z-3",
+  "git": {
+    "branch": "codex/checkpoint-architecture-0008-20260731",
+    "base_commit": "679a7fd44a4910c4f7a5eb7434e1c6bb9f372692"
+  },
+  "freshness": {
+    "prior_annotation_cache_read": false,
+    "prior_query_time_output_read": false,
+    "fresh_storer": true,
+    "fresh_retrieval": true,
+    "fresh_extraction": true,
+    "fresh_answering": true,
+    "fresh_judging": true
+  },
+  "models": {
+    "storer": {
+      "model": "gpt-5.4-nano-2026-03-17",
+      "prompt": "session-annotate-v1",
+      "input_view": "USER turns only"
+    },
+    "retrieval": {
+      "model": "gpt-5.6-luna",
+      "reasoning": "low",
+      "architecture": "parallel multi-view discovery plus v1 admission"
+    },
+    "extraction": {
+      "model": "gpt-5.4-nano-2026-03-17",
+      "reasoning": "low",
+      "architecture": "Arm 3 per-session claim extraction"
+    },
+    "answer": {
+      "model": "gpt-5.6-luna",
+      "reasoning": "high"
+    },
+    "judge": {
+      "model": "gpt-4o-2024-08-06",
+      "temperature": 0,
+      "execution": "parallel_exact_pinned_prompt",
+      "upstream_evaluator_sha256": "ecce9c4c79dc89d99534ac17b383a5cbb5b9f0c69ee98adaf0684742e3d95251"
+    }
+  },
+  "limits": {
+    "storer_concurrency": 256,
+    "retrieval_concurrency": 256,
+    "downstream_concurrency": 256,
+    "judge_concurrency": 64,
+    "model_token_budget_per_60_seconds": 1950000
+  },
+  "completion": {
+    "questions": 500,
+    "unique_sessions_annotated": 19195,
+    "storer_failures": 0,
+    "retrieval_cases": 500,
+    "retrieval_failures": 0,
+    "downstream_cases": 500,
+    "downstream_failures": 0,
+    "judged_cases": 500,
+    "judge_failures": 0
+  },
+  "opaque_id_audit": {
+    "raw_session_ids_checked": 19195,
+    "storer_prompt_files_checked": 19195,
+    "retrieval_prompt_files_checked": 500,
+    "downstream_prompt_files_checked": 500,
+    "raw_id_leak_files": 0,
+    "passed": true
+  },
+  "retrieval": {
+    "candidate_pool_full_gold": {
+      "count": 494,
+      "total": 500,
+      "rate": 0.988
+    },
+    "bag_full_gold": {
+      "count": 471,
+      "total": 500,
+      "rate": 0.942
+    },
+    "mean_candidate_pool_gold_recall": 0.9943333333333334,
+    "mean_bag_gold_recall": 0.9736333333333335,
+    "mean_candidate_pool_size": 23.888,
+    "mean_bag_size": 2.092
+  },
+  "accuracy": {
+    "correct": 457,
+    "total": 500,
+    "overall": 0.914,
+    "task_averaged": 0.9274179037336933,
+    "answerable": {
+      "correct": 431,
+      "total": 470,
+      "accuracy": 0.9170212765957447
+    },
+    "abstention": {
+      "correct": 26,
+      "total": 30,
+      "accuracy": 0.8666666666666667
+    },
+    "by_question_type": {
+      "knowledge-update": {
+        "correct": 74,
+        "total": 78,
+        "accuracy": 0.9487179487179487
+      },
+      "multi-session": {
+        "correct": 116,
+        "total": 133,
+        "accuracy": 0.8721804511278195
+      },
+      "single-session-assistant": {
+        "correct": 56,
+        "total": 56,
+        "accuracy": 1.0
+      },
+      "single-session-preference": {
+        "correct": 27,
+        "total": 30,
+        "accuracy": 0.9
+      },
+      "single-session-user": {
+        "correct": 68,
+        "total": 70,
+        "accuracy": 0.9714285714285714
+      },
+      "temporal-reasoning": {
+        "correct": 116,
+        "total": 133,
+        "accuracy": 0.8721804511278195
+      }
+    }
+  },
+  "weak_link_decomposition": {
+    "wrong_total": 43,
+    "wrong_with_full_gold_bag": 35,
+    "wrong_without_full_gold_bag": 8,
+    "correct_with_full_gold_bag": 436,
+    "correct_without_full_gold_bag": 21,
+    "interpretation": "Most remaining errors occur after successful full-gold retrieval."
+  },
+  "usage": {
+    "core_pipeline": {
+      "input_tokens": 26847564,
+      "output_tokens": 7574112,
+      "total_tokens": 34421676,
+      "api_calls": 23240
+    },
+    "storer": {
+      "input_tokens": 15938543,
+      "output_tokens": 6715380,
+      "total_tokens": 22653923,
+      "api_calls": 19195,
+      "elapsed_ms": 1103219
+    },
+    "retrieval": {
+      "input_tokens": 5164737,
+      "output_tokens": 289237,
+      "total_tokens": 5453974,
+      "api_calls": 999,
+      "elapsed_ms": 257886
+    },
+    "downstream": {
+      "input_tokens": 5653641,
+      "output_tokens": 568689,
+      "total_tokens": 6222330,
+      "api_calls": 1546,
+      "elapsed_ms": 435000
+    },
+    "judge": {
+      "input_tokens": 90643,
+      "output_tokens": 806,
+      "total_tokens": 91449,
+      "api_calls": 500,
+      "elapsed_ms": 10800
+    },
+    "separate_smoke_test": {
+      "input_tokens": 1808,
+      "output_tokens": 928,
+      "total_tokens": 2736,
+      "api_calls": 2,
+      "elapsed_ms": 4791
+    }
+  },
+  "estimated_cost_usd": {
+    "storer": 11.5819336,
+    "retrieval": 6.900159,
+    "extraction_and_answer": 4.90119225,
+    "judge": 0.2346675,
+    "core_pipeline_total": 23.61795235,
+    "separate_smoke_test": 0.0015216,
+    "operational_total": 23.61947395,
+    "per_question_core": 0.0472359047,
+    "pricing_note": "Generation prices are the run configuration. Judge estimate assumes GPT-4o input $2.50/M and output $10/M."
+  },
+  "artifact_counts": {
+    "session_annotation_files": 19195,
+    "storer_model_io_files": 19195,
+    "retrieval_case_files_used": 500,
+    "downstream_context_packages": 500,
+    "downstream_intermediates": 500,
+    "downstream_model_io_files": 500,
+    "predictions": 500,
+    "judge_model_io_files": 500,
+    "judgments": 500
+  },
+  "code_validation": {
+    "typescript_typecheck": "passed",
+    "tests": {
+      "status": "passed",
+      "files": 14,
+      "tests": 59
+    },
+    "changed_typescript_files_lint": "passed",
+    "judge_python_ruff": "passed",
+    "judge_python_compile": "passed",
+    "git_diff_check": "passed",
+    "repository_wide_lint": {
+      "status": "failed_on_preexisting_unrelated_findings",
+      "error_count": 13,
+      "changed_files_implicated": 0,
+      "log": "logs/13e-full-lint-known-failures.log"
+    }
+  },
+  "notes": [
+    "Two storer timeouts were rerun into the same otherwise-fresh index; no old annotations were reused.",
+    "Two retrieval cases were rerun after provider structured-output errors and deterministically merged.",
+    "One invalid unpaired surrogate in provider model I/O was replaced with U+FFFD so the certified merge is strict-valid JSON.",
+    "All 500 downstream cases completed without retries or failures.",
+    "Repository-wide lint has 13 pre-existing findings outside the changed files; targeted lint of every changed TypeScript file passes."
+  ]
+}

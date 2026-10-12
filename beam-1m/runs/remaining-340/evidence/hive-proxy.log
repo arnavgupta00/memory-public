@@ -1,0 +1,2 @@
+{"event":"listening","port":8787,"model":"deepseek-ai/deepseek-v4.1-flash","effort":"max","json_mode":"object","rps":4.8,"cap_usd":120,"spent_usd":0,"ledger":"/Users/arnav/programming/projects/memory/runs/final-700-r9-20261012/evidence/hive-ledger.jsonl"}
+{"event":"listening","port":8787,"model":"deepseek-ai/deepseek-v4.1-flash","effort":"max","json_mode":"object","rps":4.8,"cap_usd":120,"spent_usd":5.906322600000028,"ledger":"/Users/arnav/programming/projects/memory/runs/final-700-r9-20261012/evidence/hive-ledger.jsonl"}

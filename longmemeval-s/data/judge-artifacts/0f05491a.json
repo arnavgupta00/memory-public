@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 811.8980829895008,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How many stars do I need to reach the gold level on my Starbucks Rewards app?\n\nCorrect Answer: 120\n\nModel Response: You need 120 stars to reach the Gold level, based on the most recent correction on 2023/07/30.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "0f05491a",
+  "request_id": "chatcmpl-E7WHYcSiwjUAnCgf8Slfl1zWL98gU",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 138,
+    "total_tokens": 140
+  }
+}

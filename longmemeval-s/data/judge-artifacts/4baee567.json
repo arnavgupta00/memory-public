@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 752.4451250064885,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: I was looking back at our previous chat and I wanted to confirm, how many times did the Chiefs play the Jaguars at Arrowhead Stadium?\n\nCorrect Answer: The Chiefs played the Jaguars 12 times at Arrowhead Stadium.\n\nModel Response: The Chiefs played the Jaguars 12 times at Arrowhead Stadium, based on regular-season games through the assistant's 2021 knowledge cutoff.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "4baee567",
+  "request_id": "chatcmpl-E7WHaMjCNzicLQrKv8b3AYO6Ws7Y5",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 176,
+    "total_tokens": 178
+  }
+}

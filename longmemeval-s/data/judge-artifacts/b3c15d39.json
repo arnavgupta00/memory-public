@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1588.8419170078123,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many days did it take for me to receive the new remote shutter release after I ordered it?\n\nCorrect Answer: 5 days. 6 days (including the last day) is also acceptable.\n\nModel Response: It took 5 days\u2014from February 5th to February 10th\u2014to receive the new remote shutter release.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "b3c15d39",
+  "request_id": "chatcmpl-E7WHVONWTTyPjI4jFIAmX1nP3XGaN",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 167,
+    "total_tokens": 169
+  }
+}

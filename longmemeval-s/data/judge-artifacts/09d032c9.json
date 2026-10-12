@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 687.7197499998147,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I've been having trouble with the battery life on my phone lately. Any tips?\n\nRubric: The user would prefer responses that build upon their previous mention of purchasing a portable power bank, such as suggestions on how to optimize its use, like ensuring it's fully charged before use. They might also appreciate tips on utilizing battery-saving features on their phone. The user may not prefer responses that suggest alternative solutions or unrelated advice.\n\nModel Response: Since you already have a portable power bank and wireless charging pad, use the power bank as backup when traveling and keep the charging pad set up where you regularly rest your phone. For longer battery life, lower screen brightness, enable battery-saver/low-power mode, review battery usage for power-hungry apps, limit unnecessary background activity and location access, and keep the phone cool. If battery life has suddenly worsened, check for a recent app or system update causing unusual drain; if the battery-health reading is significantly degraded, consider a battery replacement. Carry the phone, power bank, charging cables, and Apple Watch together in the travel pouch you were considering.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "09d032c9",
+  "request_id": "chatcmpl-E7WHXYAtQLWUtkuF38nz17GGflTyi",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 308,
+    "total_tokens": 310
+  }
+}

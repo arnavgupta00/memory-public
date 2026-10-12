@@ -1,0 +1,65 @@
+{
+ "run": "runs/canary-b-r9-20261011/canary-b",
+ "questions": 260,
+ "score_pinned": 75.97,
+ "macro_over_abilities": 75.97,
+ "by_ability": {
+  "abstention": {
+   "n": 26,
+   "score": 80.77
+  },
+  "contradiction_resolution": {
+   "n": 26,
+   "score": 78.85
+  },
+  "event_ordering": {
+   "n": 26,
+   "score": 31.13
+  },
+  "information_extraction": {
+   "n": 26,
+   "score": 92.31
+  },
+  "instruction_following": {
+   "n": 26,
+   "score": 96.15
+  },
+  "knowledge_update": {
+   "n": 26,
+   "score": 84.62
+  },
+  "multi_session_reasoning": {
+   "n": 26,
+   "score": 69.55
+  },
+  "preference_following": {
+   "n": 26,
+   "score": 92.63
+  },
+  "summarization": {
+   "n": 26,
+   "score": 81.78
+  },
+  "temporal_reasoning": {
+   "n": 26,
+   "score": 51.92
+  }
+ },
+ "by_conversation": {
+  "chat-01": 72.76,
+  "chat-02": 73.01,
+  "chat-09": 72.28,
+  "chat-10": 77.06,
+  "chat-12": 84.4,
+  "chat-14": 71.71,
+  "chat-17": 76.15,
+  "chat-22": 79.75,
+  "chat-24": 71.19,
+  "chat-26": 86.81,
+  "chat-27": 78.59,
+  "chat-30": 69.2,
+  "chat-35": 74.7
+ },
+ "conversation_ci95_half_width_points": 2.3,
+ "ci_rule": "finite-population 95% CI over conversation scores (N = 35); contract target <= 5 points"
+}

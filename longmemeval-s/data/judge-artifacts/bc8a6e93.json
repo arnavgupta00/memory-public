@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1592.0652920030989,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: What did I bake for my niece's birthday party?\n\nCorrect Answer: a lemon blueberry cake\n\nModel Response: You baked a lemon blueberry cake.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "bc8a6e93",
+  "request_id": "chatcmpl-E7WHVn7aOwz3BFneJxsNK5VG1v1rY",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 130,
+    "total_tokens": 131
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 606.1270420032088,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: Is my mom using the same grocery list method as me?\n\nCorrect Answer: Yes.\n\nModel Response: Yes. As of 2023/04/30, your mom was using the same grocery list app as you. Previously, on 2023/03/11, she was still using an old paper list.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "d7c942c3",
+  "request_id": "chatcmpl-E7WHYQe7KJGifGEinS607nQxP9rVA",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 150,
+    "total_tokens": 152
+  }
+}

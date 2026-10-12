@@ -1,0 +1,7 @@
+{
+ "dispatch": 4654,
+ "response": 4654,
+ "failure": 0,
+ "cost_usd": 1.2,
+ "model": "gpt-4.1-mini, temperature 0"
+}

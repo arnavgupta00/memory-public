@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" width="1200" height="860" role="img" aria-labelledby="title desc">
+  <title id="title">BEAM-1M proof picture: the evidence chain behind 76.83</title>
+  <desc id="desc">Six links from the official data to the recomputed score, each with the verify.py checks that test it, and a side panel with the same answers on other scoring bases.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .h1 { font-size: 28px; font-weight: 700; fill: #0f172a; }
+    .sub { font-size: 15.5px; fill: #475569; }
+    .bt { font-size: 17px; font-weight: 700; fill: #0f172a; }
+    .bl { font-size: 14.5px; fill: #334155; }
+    .num { font-size: 18px; font-weight: 700; fill: #ffffff; }
+    .tag { font-size: 12.5px; font-weight: 600; fill: #115e59; }
+    .plab { font-size: 13px; fill: #475569; }
+    .big { font-size: 56px; font-weight: 800; fill: #0f766e; }
+    .mid { font-size: 38px; font-weight: 800; fill: #0f766e; }
+    .ptxt { font-size: 14px; fill: #334155; }
+    .ph { font-size: 15px; font-weight: 700; fill: #0f172a; }
+    .pnote { font-size: 12.5px; fill: #64748b; }
+    .cnum { font-size: 27px; font-weight: 800; fill: #0f172a; }
+    .ct { font-size: 14px; font-weight: 700; fill: #0f172a; }
+    .cs { font-size: 13px; fill: #475569; }
+    .foot { font-size: 15px; font-weight: 600; fill: #ffffff; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 14px; }
+  </style>
+
+  <rect x="0.5" y="0.5" width="1199" height="859" rx="18" fill="#ffffff" stroke="#e2e8f0"/>
+
+  <text x="40" y="58" class="h1">BEAM-1M: 76.83 on the official evaluator, all 700 questions</text>
+  <text x="40" y="88" class="sub">The evidence chain. Each link is checked offline by verify/verify.py; check numbers on the right of each box.</text>
+
+  <!-- chain: six boxes, x 40..760 -->
+  <g>
+    <rect x="40" y="118" width="720" height="92" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="164" r="20" fill="#0f766e"/><text x="80" y="170" text-anchor="middle" class="num">1</text>
+    <text x="116" y="150" class="bt">Official data</text>
+    <text x="116" y="174" class="bl">BEAM repository at commit 3e12035 · 35 histories × 20 questions = 700</text>
+    <text x="116" y="195" class="bl">Every file matches BEAM's own git tree (content hashes anyone can query on GitHub)</text>
+    <rect x="662" y="132" width="82" height="24" rx="12" fill="#ccfbf1"/><text x="703" y="148.5" text-anchor="middle" class="tag">checks 6</text>
+  </g>
+  <path d="M80 210 V 228" stroke="#0f766e" stroke-width="2.5"/><path d="M73 224 L80 232 L87 224 Z" fill="#0f766e"/>
+
+  <g>
+    <rect x="40" y="232" width="720" height="92" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="278" r="20" fill="#0f766e"/><text x="80" y="284" text-anchor="middle" class="num">2</text>
+    <text x="116" y="264" class="bt">Split fixed in advance; 340 questions sealed</text>
+    <text x="116" y="288" class="bl">Split on 1 Aug; on GitHub by 29 Aug (GitHub's server log, not our clock)</text>
+    <text x="116" y="309" class="bl">Canary B + expansion (340 q) sealed until their run; full-text audit: no earlier use</text>
+    <rect x="636" y="246" width="108" height="24" rx="12" fill="#ccfbf1"/><text x="690" y="262.5" text-anchor="middle" class="tag">checks 3 · 14</text>
+  </g>
+  <path d="M80 324 V 342" stroke="#0f766e" stroke-width="2.5"/><path d="M73 338 L80 346 L87 338 Z" fill="#0f766e"/>
+
+  <g>
+    <rect x="40" y="346" width="720" height="92" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="392" r="20" fill="#0f766e"/><text x="80" y="398" text-anchor="middle" class="num">3</text>
+    <text x="116" y="378" class="bt">Frozen and published before the sealed runs</text>
+    <text x="116" y="402" class="bl">Tag r9-freeze-20261011 pushed 11 Oct 10:06 UTC; Canary B started 12:21 UTC</text>
+    <text x="116" y="423" class="bl">123 files hash-locked · 4 failure-path amendments · hash chain over all 25 resumes</text>
+    <rect x="598" y="360" width="146" height="24" rx="12" fill="#ccfbf1"/><text x="671" y="376.5" text-anchor="middle" class="tag">checks 12 · 13 · 14</text>
+  </g>
+  <path d="M80 438 V 456" stroke="#0f766e" stroke-width="2.5"/><path d="M73 452 L80 460 L87 452 Z" fill="#0f766e"/>
+
+  <g>
+    <rect x="40" y="460" width="720" height="92" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="506" r="20" fill="#0f766e"/><text x="80" y="512" text-anchor="middle" class="num">4</text>
+    <text x="116" y="492" class="bt">One answer per question, every call logged</text>
+    <text x="116" y="516" class="bl">4 run parts · 700 answers · 0 blank · exactly 700 answer generations (no best-of-N)</text>
+    <text x="116" y="537" class="bl">35,901 model calls with tokens and cost · 0 empty replies · 700 memory packs kept</text>
+    <rect x="574" y="474" width="170" height="24" rx="12" fill="#ccfbf1"/><text x="659" y="490.5" text-anchor="middle" class="tag">checks 2 · 4 · 17 · 18 · 19</text>
+  </g>
+  <path d="M80 552 V 570" stroke="#0f766e" stroke-width="2.5"/><path d="M73 566 L80 574 L87 566 Z" fill="#0f766e"/>
+
+  <g>
+    <rect x="40" y="574" width="720" height="92" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="620" r="20" fill="#0f766e"/><text x="80" y="626" text-anchor="middle" class="num">5</text>
+    <text x="116" y="606" class="bt">Scored by BEAM's own evaluator, unmodified</text>
+    <text x="116" y="630" class="bl">Pinned commit 3e12035 · gpt-4.1-mini · temperature 0 · 9,882 judge calls, 0 failed</text>
+    <text x="116" y="651" class="bl">The judge saw the published text: 630/630 answers found in its own logged prompts</text>
+    <rect x="590" y="588" width="154" height="24" rx="12" fill="#ccfbf1"/><text x="667" y="604.5" text-anchor="middle" class="tag">checks 5 · 7 · 15 · 16</text>
+  </g>
+  <path d="M80 666 V 684" stroke="#0f766e" stroke-width="2.5"/><path d="M73 680 L80 688 L87 680 Z" fill="#0f766e"/>
+
+  <g>
+    <rect x="40" y="688" width="720" height="92" rx="12" fill="#f0fdfa" stroke="#99f6e4"/>
+    <circle cx="80" cy="734" r="20" fill="#0f766e"/><text x="80" y="740" text-anchor="middle" class="num">6</text>
+    <text x="116" y="720" class="bt">Scores re-derived from the raw verdicts</text>
+    <text x="116" y="744" class="bl">All 700: 76.83  ·  sealed 340: 76.00  ·  Canary B: 75.97  ·  development 360: 77.61</text>
+    <text x="116" y="765" class="bl">All 700 scores recomputed from the judge's item verdicts with BEAM's own arithmetic</text>
+    <rect x="644" y="702" width="100" height="24" rx="12" fill="#ccfbf1"/><text x="694" y="718.5" text-anchor="middle" class="tag">checks 8–11</text>
+  </g>
+
+  <!-- side panel, x 785..1160 -->
+  <rect x="785" y="118" width="375" height="662" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="809" y="150" class="plab">Headline: BEAM's official evaluator</text>
+  <text x="807" y="206" class="big">76.83</text>
+  <text x="809" y="232" class="ptxt">all 700 questions, one run, one answer each</text>
+  <text x="807" y="288" class="mid">76.00</text>
+  <text x="809" y="312" class="ptxt">the 340 sealed questions only</text>
+  <line x1="809" y1="338" x2="1136" y2="338" stroke="#cbd5e1"/>
+  <text x="809" y="366" class="ph">Same answers, other scorers</text>
+  <text x="809" y="386" class="pnote">labelled comparisons, never the headline</text>
+
+  <text x="809" y="432" class="cnum">78.18</text>
+  <text x="905" y="420" class="ct">Vectorize / AMB scorer</text>
+  <text x="905" y="439" class="cs">vs Hindsight 73.9 · HydraDB 82</text>
+  <text x="905" y="456" class="cs">judge: Gemini 3.5 Flash Lite</text>
+
+  <text x="809" y="512" class="cnum">82.23</text>
+  <text x="905" y="500" class="ct">Rubric average</text>
+  <text x="905" y="519" class="cs">vs Mem0 64.1 (Mem0's judge)</text>
+  <text x="905" y="536" class="cs">BEAM's judge, Mem0's convention</text>
+
+  <text x="809" y="592" class="cnum">77.39</text>
+  <text x="905" y="580" class="ct">Half-credit fix applied</text>
+  <text x="905" y="599" class="cs">BEAM upstream b2da22e</text>
+  <text x="905" y="616" class="cs">same judge verdicts</text>
+
+  <text x="809" y="672" class="cnum">33.6</text>
+  <text x="905" y="660" class="ct">BEAM paper, best system</text>
+  <text x="905" y="679" class="cs">LIGHT, official method, 1M tier</text>
+
+  <text x="809" y="744" class="pnote">Judges and answer models differ between rows:</text>
+  <text x="809" y="762" class="pnote">see COMPARISON.md and LIMITATIONS.md</text>
+
+  <!-- footer -->
+  <rect x="40" y="798" width="1120" height="44" rx="10" fill="#0f766e"/>
+  <text x="60" y="826" class="foot">Check it:  <tspan class="mono">python3 verify/verify.py</tspan>  → 14/14 offline   ·   <tspan class="mono">--deep</tspan>  → 19/19   ·   re-judge yourself:  <tspan class="mono">sh verify/rejudge_official.sh</tspan>  (≈ $2.50)</text>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1034.76833399327,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. In addition, do not penalize off-by-one errors for the number of days. If the question asks for the number of days/weeks/months, etc., and the model makes off-by-one errors (e.g., predicting 19 days when the answer is 18), the model's response is still correct. \n\nQuestion: What is the order of the concerts and musical events I attended in the past two months, starting from the earliest?\n\nCorrect Answer: The order of the concerts I attended is: 1. Billie Eilish concert at the Wells Fargo Center in Philly, 2. Free outdoor concert series in the park, 3. Music festival in Brooklyn, 4. Jazz night at a local bar, 5. Queen + Adam Lambert concert at the Prudential Center in Newark, NJ.\n\nModel Response: From earliest to latest based on the available dates: 1. Billie Eilish concert at the Wells Fargo Center in Philadelphia \u2014 March 18, 2023. 2. Free outdoor concert series in the park \u2014 March 25, 2023. 3. Brooklyn music festival, including Glass Animals \u2014 attended recently before April 1; the exact date is unspecified. 4. Jazz night at a local bar \u2014 April 8, 2023. 5. Queen with Adam Lambert at the Prudential Center in Newark \u2014 attended recently before April 15; the exact date is unspecified. The two undated events are placed using the surrounding conversation dates, so their precise positions cannot be confirmed.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "gpt4_d6585ce8",
+  "request_id": "chatcmpl-E7WHYmKqCyFJ1O4ksfkr3BKOJSgcH",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 408,
+    "total_tokens": 410
+  }
+}

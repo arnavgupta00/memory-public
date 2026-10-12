@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 744.4108750059968,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you an unanswerable question, an explanation, and a response from a model. Please answer yes if the model correctly identifies the question as unanswerable. The model could say that the information is incomplete, or some other information is given but the asked information is not.\n\nQuestion: At which university did I present a poster for my undergrad course research project?\n\nExplanation: The information provided is not enough. You did not mention presenting a poster for your undergrad course research project.\n\nModel Response: Harvard University.\n\nDoes the model correctly identify the question as unanswerable? Answer yes or no only.",
+  "question_id": "a96c20ee_abs",
+  "request_id": "chatcmpl-E7WHXobkAprBrfZjQtAWVuCCjAPbj",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 131,
+    "total_tokens": 133
+  }
+}

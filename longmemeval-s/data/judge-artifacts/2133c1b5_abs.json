@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 777.8260000050068,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you an unanswerable question, an explanation, and a response from a model. Please answer yes if the model correctly identifies the question as unanswerable. The model could say that the information is incomplete, or some other information is given but the asked information is not.\n\nQuestion: How long have I been living in my current apartment in Shinjuku?\n\nExplanation: The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.\n\nModel Response: The available memory does not contain this information.\n\nDoes the model correctly identify the question as unanswerable? Answer yes or no only.",
+  "question_id": "2133c1b5_abs",
+  "request_id": "chatcmpl-E7WHatJdC682YU73VGPd3wYUG4UD1",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 134,
+    "total_tokens": 136
+  }
+}

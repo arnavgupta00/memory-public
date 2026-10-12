@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1041.4979579945793,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: Can you recommend a show or movie for me to watch tonight?\n\nRubric: The user would prefer recommendations for stand-up comedy specials on Netflix, especially those that are known for their storytelling. They may not prefer recommendations for other genres or platforms.\n\nModel Response: Watch Mike Birbiglia: \u201cMy Girlfriend's Boyfriend\u201d tonight. It fits your interest in John Mulaney-style storytelling and should be especially useful before your comedy writing workshop\u2014pay attention to how Birbiglia structures the narrative, builds tension, and uses pacing. It was one of the Netflix options previously recommended to you.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "32260d93",
+  "request_id": "chatcmpl-E7WHXoNc00G8OKFbSGylXnNgrM0PM",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 209,
+    "total_tokens": 211
+  }
+}

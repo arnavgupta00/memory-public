@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 860.9124170034193,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: What is the minimum amount I could get if I sold the vintage diamond necklace and the antique vanity?\n\nCorrect Answer: $5,150\n\nModel Response: Using the stated minimums, you could get $5,150 total: $5,000 for the necklace plus at least $150 for the antique vanity.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "91b15a6e",
+  "request_id": "chatcmpl-E7WHZ4P1XcL7eAgVWnPWhklFhoXDc",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 164,
+    "total_tokens": 166
+  }
+}

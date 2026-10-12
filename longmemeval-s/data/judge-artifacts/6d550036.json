@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 847.357833001297,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many projects have I led or am currently leading?\n\nCorrect Answer: 2\n\nModel Response: 7 projects: the Nigeria water project, the Marketing Research project, the current large IRL event, 3 separate Merge events, and the June product-feature launch. The customer-data and solo Data Mining projects were not counted because the package does not explicitly say you led them.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "6d550036",
+  "request_id": "chatcmpl-E7WHV5PMZ39r3lFIuGqQ4Zyj3XgU2",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 177,
+    "total_tokens": 179
+  }
+}

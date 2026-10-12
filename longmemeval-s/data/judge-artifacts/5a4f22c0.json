@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 728.6547920084558,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: What company is Rachel, an old colleague from my previous company, currently working at?\n\nCorrect Answer: TechCorp\n\nModel Response: Rachel is currently working at TechCorp. This later, explicit user statement supersedes the earlier \u201cOld Company\u201d spreadsheet entry.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "5a4f22c0",
+  "request_id": "chatcmpl-E7WHXkoudgnVd12dIhd3qSOuijnnU",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 137,
+    "total_tokens": 139
+  }
+}

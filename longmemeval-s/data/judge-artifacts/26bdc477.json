@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 701.5920830017421,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How many trips have I taken my Canon EOS 80D camera on?\n\nCorrect Answer: five\n\nModel Response: You have taken your Canon EOS 80D on five trips, according to your most recent statement.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "26bdc477",
+  "request_id": "chatcmpl-E7WHa2ZuDc3KpRGaIBmv4gGBtSvGv",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 129,
+    "total_tokens": 130
+  }
+}

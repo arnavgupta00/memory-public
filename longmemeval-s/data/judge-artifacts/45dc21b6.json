@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 649.5277919893852,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How many of Emma's recipes have I tried out?\n\nCorrect Answer: 3\n\nModel Response: You have tried 3 of Emma's recipes. The May 30 statement is the most recent count.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "45dc21b6",
+  "request_id": "chatcmpl-E7WHaUJq8I67wuugJNrgodzZRBUwO",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 127,
+    "total_tokens": 129
+  }
+}

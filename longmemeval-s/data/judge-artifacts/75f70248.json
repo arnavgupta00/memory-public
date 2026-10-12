@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 822.0900419983082,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I've been sneezing quite a bit lately. Do you think it might be my living room?\n\nRubric: The user would prefer responses that consider the potential impact of their cat, Luna, and her shedding on their sneezing, as well as the recent deep clean of the living room and its possible effect on stirring up dust. They might not prefer responses that fail to take into account these specific details previously mentioned, such as generic suggestions or unrelated factors.\n\nModel Response: Possibly. Your living room has a shedding cat and may accumulate dust, hair, and dander, all of which could contribute to sneezing. However, the available information cannot confirm that it is the cause. Try thorough vacuuming with HEPA filtration and damp dusting, then see whether symptoms improve; if sneezing persists or is severe, consider speaking with a clinician.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "75f70248",
+  "request_id": "chatcmpl-E7WHXE1Gs8qhXSSO3Ezp8HWsafYbT",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 258,
+    "total_tokens": 260
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 784.9977090081666,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I\u2019m a bit anxious about getting around Tokyo. Do you have any helpful tips?\n\nRubric: The user would prefer responses that utilize their existing resources, such as their Suica card and TripIt app, to provide personalized tips for navigating Tokyo's public transportation. They might not prefer general tips or recommendations that do not take into account their prior preparations.\n\nModel Response: You already have the two most useful tools\u2014your Suica card and TripIt\u2014so make them the center of your plan. Put each meeting point, train route, station exit, and a screenshot or backup route into TripIt before leaving. For the Narita arrival, choose the direct N'EX to Shinjuku for simplicity, or the Skyliner/Yamanote option if you prefer the quoted lower cost; check the current schedule and whether any reserved-seat or express supplement is required. At stations, follow the line signs, tap Suica in and out where accepted, and ask station staff for help rather than guessing\u2014showing your destination on your phone is fine. For Tsukiji and the Nikko tour, verify the exact destination station, exit, and meeting-point address in advance, and allow extra time for transfers and large stations such as Shinjuku. Since public transport fits your sustainability goal, use it as your default and keep the Park Hyatt Tokyo concierge as a backup for route checks or tour logistics. For a low-stress first outing, visit Tokyo Tower early or later in the evening, and consider online tickets to avoid queues. You do not need to master all of Tokyo at once: plan one route at a time and arrive early.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "0a34ad58",
+  "request_id": "chatcmpl-E7WHXbFKKLVG3mWPtjCGhsjjRE4Dc",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 417,
+    "total_tokens": 419
+  }
+}

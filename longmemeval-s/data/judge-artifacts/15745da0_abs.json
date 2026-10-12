@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 641.9809999933932,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you an unanswerable question, an explanation, and a response from a model. Please answer yes if the model correctly identifies the question as unanswerable. The model could say that the information is incomplete, or some other information is given but the asked information is not.\n\nQuestion: How long have I been collecting vintage films?\n\nExplanation: You did not mention this information. You mentioned collecting vintage cameras but not vintage films.\n\nModel Response: The available memory does not contain this information.\n\nDoes the model correctly identify the question as unanswerable? Answer yes or no only.",
+  "question_id": "15745da0_abs",
+  "request_id": "chatcmpl-E7WHWZCr4QWkU301sO5agMj8bC2sd",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 125,
+    "total_tokens": 127
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 671.9426249910612,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you an unanswerable question, an explanation, and a response from a model. Please answer yes if the model correctly identifies the question as unanswerable. The model could say that the information is incomplete, or some other information is given but the asked information is not.\n\nQuestion: How many pages do I have left to read in 'Sapiens'?\n\nExplanation: The information provided is not enough. You did not mention how many paged do you have left to read in 'Sapiens'.\n\nModel Response: The available memory does not contain this information.\n\nDoes the model correctly identify the question as unanswerable? Answer yes or no only.",
+  "question_id": "2311e44b_abs",
+  "request_id": "chatcmpl-E7WHYfXnjEmocB5ColFOLnZmplymR",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 142,
+    "total_tokens": 144
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 717.6390829990851,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: Where did Rachel move to after her recent relocation?\n\nCorrect Answer: the suburbs\n\nModel Response: Rachel moved to Chicago.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "830ce83f",
+  "request_id": "chatcmpl-E7WHX9CbXjS0GGmV2RgSORorSmBaF",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 110,
+    "total_tokens": 112
+  }
+}

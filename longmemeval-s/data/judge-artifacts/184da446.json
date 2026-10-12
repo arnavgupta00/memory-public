@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 709.5472089858958,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How many pages of 'A Short History of Nearly Everything' have I read so far?\n\nCorrect Answer: 220\n\nModel Response: You had read through page 220 of 'A Short History of Nearly Everything' so far.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "184da446",
+  "request_id": "chatcmpl-E7WHZl1Jbyqebnc86omTfu7nL0E19",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 132,
+    "total_tokens": 134
+  }
+}

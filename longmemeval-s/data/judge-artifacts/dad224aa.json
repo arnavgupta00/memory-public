@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 645.6983340031002,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: What time do I wake up on Saturday mornings?\n\nCorrect Answer: 7:30 am\n\nModel Response: Your Saturday wake-up time varies. You have reported 7:30 am, around 8:30 am, and 9:30 am; 7:30 am appears to be your preferred time, while your stated target is 8:00 am.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "dad224aa",
+  "request_id": "chatcmpl-E7WHaxmjLbEavzfbFhvjhJxcHyVlv",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 161,
+    "total_tokens": 163
+  }
+}

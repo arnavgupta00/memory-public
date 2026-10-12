@@ -1,0 +1,119 @@
+{
+ "public_freeze": {
+  "tag": "r9-freeze-20261011",
+  "commit": "595a2e28228c21cf842378fb9216cacb46478fd3",
+  "committed_self_reported": "2026-10-11T15:36:19+05:30",
+  "on_github_by_utc": "2026-10-11T10:06:21Z",
+  "github_push": {
+   "timestamp": "2026-10-11T10:06:21Z",
+   "activity_type": "push",
+   "ref": "refs/heads/codex/jev-experiments-v1",
+   "before": "f3961ce7bdf27c48691d630765678a7d5aefa3c8",
+   "after": "595a2e28228c21cf842378fb9216cacb46478fd3"
+  },
+  "repository": "https://github.com/arnavgupta00/memory",
+  "snapshot_folder_in_repo": "src/agents/current/freezes/R9-20261011",
+  "files_as_frozen_in_this_package": "code/public-freeze/"
+ },
+ "files_changed_since_public_freeze": [
+  "src/jev/recursiveArtifacts.mjs",
+  "src/pipeline/a6/FROZEN.json",
+  "src/pipeline/a6/run.mjs",
+  "src/pipeline/a6/stages/s07_fusion_jev.mjs",
+  "src/pipeline/a7/hive-proxy.mjs",
+  "src/retrieval/semanticProviders.ts"
+ ],
+ "amendments": [
+  {
+   "date": "2026-10-11",
+   "file": "src/pipeline/a6/run.mjs",
+   "old_sha256": "a2fc26daf330ec7ce6f2679c95a5f9086412af598b50c7ecba375ed0ad8ea672",
+   "new_sha256": "6821f8819b1d06e41d7bfd493a932c9c6e31512701928bcef2b066ef310d5fa0",
+   "change": "added --jev-cap (default 10, unchanged behaviour) passed to runJevFilter capUsd; the stage 8 spend guard (4 x one-attempt forecast <= cap) blocked the 260-question Canary B run (4 x $2.62 = $10.46). Spend guard only: no prompt, model, request, threshold or result change."
+  },
+  {
+   "date": "2026-10-11",
+   "file": "src/pipeline/a6/stages/s07_fusion_jev.mjs",
+   "old_sha256": "efce6c7935a5b435b4aa60394737c4b2b5741aa7a9abc1dc9cdc073c7a5eb4e3",
+   "new_sha256": "935ac475a0dd35fb96abd8c3b21a0044ffd07bc12bcd809ae26d82183a0a09f8",
+   "change": "Canary B: TypeSafe refused two relevance batches with max_tokens_exceeded (a 21,712-digit run inside one generated assistant reply, chat 22, counts far more tokens on TypeSafe than the local estimate). A refused batch is now split in two and each half judged (s07 askSplitting); that error no longer halts other dispatches (recursiveArtifacts). Failure path only: accepted requests are byte-identical."
+  },
+  {
+   "date": "2026-10-11",
+   "file": "src/jev/recursiveArtifacts.mjs",
+   "old_sha256": "f009b3e849105a8c965aae1f4259a333e9a4bac69cd897722ddd1636266da096",
+   "new_sha256": "347dd26324a233973478b8614296b843ff26d3ef6f068d08f31e5661cf14263d",
+   "change": "Canary B: TypeSafe refused two relevance batches with max_tokens_exceeded (a 21,712-digit run inside one generated assistant reply, chat 22, counts far more tokens on TypeSafe than the local estimate). A refused batch is now split in two and each half judged (s07 askSplitting); that error no longer halts other dispatches (recursiveArtifacts). Failure path only: accepted requests are byte-identical."
+  },
+  {
+   "date": "2026-10-12",
+   "file": "src/retrieval/semanticProviders.ts",
+   "old_sha256": "281d2fadd3ffb3de2f173d62401177a4e09c78b940c91e639fa5991159d2b1fb",
+   "new_sha256": "812fbde57b8827df2347718faf10bdb890f0c484b65987ad9d51b7a4152f75e0",
+   "change": "Remaining-340 run: Voyage refused one embedding batch with TOO_MANY_TOKENS_IN_BATCH (120,372 > 120,000; local estimate slightly low). A refused batch is now split in two by whole documents and each half embedded (contextualized vectors per document unchanged). Failure path only: accepted batches are byte-identical."
+  }
+ ],
+ "frozen_hash_chain": [
+  {
+   "state": "public freeze (tag r9-freeze-20261011)",
+   "frozen_files_sha256": "fb2baea2867f62f449d690b679d81861bc1344fa120c7444869fe5fbaf877a5e",
+   "used_by_runs": [
+    "canary-a-part1 start 2026-10-10T19:44:24.299Z",
+    "canary-a-part2 start 2026-10-10T20:32:18.629Z",
+    "canary-a-part2 resume 2026-10-10T20:32:25.102Z",
+    "canary-a-part2 resume 2026-10-10T20:32:48.826Z",
+    "canary-a-part2 resume 2026-10-10T20:36:28.442Z",
+    "canary-b start 2026-10-11T12:21:10.055Z",
+    "canary-b resume 2026-10-11T13:31:18.400Z",
+    "canary-b resume 2026-10-11T13:32:12.024Z",
+    "canary-b resume 2026-10-11T13:33:05.501Z",
+    "canary-b resume 2026-10-11T13:33:58.905Z"
+   ]
+  },
+  {
+   "state": "after amendment (2026-10-11): src/pipeline/a6/run.mjs",
+   "frozen_files_sha256": "c8f55b6646a3834967504343fd2ec56b83ddbd07cdf055aebb242d1a660f4fbb",
+   "used_by_runs": [
+    "canary-b resume 2026-10-11T13:39:39.476Z",
+    "canary-b resume 2026-10-11T13:55:00.317Z",
+    "canary-b resume 2026-10-11T14:10:37.994Z"
+   ]
+  },
+  {
+   "state": "after amendment (2026-10-11): src/pipeline/a6/stages/s07_fusion_jev.mjs",
+   "frozen_files_sha256": "f205d436becb46f89bcde058db26196910808ee11280c506bfa3f7dfa7475267",
+   "used_by_runs": []
+  },
+  {
+   "state": "after amendment (2026-10-11): src/jev/recursiveArtifacts.mjs",
+   "frozen_files_sha256": "8f117895b4ce47409fc1e0e35989b63f88ca550c19ed9d4a3aff4a10cdb1cef6",
+   "used_by_runs": [
+    "canary-b resume 2026-10-11T14:14:50.418Z",
+    "canary-b resume 2026-10-11T14:49:27.023Z",
+    "canary-b resume 2026-10-11T14:50:21.968Z",
+    "canary-b resume 2026-10-11T14:51:17.263Z",
+    "canary-b resume 2026-10-11T14:52:12.110Z",
+    "canary-b resume 2026-10-11T14:55:57.513Z",
+    "remaining-340 start 2026-10-11T19:53:38.042Z",
+    "remaining-340 resume 2026-10-11T21:00:30.038Z",
+    "remaining-340 resume 2026-10-11T21:01:44.890Z",
+    "remaining-340 resume 2026-10-11T21:02:58.920Z",
+    "remaining-340 resume 2026-10-11T21:04:17.922Z"
+   ]
+  },
+  {
+   "state": "after amendment (2026-10-12): src/retrieval/semanticProviders.ts",
+   "frozen_files_sha256": "6ee072cb8521900dd99e16a69c75bac3b3380433667e028610fbf7a08e8117bd",
+   "used_by_runs": [
+    "remaining-340 resume 2026-10-11T21:11:35.638Z"
+   ]
+  }
+ ],
+ "translator": {
+  "file": "src/pipeline/a7/hive-proxy.mjs",
+  "sha256_public_freeze": "b136610e02735159ce43063279cd033bd28a7a8c375393df75da8232a0ac1650",
+  "sha256_final": "5be459b1c1bb68d63f63cffa1c5637539cad2e69f5f70cd27ec3709ace3e36f5",
+  "change": "Canary B amendment 3 (11 Oct, 20:25 IST relaunch): a length-limit trim fallback for the packager's discarded answer only. It never fired: 0 discarded_answer_trimmed events in any ledger."
+ },
+ "frozen_file_hashes_verified_now": true
+}

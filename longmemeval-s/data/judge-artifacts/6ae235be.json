@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 827.7160830039065,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?\n\nCorrect Answer: Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.\n\nModel Response: The Lake Charles Refinery uses atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "6ae235be",
+  "request_id": "chatcmpl-E7WHZJyw1yVwHo52mnmaNRzoJh3rj",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 188,
+    "total_tokens": 190
+  }
+}

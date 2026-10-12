@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1893.3219589962391,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many different types of food delivery services have I used recently?\n\nCorrect Answer: 3\n\nModel Response: You have recently used 3 different food delivery services: Domino's Pizza, Uber Eats, and Fresh Fusion.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "d682f1a2",
+  "request_id": "chatcmpl-E7WHVkU0cPtRRKS2zPHj6YeKGt54v",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 145,
+    "total_tokens": 147
+  }
+}

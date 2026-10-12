@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1990.0057089980692,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How much total money have I spent on bike-related expenses since the start of the year?\n\nCorrect Answer: $185\n\nModel Response: You have spent $185 total on the documented bike-related expenses since the start of 2023: $25 for the chain, $40 for the bike lights, and $120 for the Bell Zephyr helmet. The repeated $40 lights statements refer to the same purchase and were counted only once; no price was provided for the tune-up or planned bike rack.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "gpt4_d84a3211",
+  "request_id": "chatcmpl-E7WHVkh6bv9DvXwUXXw99o6nc7G2J",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 201,
+    "total_tokens": 203
+  }
+}

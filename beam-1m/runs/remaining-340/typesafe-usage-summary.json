@@ -1,0 +1,31 @@
+{
+ "model": "jev-1.13.0 (TypeSafe)",
+ "price": "$0.042 per 1M input tokens (docs.typesafe.ai/models)",
+ "by_stage": {
+  "notebook (3)": {
+   "attempts": 921,
+   "input_tokens": 10613915,
+   "attempts_without_usage": 0,
+   "list_usd": 0.4458
+  },
+  "relevance filter (8)": {
+   "attempts": 3333,
+   "input_tokens": 85293979,
+   "attempts_without_usage": 2,
+   "list_usd": 3.5823
+  },
+  "timeline (9)": {
+   "attempts": 1721,
+   "input_tokens": 18868606,
+   "attempts_without_usage": 0,
+   "list_usd": 0.7925
+  },
+  "targeted checks (9)": {
+   "attempts": 227,
+   "input_tokens": 481148,
+   "attempts_without_usage": 0,
+   "list_usd": 0.0202
+  }
+ },
+ "list_usd_total": 4.8408
+}

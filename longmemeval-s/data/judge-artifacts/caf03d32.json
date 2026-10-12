@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 709.7128750028787,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I've been struggling with my slow cooker recipes. Any advice on getting better results?\n\nRubric: The user would prefer responses that provide tips and advice specifically tailored to their slow cooker experiences, utilizing their recent success with beef stew and interest in making yogurt in the slow cooker. They might not prefer general slow cooker recipes or advice unrelated to their specific experiences and interests.\n\nModel Response: Build on the slow cooker that already produced your successful beef stew, but make your yogurt experiments more controlled. For dairy yogurt, use a thermometer rather than relying only on the clock: heat to 180\u00b0F to 185\u00b0F (82\u00b0C to 85\u00b0C), cool to 110\u00b0F to 120\u00b0F (43\u00b0C to 49\u00b0C), add the live-culture starter, and incubate for 8-12 hours before chilling. For your plant-based cashew version, soak 1 cup of cashews for at least 4 hours or overnight, blend them with 1/2 cup water for about 2 minutes, and strain thoroughly. Use less water if it is too thin; choose cheesecloth or a nut milk bag if it is grainy; and chill it for at least 2 hours before judging the final texture. Keep the cashew-to-water ratio, straining method, and incubation time consistent from batch to batch, changing only one variable at a time. Add flavorings such as vanilla, cinnamon, fruit, or maple syrup after you have evaluated the plain batch, so you can tell whether the underlying texture improved.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "caf03d32",
+  "request_id": "chatcmpl-E7WHXLH0gmNVcYcAOIX6vgB1isT2Z",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 395,
+    "total_tokens": 397
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 781.7701250023674,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. In addition, do not penalize off-by-one errors for the number of days. If the question asks for the number of days/weeks/months, etc., and the model makes off-by-one errors (e.g., predicting 19 days when the answer is 18), the model's response is still correct. \n\nQuestion: I mentioned that I participated in an art-related event two weeks ago. Where was that event held at?\n\nCorrect Answer: The Metropolitan Museum of Art.\n\nModel Response: The art-related event was held at the City Art Museum.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "gpt4_59149c78",
+  "request_id": "chatcmpl-E7WHZIvwKOsUr9Cm1rFf1uP1CMtvy",
+  "response": "No",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 210,
+    "total_tokens": 211
+  }
+}

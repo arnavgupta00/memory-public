@@ -1,0 +1,56 @@
+A6 pipeline (fresh mode, answer layer A2): 80 questions -> runs/a6/canary-a-other80-hive-r9
+[5 s] stage 1 dataset: 5 histories, 80 questions (source files: 0 copied, 11 downloaded)
+A6 pipeline (fresh mode, answer layer A2): 80 questions -> runs/a6/canary-a-other80-hive-r9
+[0 s] stage 1 dataset: 5 histories, 80 questions (source files: 0 copied, 0 downloaded)
+[0 s] stage 2 ingestion: 4037 sessions; 0 notes and 0 index corpora reused
+[0 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/a6/canary-a-other80-hive-r9/logs/ingest.log
+[3 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/a6/canary-a-other80-hive-r9/logs/index.log
+file:///Users/arnav/programming/projects/memory/src/agents/current/src/jev/recursiveArtifacts.mjs:25
+  }catch(e){halted ||= e;save(`calls/${key}.json`,{ok:false,key,identity,inputHash:hash(payload),error:redact(e.message),category:'inference-failure'});throw Error(redact(e.message));}finally{release();}
+                                                                                                                                                              ^
+
+Error: TypeSafe HTTP 402: {"detail":{"error_type":"billing_error","message":"Your organization has no available TypeSafe API credits. Please add more credits and/or set up auto-reload at https://console.typesafe.ai/settings/billing"}}
+    at run (file:///Users/arnav/programming/projects/memory/src/agents/current/src/jev/recursiveArtifacts.mjs:25:159)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 80 questions -> runs/a6/canary-a-other80-hive-r9
+[0 s] stage 1 dataset: 5 histories, 80 questions (source files: 0 copied, 0 downloaded)
+[0 s] stage 2 ingestion: 4037 sessions; 0 notes and 0 index corpora reused
+[0 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/a6/canary-a-other80-hive-r9/logs/ingest.log
+[3 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/a6/canary-a-other80-hive-r9/logs/index.log
+file:///Users/arnav/programming/projects/memory/src/agents/current/src/jev/recursiveArtifacts.mjs:25
+  }catch(e){halted ||= e;save(`calls/${key}.json`,{ok:false,key,identity,inputHash:hash(payload),error:redact(e.message),category:'inference-failure'});throw Error(redact(e.message));}finally{release();}
+                                                                                                                                                              ^
+
+Error: TypeSafe HTTP 402: {"detail":{"error_type":"billing_error","message":"Your organization has no available TypeSafe API credits. Please add more credits and/or set up auto-reload at https://console.typesafe.ai/settings/billing"}}
+    at run (file:///Users/arnav/programming/projects/memory/src/agents/current/src/jev/recursiveArtifacts.mjs:25:159)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 80 questions -> runs/a6/canary-a-other80-hive-r9
+[0 s] stage 1 dataset: 5 histories, 80 questions (source files: 0 copied, 0 downloaded)
+[0 s] stage 2 ingestion: 4037 sessions; 0 notes and 0 index corpora reused
+[0 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/a6/canary-a-other80-hive-r9/logs/ingest.log
+[3 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/a6/canary-a-other80-hive-r9/logs/index.log
+[6 s] stage 6 search: 80 questions; 0 reused, 80 to search
+[6 s]   running src/scripts/hopArchitectureScreen.ts (search) — log: runs/a6/canary-a-other80-hive-r9/logs/search.log
+[31 s] stage 3 notebook: 5 histories; 0 JEV calls replayed (seeded 0), 277 sent
+[51 s] stage 5 router: 80 questions; broad 30, conflict 8, duration 8
+[73 s] stage 9 targeted: 16 conflict/duration questions; 0 JEV calls replayed (seeded 0), 53 sent
+[445 s] stage 7 fusion: 80 questions, K180 (10 workers); JEV forecast 843 requests, $0.87
+[881 s] stage 8 JEV filter: 80/80 questions; 0 calls replayed (seeded 0), 843 sent
+[881 s] stage 10a package: 80 questions; 0 saved packager calls available for identical-request replay
+[881 s]   running src/scripts/hopBagDownstreamGate.ts (package) — log: runs/a6/canary-a-other80-hive-r9/logs/package.log
+[1132 s] stage 9 timeline: 30 broad questions; 0 JEV calls replayed (seeded 0), 420 sent
+[1239 s] stage 10 context: 80 memory packs (22 broad packages trimmed to 130K tokens; 10 workers)
+[1472 s] stage 11 A2: 10/80 answered
+[1494 s] stage 11 A2: 20/80 answered
+[1538 s] stage 11 A2: 30/80 answered
+[1568 s] stage 11 A2: 40/80 answered
+[1606 s] stage 11 A2: 50/80 answered
+[1646 s] stage 11 A2: 60/80 answered
+[1691 s] stage 11 A2: 70/80 answered
+[1838 s] stage 11 A2: 80/80 answered
+[1839 s] stage 11 A2: 80/80 answered; pipeline model spend so far $7.56
+[1839 s] done in 1839 s

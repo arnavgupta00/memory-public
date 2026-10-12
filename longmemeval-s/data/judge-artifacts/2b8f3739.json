@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1136.7940830095904,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: What is the total amount of money I earned from selling my products at the markets?\n\nCorrect Answer: $495\n\nModel Response: You earned a total of $495 from selling your products at the markets.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "2b8f3739",
+  "request_id": "chatcmpl-E7WHWgEs8p82ihqQjsoXkEbykqMxb",
+  "response": "Yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 142,
+    "total_tokens": 143
+  }
+}

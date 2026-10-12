@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 801.5315420052502,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many items of clothing do I need to pick up or return from a store?\n\nCorrect Answer: 3\n\nModel Response: You need to handle 2 clothing items: 1 navy blue blazer to pick up from the dry cleaner, and 1 pair of boots to return/exchange and pick up in the larger size from Zara.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "0a995998",
+  "request_id": "chatcmpl-E7WHVqSrk9NCjn8MCDpMf17t0hbgN",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 169,
+    "total_tokens": 171
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 792.6324999862118,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I've been thinking about ways to stay connected with my colleagues. Any suggestions?\n\nRubric: The user would prefer responses that acknowledge their desire for social interaction and collaboration while working remotely, utilizing their previous experiences with company initiatives and team collaborations. They might prefer suggestions of virtual team-building activities, regular check-ins, or joining interest-based groups within the company. The user may not prefer generic suggestions that do not take into account their specific work situation or previous attempts at staying connected with colleagues.\n\nModel Response: Since you want to keep the flexibility of working from home while recreating casual watercooler interaction, suggest an optional, 30-minute virtual coffee break once a week. Bring it up as a question in your next team meeting, invite alternatives, and ask what time and format suit people best. Start with a small trial using your team\u2019s familiar video platform, make participation optional, and rotate simple conversation prompts or let the group chat freely. To keep it collaborative, pause after proposing it, avoid filling silence, invite quieter teammates to contribute without pressuring them, and revisit the format after a few sessions based on feedback.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "54026fce",
+  "request_id": "chatcmpl-E7WHXiV34jcjezL5keOgUPfdp3aLO",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 312,
+    "total_tokens": 314
+  }
+}

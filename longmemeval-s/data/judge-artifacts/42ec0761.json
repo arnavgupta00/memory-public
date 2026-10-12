@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 760.8004170033382,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: Do I have a spare screwdriver for opening up my laptop?\n\nCorrect Answer: Yes\n\nModel Response: Yes. As of 2023/08/15, you have a spare screwdriver, picked up when you organized your computer desk. This supersedes your earlier note that you had misplaced one.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "42ec0761",
+  "request_id": "chatcmpl-E7WHaMVmsTLV0Y3a9DiSRvD2GQgUO",
+  "response": "Yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 145,
+    "total_tokens": 146
+  }
+}

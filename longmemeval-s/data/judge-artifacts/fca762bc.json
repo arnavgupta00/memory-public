@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 718.4650839917595,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: I wanted to follow up on our previous conversation about language learning apps. You mentioned a few options, and I was wondering if you could remind me of the one that uses mnemonics to help learners memorize words and phrases?\n\nCorrect Answer: Memrise\n\nModel Response: The app was Memrise.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "fca762bc",
+  "request_id": "chatcmpl-E7WHaJbbUljQoY6efbZYcBCz3Hx26",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 161,
+    "total_tokens": 163
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "pipeline": "A6 full",
+  "frozen_sha256": "fb2baea2867f62f449d690b679d81861bc1344fa120c7444869fe5fbaf877a5e",
+  "git_commit": "f3961ce7",
+  "mode": "fresh",
+  "started": "2026-10-10T19:44:24.299Z",
+  "questions": [
+    "beam-1m/chat-03/abstention/1",
+    "beam-1m/chat-08/abstention/2",
+    "beam-1m/chat-18/contradiction_resolution/2",
+    "beam-1m/chat-25/contradiction_resolution/1",
+    "beam-1m/chat-29/event_ordering/1",
+    "beam-1m/chat-03/event_ordering/2",
+    "beam-1m/chat-08/information_extraction/2",
+    "beam-1m/chat-18/information_extraction/1",
+    "beam-1m/chat-25/instruction_following/1",
+    "beam-1m/chat-29/instruction_following/2",
+    "beam-1m/chat-03/knowledge_update/2",
+    "beam-1m/chat-08/knowledge_update/1",
+    "beam-1m/chat-18/multi_session_reasoning/1",
+    "beam-1m/chat-25/multi_session_reasoning/2",
+    "beam-1m/chat-29/preference_following/2",
+    "beam-1m/chat-03/preference_following/1",
+    "beam-1m/chat-08/summarization/1",
+    "beam-1m/chat-18/summarization/2",
+    "beam-1m/chat-25/temporal_reasoning/2",
+    "beam-1m/chat-29/temporal_reasoning/1"
+  ],
+  "cap_usd": 100,
+  "answer_layer": "A2",
+  "reuse_from": [],
+  "judge": false
+}

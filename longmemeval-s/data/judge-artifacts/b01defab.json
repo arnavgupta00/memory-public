@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 693.3005829923786,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: Did I finish reading 'The Nightingale' by Kristin Hannah?\n\nCorrect Answer: Yes\n\nModel Response: Yes. You finished reading \u201cThe Nightingale\u201d by Kristin Hannah by March 30, 2023, after having temporarily put it down in January.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "b01defab",
+  "request_id": "chatcmpl-E7WHalJljAGmyG5d3a8PJ66QsdoG2",
+  "response": "Yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 138,
+    "total_tokens": 139
+  }
+}

@@ -1,0 +1,12 @@
+ability                     official  rubric basis
+abstention                      80.8          80.8
+contradiction_resolution        78.8          78.8
+event_ordering                  31.1          78.2
+information_extraction          92.3          92.3
+instruction_following           96.2          97.1
+knowledge_update                84.6          84.6
+multi_session_reasoning         69.6          70.4
+preference_following            92.6          93.3
+summarization                   81.8          83.6
+temporal_reasoning              51.9          52.9
+OVERALL                         76.0          81.2   (n=260)

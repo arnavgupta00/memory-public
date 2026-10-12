@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 2516.2852500070585,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many pages do I have left to read in 'The Nightingale'?\n\nCorrect Answer: 190\n\nModel Response: You have 190 pages left to read (440 \u2212 250 = 190).\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "2311e44b",
+  "request_id": "chatcmpl-E7WHYDjKtjZUN7WedaWDwZOfqoCGl",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 143,
+    "total_tokens": 144
+  }
+}

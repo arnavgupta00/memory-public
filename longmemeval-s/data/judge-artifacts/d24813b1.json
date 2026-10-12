@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 911.2189169973135,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I'm thinking of inviting my colleagues over for a small gathering. Any tips on what to bake?\n\nRubric: The user would prefer baking suggestions that take into account their previous success with the lemon poppyseed cake, such as variations of that recipe or other desserts that share similar qualities. They might prefer suggestions that balance impressiveness with manageability, considering their previous experience. The user may not prefer overly complex or unfamiliar recipes, or suggestions that do not build upon their existing baking experience.\n\nModel Response: Bake your lemon poppyseed cake again\u2014it already succeeded at a colleague gathering, making it the safest crowd-pleaser. For a fresh variation, turn it into a lemon-lavender pound cake using 1 teaspoon culinary-grade dried lavender, 1 cup granulated sugar, 1/2 cup brown sugar, 1 1/2 teaspoons lemon zest, and 1 1/2 tablespoons lemon juice. Bake it in a loaf pan at 325\u00b0F for 55\u201360 minutes and dust with confectioners\u2019 sugar. Your slow cooker can handle the spinach-and-artichoke dip with the mozzarella-Parmesan blend while the cake cools.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "d24813b1",
+  "request_id": "chatcmpl-E7WHXvqVqV4sixtIHRuVSNt2GKYMp",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 323,
+    "total_tokens": 325
+  }
+}

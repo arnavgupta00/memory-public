@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 765.3052919922629,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I am planning another theme park weekend; do you have any suggestions?\n\nRubric: The user would prefer theme park suggestions that cater to their interest in both thrill rides and special events, utilizing their previous experiences at Disneyland, Knott's Berry Farm, Six Flags Magic Mountain, and Universal Studios Hollywood as a reference point. They would also appreciate recommendations that highlight unique food experiences and nighttime shows. The user might not prefer suggestions that focus solely on one aspect of theme parks, such as only thrill rides or only family-friendly attractions, and may not be interested in parks that lack special events or unique dining options.\n\nModel Response: For your next weekend, I\u2019d center it on a return to Universal Studios Hollywood for Halloween Horror Nights: book the VIP Experience with the Gourmet Buffet and add the Behind-the-Scenes Tour, since those match your stated interests in food, thrills, and exclusive experiences. Use the other day to revisit Disneyland during Halloween Time for themed food and nighttime entertainment, or choose Knott\u2019s Scary Farm instead if you want a more maze-and-scare-focused weekend. Since these events were suggested for mid-September through early November, check the parks\u2019 official sites for exact dates and availability before booking.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "fca70973",
+  "request_id": "chatcmpl-E7WHXenbm9fIY9cCp63MkNdSmnMd0",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 331,
+    "total_tokens": 333
+  }
+}

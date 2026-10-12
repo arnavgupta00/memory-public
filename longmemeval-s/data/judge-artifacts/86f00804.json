@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 721.8625840032473,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: What book am I currently reading?\n\nCorrect Answer: The Seven Husbands of Evelyn Hugo\n\nModel Response: You are currently reading \u201cThe Seven Husbands of Evelyn Hugo.\u201d\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "86f00804",
+  "request_id": "chatcmpl-E7WHWbwXsynL3WabwpeA4qG0B9yKv",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 135,
+    "total_tokens": 136
+  }
+}

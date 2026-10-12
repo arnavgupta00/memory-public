@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 646.1237920011627,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How many times have I met up with Alex from Germany?\n\nCorrect Answer: We've met up twice.\n\nModel Response: You have met up with Alex from Germany twice. The additional meetup mentioned was planned, but the package does not confirm that it happened by 2023/10/30.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "5c40ec5b",
+  "request_id": "chatcmpl-E7WHajmWyDbrALMylM75nVUAaypZ9",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 144,
+    "total_tokens": 146
+  }
+}

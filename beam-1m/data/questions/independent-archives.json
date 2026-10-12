@@ -1,0 +1,79 @@
+{
+ "note": "Third-party copies (Internet Archive, Wayback Machine) of the public GitHub records that date the split and the freeze, saved on 12 Oct 2026 while the development repository was still public. Each archived copy's content is checked against this package; verify.py --online repeats the check.",
+ "freeze_commit": "595a2e28228c21cf842378fb9216cacb46478fd3",
+ "freeze_pushed_utc": "2026-10-11T10:06:21Z",
+ "archives": [
+  {
+   "what": "push log",
+   "url": "https://api.github.com/repos/arnavgupta00/memory/activity?per_page=100",
+   "snapshot": "https://web.archive.org/web/20261012173824/https://api.github.com/repos/arnavgupta00/memory/activity?per_page=100",
+   "archived_utc": "2026-10-12T17:38:24Z",
+   "archived_content_sha256": "383a9ac77a17dd1a33f1555921efcb315933ba3d0fe08693db5a1caa4e63685d",
+   "shows": "push of 595a2e28 to refs/heads/codex/jev-experiments-v1 at 2026-10-11T10:06:21Z"
+  },
+  {
+   "what": "freeze tag",
+   "url": "https://api.github.com/repos/arnavgupta00/memory/git/refs/tags/r9-freeze-20261011",
+   "snapshot": "https://web.archive.org/web/20261012173834/https://api.github.com/repos/arnavgupta00/memory/git/refs/tags/r9-freeze-20261011",
+   "archived_utc": "2026-10-12T17:38:34Z",
+   "archived_content_sha256": "855eb1e92978775c33e9169cc67be40ca329a6b1f98eb475f11034ddb7c54f9f",
+   "shows": "tag object 60dfc91d2933791df5c9e85fa9dd1f76fd3ca7fe"
+  },
+  {
+   "what": "freeze commit",
+   "url": "https://api.github.com/repos/arnavgupta00/memory/git/commits/595a2e28228c21cf842378fb9216cacb46478fd3",
+   "snapshot": "https://web.archive.org/web/20261012173948/https://api.github.com/repos/arnavgupta00/memory/git/commits/595a2e28228c21cf842378fb9216cacb46478fd3",
+   "archived_utc": "2026-10-12T17:39:48Z",
+   "archived_content_sha256": "d9e5fa07b32b990482fcc0f1bd63167729905610a035e70bf02e2a82ffd8705a",
+   "shows": "commit 595a2e28, committed 2026-10-11T10:06:19Z"
+  },
+  {
+   "what": "freeze manifest (FROZEN.json)",
+   "url": "https://raw.githubusercontent.com/arnavgupta00/memory/595a2e28228c21cf842378fb9216cacb46478fd3/src/agents/current/src/pipeline/a6/FROZEN.json",
+   "snapshot": "https://web.archive.org/web/20261012174005/https://raw.githubusercontent.com/arnavgupta00/memory/595a2e28228c21cf842378fb9216cacb46478fd3/src/agents/current/src/pipeline/a6/FROZEN.json",
+   "archived_utc": "2026-10-12T17:40:05Z",
+   "archived_content_sha256": "518766813d8e130564acae46a7179bc188dc85a3bd55b465ff794895e0b53be1",
+   "package_file": "code/public-freeze/src/agents/current/src/pipeline/a6/FROZEN.json"
+  },
+  {
+   "what": "split file beam-1m-canary-design-v1.json",
+   "url": "https://raw.githubusercontent.com/arnavgupta00/memory/2e1719d385a28cb3728626e68230328ea4cb6a24/src/agents/current/eval-slices/beam-1m/beam-1m-canary-design-v1.json",
+   "snapshot": "https://web.archive.org/web/20261012174028/https://raw.githubusercontent.com/arnavgupta00/memory/2e1719d385a28cb3728626e68230328ea4cb6a24/src/agents/current/eval-slices/beam-1m/beam-1m-canary-design-v1.json",
+   "archived_utc": "2026-10-12T17:40:28Z",
+   "archived_content_sha256": "c6538534c0290ba1ba5c4855dd50cf62bf1062ef986f46e5b33ed86077d102b4",
+   "package_file": "data/questions/partition-files/beam-1m-canary-design-v1.json"
+  },
+  {
+   "what": "split file beam-1m-canary-a-development-v1.json",
+   "url": "https://raw.githubusercontent.com/arnavgupta00/memory/2e1719d385a28cb3728626e68230328ea4cb6a24/src/agents/current/eval-slices/beam-1m/beam-1m-canary-a-development-v1.json",
+   "snapshot": "https://web.archive.org/web/20261012174050/https://raw.githubusercontent.com/arnavgupta00/memory/2e1719d385a28cb3728626e68230328ea4cb6a24/src/agents/current/eval-slices/beam-1m/beam-1m-canary-a-development-v1.json",
+   "archived_utc": "2026-10-12T17:40:50Z",
+   "archived_content_sha256": "f0ac5d26b081a94fd7c86821bf0d3aa02ad106db9b8eff24597c488740c6f031",
+   "package_file": "data/questions/partition-files/beam-1m-canary-a-development-v1.json"
+  },
+  {
+   "what": "split file beam-1m-canary-b-certification-v1.json",
+   "url": "https://raw.githubusercontent.com/arnavgupta00/memory/2e1719d385a28cb3728626e68230328ea4cb6a24/src/agents/current/eval-slices/beam-1m/beam-1m-canary-b-certification-v1.json",
+   "snapshot": "https://web.archive.org/web/20261012174223/https://raw.githubusercontent.com/arnavgupta00/memory/2e1719d385a28cb3728626e68230328ea4cb6a24/src/agents/current/eval-slices/beam-1m/beam-1m-canary-b-certification-v1.json",
+   "archived_utc": "2026-10-12T17:42:23Z",
+   "archived_content_sha256": "6072d2d51249e8b48d77166089be385e69ea1972b0fc88075805466fed86a83b",
+   "package_file": "data/questions/partition-files/beam-1m-canary-b-certification-v1.json"
+  },
+  {
+   "what": "split file beam-1m-blind-reserve-v1.json",
+   "url": "https://raw.githubusercontent.com/arnavgupta00/memory/2e1719d385a28cb3728626e68230328ea4cb6a24/src/agents/current/eval-slices/beam-1m/beam-1m-blind-reserve-v1.json",
+   "snapshot": "https://web.archive.org/web/20261012174242/https://raw.githubusercontent.com/arnavgupta00/memory/2e1719d385a28cb3728626e68230328ea4cb6a24/src/agents/current/eval-slices/beam-1m/beam-1m-blind-reserve-v1.json",
+   "archived_utc": "2026-10-12T17:42:42Z",
+   "archived_content_sha256": "296a294c7ecda81f2f396893713f74d185c3cacc6a363a0191a3e4239d6d2ce7",
+   "package_file": "data/questions/partition-files/beam-1m-blind-reserve-v1.json"
+  },
+  {
+   "what": "allocation record (24 Sep)",
+   "url": "https://raw.githubusercontent.com/arnavgupta00/memory/f3961ce7bdf27c48691d630765678a7d5aefa3c8/src/agents/current/eval-slices/beam-1m/beam-1m-holdout-allocation-20260924.json",
+   "snapshot": "https://web.archive.org/web/20261012174347/https://raw.githubusercontent.com/arnavgupta00/memory/f3961ce7bdf27c48691d630765678a7d5aefa3c8/src/agents/current/eval-slices/beam-1m/beam-1m-holdout-allocation-20260924.json",
+   "archived_utc": "2026-10-12T17:43:47Z",
+   "archived_content_sha256": "58e852e56d86f2caf6e357dc99a7f3469b1cc78aaef673c659082d87c5736ff9",
+   "package_file": "data/questions/partition-files/beam-1m-holdout-allocation-20260924.json"
+  }
+ ]
+}

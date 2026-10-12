@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 701.351749987225,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: Can you suggest a hotel for my upcoming trip to Miami?\n\nRubric: The user would prefer suggestions of hotels in Miami that offer great views, possibly of the ocean or the city skyline, and have unique features such as a rooftop pool or a hot tub on the balcony. They may not prefer suggestions of basic or budget hotels without these features.\n\nModel Response: You previously indicated that a great city view matters when choosing a hotel, but the available memory contains no Miami-specific hotel preferences or options. I can\u2019t make a well-grounded Miami hotel recommendation from this context alone.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "0edc2aef",
+  "request_id": "chatcmpl-E7WHXATG4GMDjcSbVkaB0p19hBQoU",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 204,
+    "total_tokens": 206
+  }
+}

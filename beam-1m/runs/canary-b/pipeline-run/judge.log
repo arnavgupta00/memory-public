@@ -1,0 +1,27 @@
+[nltk_data] Downloading package punkt_tab to /Users/arnav/nltk_data...
+[nltk_data]   Package punkt_tab is already up-to-date!
+Initializing model: all-MiniLM-L6-v2
+Initializing model: BAAI/bge-large-en-v1.5
+Initializing model: BAAI/bge-base-en-v1.5
+All models initialized successfully
+{
+  "arms": {
+    "a2": {
+      "questions": 260,
+      "mean_score": 0.7597037193330679,
+      "abilities": {
+        "abstention": 0.8076923076923077,
+        "contradiction_resolution": 0.7884615384615384,
+        "event_ordering": 0.31127712007060604,
+        "information_extraction": 0.9230769230769231,
+        "instruction_following": 0.9615384615384616,
+        "knowledge_update": 0.8461538461538461,
+        "multi_session_reasoning": 0.6955128205128205,
+        "preference_following": 0.9262820512820512,
+        "summarization": 0.8178113553113554,
+        "temporal_reasoning": 0.5192307692307693
+      }
+    }
+  },
+  "paired_vs_baseline": {}
+}

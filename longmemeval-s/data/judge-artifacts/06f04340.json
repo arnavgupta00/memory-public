@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 944.9224160052836,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: What should I serve for dinner this weekend with my homegrown ingredients?\n\nRubric: The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.\n\nModel Response: Serve grilled chicken or fish topped with basil-and-mint chimichurri, alongside a fresh cherry-tomato salad with cucumber and feta. It uses your fresh basil, mint, and garden tomatoes while building on the grilled-main and herb-and-tomato combinations already discussed.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "06f04340",
+  "request_id": "chatcmpl-E7WHX9nJpLMzzxVJ3a3BFY0gOjUUy",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 216,
+    "total_tokens": 218
+  }
+}

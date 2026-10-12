@@ -1,0 +1,380 @@
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[19 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 27 downloaded)
+[19 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[19 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[93 s] stage 3 notebook: 13 histories; 0 JEV calls replayed (seeded 0), 686 sent
+[202 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[277 s] stage 9 targeted: 51 conflict/duration questions; 0 JEV calls replayed (seeded 0), 169 sent
+[2357 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[2976 s] stage 6 search: 260 questions; 0 reused, 260 to search
+[2976 s]   running src/scripts/hopArchitectureScreen.ts (search) — log: runs/canary-b-r9-20261011/canary-b/logs/search.log
+[4177 s] stage 7 fusion: 260 questions, K180 (10 workers); JEV forecast 2479 requests, $2.62
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: JEV forecast exceeds the $10 dispatch guard
+    at runJevFilter (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/stages/s07_fusion_jev.mjs:84:3)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:131:33
+    at step (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:117:76)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:131:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async run (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:126:5)
+    at async file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:297:22 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[1 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 0 downloaded)
+[1 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[1 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[6 s] stage 3 notebook: 13 histories; 686 JEV calls replayed (seeded 0), 0 sent
+[6 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[8 s] stage 9 targeted: 51 conflict/duration questions; 169 JEV calls replayed (seeded 0), 0 sent
+[8 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[22 s] stage 6 search: 260 questions; 260 reused, 0 to search
+[23 s] stage 7 fusion: 260 questions already fused by this run (resume); JEV forecast 2479 requests
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: JEV forecast exceeds the $10 dispatch guard
+    at runJevFilter (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/stages/s07_fusion_jev.mjs:84:3)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:131:33
+    at step (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:117:76)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:131:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async run (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:126:5)
+    at async file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:297:22 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[1 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 0 downloaded)
+[1 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[1 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[6 s] stage 3 notebook: 13 histories; 686 JEV calls replayed (seeded 0), 0 sent
+[6 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[8 s] stage 9 targeted: 51 conflict/duration questions; 169 JEV calls replayed (seeded 0), 0 sent
+[8 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[22 s] stage 6 search: 260 questions; 260 reused, 0 to search
+[23 s] stage 7 fusion: 260 questions already fused by this run (resume); JEV forecast 2479 requests
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: JEV forecast exceeds the $10 dispatch guard
+    at runJevFilter (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/stages/s07_fusion_jev.mjs:84:3)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:131:33
+    at step (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:117:76)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:131:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async run (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:126:5)
+    at async file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:297:22 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[1 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 0 downloaded)
+[1 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[1 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[6 s] stage 3 notebook: 13 histories; 686 JEV calls replayed (seeded 0), 0 sent
+[6 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[8 s] stage 9 targeted: 51 conflict/duration questions; 169 JEV calls replayed (seeded 0), 0 sent
+[8 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[22 s] stage 6 search: 260 questions; 260 reused, 0 to search
+[23 s] stage 7 fusion: 260 questions already fused by this run (resume); JEV forecast 2479 requests
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: JEV forecast exceeds the $10 dispatch guard
+    at runJevFilter (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/stages/s07_fusion_jev.mjs:84:3)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:131:33
+    at step (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:117:76)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:131:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async run (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:126:5)
+    at async file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:297:22 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[1 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 0 downloaded)
+[1 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[1 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[6 s] stage 3 notebook: 13 histories; 686 JEV calls replayed (seeded 0), 0 sent
+[6 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[8 s] stage 9 targeted: 51 conflict/duration questions; 169 JEV calls replayed (seeded 0), 0 sent
+[8 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[22 s] stage 6 search: 260 questions; 260 reused, 0 to search
+[23 s] stage 7 fusion: 260 questions already fused by this run (resume); JEV forecast 2479 requests
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: JEV forecast exceeds the $10 dispatch guard
+    at runJevFilter (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/stages/s07_fusion_jev.mjs:84:3)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:131:33
+    at step (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:117:76)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:131:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async run (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:126:5)
+    at async file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:297:22 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[1 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 0 downloaded)
+[1 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[1 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[6 s] stage 3 notebook: 13 histories; 686 JEV calls replayed (seeded 0), 0 sent
+[6 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[8 s] stage 9 targeted: 51 conflict/duration questions; 169 JEV calls replayed (seeded 0), 0 sent
+[8 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[22 s] stage 6 search: 260 questions; 260 reused, 0 to search
+[23 s] stage 7 fusion: 260 questions already fused by this run (resume); JEV forecast 2479 requests
+file:///Users/arnav/programming/projects/memory/src/agents/current/src/jev/recursiveArtifacts.mjs:25
+  }catch(e){halted ||= e;save(`calls/${key}.json`,{ok:false,key,identity,inputHash:hash(payload),error:redact(e.message),category:'inference-failure'});throw Error(redact(e.message));}finally{release();}
+                                                                                                                                                              ^
+
+Error: TypeSafe HTTP 400: {"detail":{"error_type":"max_tokens_exceeded"}}
+    at run (file:///Users/arnav/programming/projects/memory/src/agents/current/src/jev/recursiveArtifacts.mjs:25:159)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[1 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 0 downloaded)
+[1 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[1 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[7 s] stage 3 notebook: 13 histories; 686 JEV calls replayed (seeded 0), 0 sent
+[7 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[9 s] stage 9 targeted: 51 conflict/duration questions; 169 JEV calls replayed (seeded 0), 0 sent
+[9 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[23 s] stage 6 search: 260 questions; 260 reused, 0 to search
+[24 s] stage 7 fusion: 260 questions already fused by this run (resume); JEV forecast 2479 requests
+file:///Users/arnav/programming/projects/memory/src/agents/current/src/jev/recursiveArtifacts.mjs:25
+  }catch(e){halted ||= e;save(`calls/${key}.json`,{ok:false,key,identity,inputHash:hash(payload),error:redact(e.message),category:'inference-failure'});throw Error(redact(e.message));}finally{release();}
+                                                                                                                                                              ^
+
+Error: TypeSafe HTTP 400: {"detail":{"error_type":"max_tokens_exceeded"}}
+    at run (file:///Users/arnav/programming/projects/memory/src/agents/current/src/jev/recursiveArtifacts.mjs:25:159)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[1 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 0 downloaded)
+[1 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[1 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[6 s] stage 3 notebook: 13 histories; 686 JEV calls replayed (seeded 0), 0 sent
+[6 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[8 s] stage 9 targeted: 51 conflict/duration questions; 169 JEV calls replayed (seeded 0), 0 sent
+[8 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[22 s] stage 6 search: 260 questions; 260 reused, 0 to search
+[23 s] stage 7 fusion: 260 questions already fused by this run (resume); JEV forecast 2479 requests
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[1 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 0 downloaded)
+[1 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[1 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[10 s] stage 3 notebook: 13 histories; 686 JEV calls replayed (seeded 0), 0 sent
+[10 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[13 s] stage 9 targeted: 51 conflict/duration questions; 169 JEV calls replayed (seeded 0), 0 sent
+[13 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[33 s] stage 6 search: 260 questions; 260 reused, 0 to search
+[35 s] stage 7 fusion: 260 questions already fused by this run (resume); JEV forecast 2479 requests
+[1479 s] stage 8 JEV filter: 260/260 questions; 1489 calls replayed (seeded 0), 998 sent
+[1480 s] stage 10a package: 260 questions; 0 saved packager calls available for identical-request replay
+[1480 s]   running src/scripts/hopBagDownstreamGate.ts (package) — log: runs/canary-b-r9-20261011/canary-b/logs/package.log
+file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/lib/proc.mjs:28
+      code === 0 ? resolve() : reject(new Error(`${script} exited ${code}; see ${path.relative(root, path.join(logs, `${name}.log`))}`));
+                                      ^
+
+Error: src/scripts/hopBagDownstreamGate.ts exited 1; see runs/canary-b-r9-20261011/canary-b/logs/package.log
+    at ChildProcess.<anonymous> (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/lib/proc.mjs:28:39)
+    at ChildProcess.emit (node:events:508:28)
+    at maybeClose (node:internal/child_process:1101:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[1 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 0 downloaded)
+[1 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[1 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[6 s] stage 3 notebook: 13 histories; 686 JEV calls replayed (seeded 0), 0 sent
+[6 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[8 s] stage 9 targeted: 51 conflict/duration questions; 169 JEV calls replayed (seeded 0), 0 sent
+[8 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[22 s] stage 6 search: 260 questions; 260 reused, 0 to search
+[23 s] stage 7 fusion: 260 questions already fused by this run (resume); JEV forecast 2479 requests
+[24 s] stage 8 JEV filter: 260/260 questions already filtered by this run (resume); 0 sent
+file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/stages/s10_package.mjs:34
+    if (!(same && complete)) throw new Error('This run already holds packager output that is incomplete or was built from different bags; use a new run folder');
+                                   ^
+
+Error: This run already holds packager output that is incomplete or was built from different bags; use a new run folder
+    at runPackage (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/stages/s10_package.mjs:34:36)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:134:37
+    at step (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:119:76)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:134:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async run (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:128:5)
+    at async file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:299:22
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[1 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 0 downloaded)
+[1 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[1 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[6 s] stage 3 notebook: 13 histories; 686 JEV calls replayed (seeded 0), 0 sent
+[6 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[8 s] stage 9 targeted: 51 conflict/duration questions; 169 JEV calls replayed (seeded 0), 0 sent
+[8 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[22 s] stage 6 search: 260 questions; 260 reused, 0 to search
+[23 s] stage 7 fusion: 260 questions already fused by this run (resume); JEV forecast 2479 requests
+[23 s] stage 8 JEV filter: 260/260 questions already filtered by this run (resume); 0 sent
+file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/stages/s10_package.mjs:34
+    if (!(same && complete)) throw new Error('This run already holds packager output that is incomplete or was built from different bags; use a new run folder');
+                                   ^
+
+Error: This run already holds packager output that is incomplete or was built from different bags; use a new run folder
+    at runPackage (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/stages/s10_package.mjs:34:36)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:134:37
+    at step (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:119:76)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:134:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async run (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:128:5)
+    at async file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:299:22
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[1 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 0 downloaded)
+[1 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[1 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[6 s] stage 3 notebook: 13 histories; 686 JEV calls replayed (seeded 0), 0 sent
+[6 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[8 s] stage 9 targeted: 51 conflict/duration questions; 169 JEV calls replayed (seeded 0), 0 sent
+[8 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[22 s] stage 6 search: 260 questions; 260 reused, 0 to search
+[23 s] stage 7 fusion: 260 questions already fused by this run (resume); JEV forecast 2479 requests
+[23 s] stage 8 JEV filter: 260/260 questions already filtered by this run (resume); 0 sent
+file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/stages/s10_package.mjs:34
+    if (!(same && complete)) throw new Error('This run already holds packager output that is incomplete or was built from different bags; use a new run folder');
+                                   ^
+
+Error: This run already holds packager output that is incomplete or was built from different bags; use a new run folder
+    at runPackage (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/stages/s10_package.mjs:34:36)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:134:37
+    at step (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:119:76)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:134:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async run (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:128:5)
+    at async file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:299:22
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[1 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 0 downloaded)
+[1 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[1 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[6 s] stage 3 notebook: 13 histories; 686 JEV calls replayed (seeded 0), 0 sent
+[6 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[8 s] stage 9 targeted: 51 conflict/duration questions; 169 JEV calls replayed (seeded 0), 0 sent
+[8 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[22 s] stage 6 search: 260 questions; 260 reused, 0 to search
+[23 s] stage 7 fusion: 260 questions already fused by this run (resume); JEV forecast 2479 requests
+[23 s] stage 8 JEV filter: 260/260 questions already filtered by this run (resume); 0 sent
+file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/stages/s10_package.mjs:34
+    if (!(same && complete)) throw new Error('This run already holds packager output that is incomplete or was built from different bags; use a new run folder');
+                                   ^
+
+Error: This run already holds packager output that is incomplete or was built from different bags; use a new run folder
+    at runPackage (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/stages/s10_package.mjs:34:36)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:134:37
+    at step (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:119:76)
+    at file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:134:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async run (file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:128:5)
+    at async file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:299:22
+
+Node.js v24.8.0
+A6 pipeline (fresh mode, answer layer A2): 260 questions -> runs/canary-b-r9-20261011/canary-b
+[1 s] stage 1 dataset: 13 histories, 260 questions (source files: 0 copied, 0 downloaded)
+[1 s] stage 2 ingestion: 10863 sessions; 0 notes and 0 index corpora reused
+[1 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/canary-b-r9-20261011/canary-b/logs/ingest.log
+[6 s] stage 3 notebook: 13 histories; 686 JEV calls replayed (seeded 0), 0 sent
+[6 s] stage 5 router: 260 questions; broad 104, conflict 24, duration 27
+[8 s] stage 9 targeted: 51 conflict/duration questions; 169 JEV calls replayed (seeded 0), 0 sent
+[8 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/canary-b-r9-20261011/canary-b/logs/index.log
+[22 s] stage 6 search: 260 questions; 260 reused, 0 to search
+[23 s] stage 7 fusion: 260 questions already fused by this run (resume); JEV forecast 2479 requests
+[24 s] stage 8 JEV filter: 260/260 questions already filtered by this run (resume); 0 sent
+[25 s] stage 10a package: 260 questions; 0 saved packager calls available for identical-request replay
+[25 s]   running src/scripts/hopBagDownstreamGate.ts (package) — log: runs/canary-b-r9-20261011/canary-b/logs/package.log
+[374 s] stage 9 timeline: 104 broad questions; 0 JEV calls replayed (seeded 0), 1519 sent
+[807 s] stage 10 context: 260 memory packs (67 broad packages trimmed to 130K tokens; 10 workers)
+[1067 s] stage 11 A2: 10/260 answered
+[1203 s] stage 11 A2: 20/260 answered
+[1300 s] stage 11 A2: 30/260 answered
+[1349 s] stage 11 A2: 40/260 answered
+[1387 s] stage 11 A2: 50/260 answered
+[1432 s] stage 11 A2: 60/260 answered
+[1458 s] stage 11 A2: 70/260 answered
+[1517 s] stage 11 A2: 80/260 answered
+[1532 s] stage 11 A2: 90/260 answered
+[1552 s] stage 11 A2: 100/260 answered
+[1565 s] stage 11 A2: 110/260 answered
+[1572 s] stage 11 A2: 120/260 answered
+[1583 s] stage 11 A2: 130/260 answered
+[1586 s] stage 11 A2: 140/260 answered
+[1592 s] stage 11 A2: 150/260 answered
+[1595 s] stage 11 A2: 160/260 answered
+[1602 s] stage 11 A2: 170/260 answered
+[1609 s] stage 11 A2: 180/260 answered
+[1624 s] stage 11 A2: 190/260 answered
+[1638 s] stage 11 A2: 200/260 answered
+[1654 s] stage 11 A2: 210/260 answered
+[1672 s] stage 11 A2: 220/260 answered
+[1686 s] stage 11 A2: 230/260 answered
+[1707 s] stage 11 A2: 240/260 answered
+[1751 s] stage 11 A2: 250/260 answered
+[1971 s] stage 11 A2: 260/260 answered
+[1971 s] stage 11 A2: 260/260 answered; pipeline model spend so far $25.72
+[1971 s] done in 1971 s

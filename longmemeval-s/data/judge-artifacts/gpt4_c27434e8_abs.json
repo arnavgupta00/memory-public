@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 735.651915994822,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you an unanswerable question, an explanation, and a response from a model. Please answer yes if the model correctly identifies the question as unanswerable. The model could say that the information is incomplete, or some other information is given but the asked information is not.\n\nQuestion: Which project did I start first, the Ferrari model or the Porsche 991 Turbo S model?\n\nExplanation: The information provided is not enough. You did not mention starting the Porsche 991 Turbo S model.\n\nModel Response: The available memory does not contain this information.\n\nDoes the model correctly identify the question as unanswerable? Answer yes or no only.",
+  "question_id": "gpt4_c27434e8_abs",
+  "request_id": "chatcmpl-E7WHXZg51h2ccaylYhkNDzFZsswfg",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 138,
+    "total_tokens": 140
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 933.7005830020644,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. In addition, do not penalize off-by-one errors for the number of days. If the question asks for the number of days/weeks/months, etc., and the model makes off-by-one errors (e.g., predicting 19 days when the answer is 18), the model's response is still correct. \n\nQuestion: What is the order of the three trips I took in the past three months, from earliest to latest?\n\nCorrect Answer: I went on a day hike to Muir Woods National Monument with my family, then I went on a road trip with friends to Big Sur and Monterey, and finally I started my solo camping trip to Yosemite National Park.\n\nModel Response: From earliest to latest, the three trips were: 1. Big Sur and Monterey road trip \u2014 by April 20, 2023; 2. Dubai and Abu Dhabi trip \u2014 April 22\u201328, 2023; 3. Solo camping trip to Yosemite National Park \u2014 in May 2023, associated with May 15. The Yosemite details conflict on whether May 15 was the start or return date, but its position after the two April trips is clear.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "gpt4_7f6b06db",
+  "request_id": "chatcmpl-E7WHWbBw57Asw5p6TyG2UnQIrqOkZ",
+  "response": "No",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 334,
+    "total_tokens": 335
+  }
+}

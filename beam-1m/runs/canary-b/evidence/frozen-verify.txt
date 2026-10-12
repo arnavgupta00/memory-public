@@ -1,0 +1,7 @@
+frozen files: unchanged (123)
+context  75/75 identical to the Fresh75 A6F run
+check    75/75 identical to the Fresh75 A6F run
+extract  75/75 identical to the Fresh75 A6F run
+plan     75/75 identical to the Fresh75 A6F run
+answer   75/75 identical to the Fresh75 A6F run
+A2       75/75 plan + answer requests identical to the saved A2 runs (probe 20: 29 Sep; other 55: 2 Oct)

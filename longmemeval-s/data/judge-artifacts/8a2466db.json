@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 662.4023750046035,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: Can you recommend some resources where I can learn more about video editing?\n\nRubric: The user would prefer responses that suggest resources specifically tailored to Adobe Premiere Pro, especially those that delve into its advanced settings. They might not prefer general video editing resources or resources related to other video editing software.\n\nModel Response: Since you enjoy using Adobe Premiere Pro and have already been exploring Lumetri color grading, start with Adobe's official Premiere Pro documentation and tutorials for reliable fundamentals and feature references. Then use Premiere Bro and Adobe Creative Cloud on YouTube for practical demonstrations; Video Copilot is especially useful when you want to expand into effects and After Effects integration. For a more guided curriculum, try Udemy, LinkedIn Learning, or Skillshare. When you get stuck, ask questions in r/premierepro or the Adobe Premiere Pro forum. A good progression for you would be editing and timeline fundamentals, audio and export settings, then Lumetri\u2014starting with the Creative panel and refining with Curves, Color Wheels, and Color Match.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "8a2466db",
+  "request_id": "chatcmpl-E7WHXwhKzkdAI3EmLmpoRGzx3nfiF",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 294,
+    "total_tokens": 296
+  }
+}

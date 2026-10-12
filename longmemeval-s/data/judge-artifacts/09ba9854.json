@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1032.851791009307,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How much will I save by taking the train from the airport to my hotel instead of a taxi?\n\nCorrect Answer: $50\n\nModel Response: Using the $60 taxi estimate you were given and the estimated $20\u201330 total for train plus local connection, you would save about $30\u201340. If the train truly costs the special $10 fare your friend mentioned, the saving would be about $50. Standard Narita taxi estimates in the package are much higher, so the exact saving depends on the actual taxi quote and train route.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "09ba9854",
+  "request_id": "chatcmpl-E7WHY6vkk5J1vkDKqY2gNVYLV8WQu",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 210,
+    "total_tokens": 212
+  }
+}

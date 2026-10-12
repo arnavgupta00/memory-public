@@ -1,0 +1,69 @@
+{
+ "run": "runs/final-700-r9-20261012/remaining-340",
+ "questions": 340,
+ "score_pinned": 77.23,
+ "macro_over_abilities": 77.23,
+ "by_ability": {
+  "abstention": {
+   "n": 34,
+   "score": 86.76
+  },
+  "contradiction_resolution": {
+   "n": 34,
+   "score": 83.82
+  },
+  "event_ordering": {
+   "n": 34,
+   "score": 27.94
+  },
+  "information_extraction": {
+   "n": 34,
+   "score": 88.7
+  },
+  "instruction_following": {
+   "n": 34,
+   "score": 100.0
+  },
+  "knowledge_update": {
+   "n": 34,
+   "score": 77.94
+  },
+  "multi_session_reasoning": {
+   "n": 34,
+   "score": 82.56
+  },
+  "preference_following": {
+   "n": 34,
+   "score": 92.89
+  },
+  "summarization": {
+   "n": 34,
+   "score": 83.15
+  },
+  "temporal_reasoning": {
+   "n": 34,
+   "score": 48.53
+  }
+ },
+ "by_conversation": {
+  "chat-04": 77.01,
+  "chat-05": 82.02,
+  "chat-06": 74.72,
+  "chat-07": 61.11,
+  "chat-11": 71.8,
+  "chat-13": 80.99,
+  "chat-15": 71.93,
+  "chat-16": 82.22,
+  "chat-19": 76.05,
+  "chat-20": 82.93,
+  "chat-21": 80.79,
+  "chat-23": 84.52,
+  "chat-28": 78.54,
+  "chat-31": 76.43,
+  "chat-32": 82.54,
+  "chat-33": 69.06,
+  "chat-34": 80.25
+ },
+ "conversation_ci95_half_width_points": 2.1,
+ "ci_rule": "finite-population 95% CI over conversation scores (N = 35); contract target <= 5 points"
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 619.1160839953227,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: What is my current highest score in Ticket to Ride?\n\nCorrect Answer: 132 points\n\nModel Response: Your current highest Ticket to Ride score is 132 points.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "0e4e4c46",
+  "request_id": "chatcmpl-E7WHXMfQHj4OhK8UOXNR35JwvPQWr",
+  "response": "Yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 119,
+    "total_tokens": 120
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 624.3647499941289,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I've been thinking about making a cocktail for an upcoming get-together, but I'm not sure which one to choose. Any suggestions?\n\nRubric: Considering their mixology class background, the user would prefer cocktail suggestions that build upon their existing skills and interests, such as creative variations of classic cocktails or innovative twists on familiar flavors. They might appreciate recommendations that incorporate their experience with refreshing summer drinks like Pimm's Cup. The user would not prefer overly simplistic or basic cocktail recipes, and may not be interested in suggestions that don't take into account their mixology class background.\n\nModel Response: Choose the Pimm's Cup with a Twist for your get-together, using the Hendrick's gin, muddled cucumber, and Ruby Red grapefruit syrup you selected. A good batch-friendly formula is 1 1/2 oz Hendrick's gin, 1/2 oz Pimm's No. 1, 1/2 oz lemon juice, 1/2 oz Ruby Red grapefruit syrup, and a splash of ginger beer. Serve it over ice in your Collins glasses and garnish with cucumber, mint, and a grapefruit slice for a refreshing, colorful drink that feels more distinctive than the classic Pimm's Cup you have already made.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "1a1907b4",
+  "request_id": "chatcmpl-E7WHXZZoet1eMqIO95XzP9cNqdxbF",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 336,
+    "total_tokens": 338
+  }
+}

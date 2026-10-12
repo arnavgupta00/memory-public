@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 693.8890419987729,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: What was my previous personal best time for the charity 5K run?\n\nCorrect Answer: 27 minutes and 45 seconds\n\nModel Response: Your previous personal best time was 27 minutes and 45 seconds.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "e66b632c",
+  "request_id": "chatcmpl-E7WHXcgldHymXrH6JOUzk7fdelKFd",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 129,
+    "total_tokens": 130
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 689.599959005136,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How many MCU films did I watch in the last 3 months?\n\nCorrect Answer: 5\n\nModel Response: You watched 5 MCU films in the last 3 months, based on your most recent statement.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "b6019101",
+  "request_id": "chatcmpl-E7WHanTQGX2GJkLXKuU2rKTspPfsu",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 129,
+    "total_tokens": 131
+  }
+}

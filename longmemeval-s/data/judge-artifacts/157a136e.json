@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 820.4324999969685,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many years older is my grandma than me?\n\nCorrect Answer: 43\n\nModel Response: The exact difference cannot be determined from the package. If your grandma is 75 and you are currently 30\u201339, she is approximately 36\u201345 years older than you.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "157a136e",
+  "request_id": "chatcmpl-E7WHYAtjPe191tzaSKzNyU1caMRhU",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 157,
+    "total_tokens": 159
+  }
+}

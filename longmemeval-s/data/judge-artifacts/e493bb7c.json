@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 671.9851660018321,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: Where is the painting 'Ethereal Dreams' by Emma Taylor currently hanging?\n\nCorrect Answer: in my bedroom\n\nModel Response: As of the latest statement, \u201cEthereal Dreams\u201d is hanging above the bed in the user\u2019s bedroom.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "e493bb7c",
+  "request_id": "chatcmpl-E7WHYdRYXCOxNcmluTgAqVLj9Vdtp",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 135,
+    "total_tokens": 136
+  }
+}

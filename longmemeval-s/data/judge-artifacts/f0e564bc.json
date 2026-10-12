@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 692.0732500002487,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: What is the total amount I spent on the designer handbag and high-end skincare products?\n\nCorrect Answer: $1,300\n\nModel Response: You spent a total of $1,300: $800 on the Coach handbag and $500 on the high-end skincare products.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "f0e564bc",
+  "request_id": "chatcmpl-E7WHYduSzEcAN4qxWuRLKQd16pcuE",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 155,
+    "total_tokens": 157
+  }
+}

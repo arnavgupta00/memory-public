@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1080.2251659915783,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. In addition, do not penalize off-by-one errors for the number of days. If the question asks for the number of days/weeks/months, etc., and the model makes off-by-one errors (e.g., predicting 19 days when the answer is 18), the model's response is still correct. \n\nQuestion: How many days passed between the day I replaced my spark plugs and the day I participated in the Turbocharged Tuesdays auto racking event?\n\nCorrect Answer: 29 days. 30 days (including the last day) is also acceptable.\n\nModel Response: 29 days passed between replacing the spark plugs on 2023/02/14 and participating in the Turbocharged Tuesdays auto racking event on 2023/03/15.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "gpt4_74aed68e",
+  "request_id": "chatcmpl-E7WHY1F5gWk4e2s32uHLa7dFgIuiM",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 252,
+    "total_tokens": 254
+  }
+}

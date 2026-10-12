@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 750.7489999989048,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I'm planning a trip to Denver soon. Any suggestions on what to do there?\n\nRubric: The user would prefer responses that take into account their previous experience in Denver, specifically their interest in live music and memorable encounter with Brandon Flowers. They might appreciate suggestions that revisit or build upon this experience, such as revisiting the same bar or exploring similar music venues in the area. The user may not prefer general tourist recommendations or activities unrelated to their interest in live music.\n\nModel Response: Make your next Denver trip music-centered: revisit Red Rocks for another concert, arrive early for dinner at The Ship Rock Grille, and ask for a patio or partial stage-view table. Since you loved Denver's music scene, check calendars for The Ogden Theatre, Bluebird Theater, Fillmore Auditorium, Larimer Lounge, the hi-dive, or the Marquis Theater, and consider a record-store stop at Twist & Shout. For training, use or validate the previously discussed 20-mile downtown ride\u2014starting near 5th Street and incorporating the park loop and riverfront path\u2014because it matches your low-traffic, bike-lane preference. Add an easy 4\u20135 km park or trail run if it fits your Sunday-evening routine; save hill repeats for a controlled workout rather than adding extra intensity so you stay healthy for the June 19 triathlon. If you want strength work while visiting, ask Rachel at your gym about a suitable core-and-legs session.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "a89d7624",
+  "request_id": "chatcmpl-E7WHXTFskDvl4Oy3kzNRNCqtcgF6Z",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 383,
+    "total_tokens": 385
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 669.4130420073634,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: What type of vehicle model am I currently working on?\n\nCorrect Answer: Ford F-150 pickup truck\n\nModel Response: You are currently working on a Ford F-150 pickup truck model. This is the more recent project, replacing the earlier Ford Mustang Shelby GT350R model.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "3ba21379",
+  "request_id": "chatcmpl-E7WHYrS4Foutg9WT8jz7977bwbEpt",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 142,
+    "total_tokens": 144
+  }
+}

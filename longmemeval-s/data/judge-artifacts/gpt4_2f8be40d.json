@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 1772.911166990525,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many weddings have I attended in this year?\n\nCorrect Answer: I attended three weddings. The couples were Rachel and Mike, Emily and Sarah, and Jen and Tom.\n\nModel Response: The package identifies 5 weddings you attended in 2023, although the dates of Emily's and your sister's weddings are not specified.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "gpt4_2f8be40d",
+  "request_id": "chatcmpl-E7WHViqa8un2cGkrrwWlCaOLMFkNP",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 166,
+    "total_tokens": 168
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 690.9056659933412,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How long have I been using my Fitbit Charge 3?\n\nCorrect Answer: 9 months\n\nModel Response: As of 2023/09/04, you\u2019ve been using your Fitbit Charge 3 for about 9 months, based on your most recent statement.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "08e075c7",
+  "request_id": "chatcmpl-E7WHX270Ui8Eq9yW69uHbb8wEVYsd",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 140,
+    "total_tokens": 142
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 770.6317080010194,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many different cuisines have I learned to cook or tried out in the past few months?\n\nCorrect Answer: 4\n\nModel Response: You have learned to cook or tried 4 different cuisines: Ethiopian, Indian, Korean, and vegan cuisine. Thai and Japanese are mentioned as planned or prospective experiences, not confirmed past experiences, so they are excluded.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "d23cf73b",
+  "request_id": "chatcmpl-E7WHVsnRJ0eXGE3XWFRRPO0I5WHl6",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 171,
+    "total_tokens": 173
+  }
+}

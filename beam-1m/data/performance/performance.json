@@ -1,0 +1,214 @@
+{
+ "note": "Computed by tools/performance.py from the logs in this package and the run folders. Latency is provider-measured model time per call, not batch wall time; see the script header for how a question's model time is assembled.",
+ "cost": {
+  "hive_list_usd": 168.39,
+  "hive_billed_usd_approx": 89.25,
+  "typesafe_list_usd": 10.18,
+  "judge_usd": 2.49,
+  "total_billed_usd_approx": 101.92,
+  "per_question_billed_usd_approx": 0.146,
+  "per_question_list_usd": 0.259,
+  "one_time_session_notes_list_usd": 11.79,
+  "note": "Hive billed about 0.53x list price; TypeSafe and the judge are at list price."
+ },
+ "tokens": {
+  "session notes": {
+   "prompt_tokens": 22928065,
+   "completion_tokens": 4104270,
+   "calls": 29488
+  },
+  "router, search, targeted plans": {
+   "prompt_tokens": 27512248,
+   "completion_tokens": 21724635,
+   "calls": 4020
+  },
+  "packager's discarded answer": {
+   "prompt_tokens": 133521482,
+   "completion_tokens": 2034866,
+   "calls": 990
+  },
+  "planner": {
+   "prompt_tokens": 59456914,
+   "completion_tokens": 31730639,
+   "calls": 703
+  },
+  "answerer": {
+   "prompt_tokens": 60179465,
+   "completion_tokens": 4836457,
+   "calls": 700
+  }
+ },
+ "memory_pack_tokens_planner_prompt": {
+  "n": 700,
+  "p50": 80798.0,
+  "p90": 162036.0,
+  "mean": 84618.0
+ },
+ "history_tokens_note": "BEAM-1M histories are about one million tokens each (1.03-1.09 million on average by the project tokenizer).",
+ "model_call_latency_seconds": {
+  "session notes": {
+   "n": 29488,
+   "p50": 1.4,
+   "p90": 2.7,
+   "mean": 1.7
+  },
+  "router, search, targeted plans": {
+   "n": 4020,
+   "p50": 12.2,
+   "p90": 73.6,
+   "mean": 24.2
+  },
+  "packager's discarded answer": {
+   "n": 990,
+   "p50": 9.1,
+   "p90": 21.9,
+   "mean": 12.0
+  },
+  "planner": {
+   "n": 703,
+   "p50": 213.6,
+   "p90": 369.6,
+   "mean": 217.1
+  },
+  "answerer": {
+   "n": 700,
+   "p50": 20.7,
+   "p90": 90.4,
+   "mean": 36.8
+  }
+ },
+ "typesafe_call_latency_seconds": {
+  "notebook": {
+   "n": 2161,
+   "p50": 0.4,
+   "p90": 0.4,
+   "mean": 0.4
+  },
+  "relevance filter": {
+   "n": 6863,
+   "p50": 6.5,
+   "p90": 20.0,
+   "mean": 8.5
+  },
+  "timeline": {
+   "n": 3741,
+   "p50": 0.4,
+   "p90": 0.4,
+   "mean": 0.4
+  },
+  "targeted checks": {
+   "n": 461,
+   "p50": 0.3,
+   "p90": 0.4,
+   "mean": 0.3
+  }
+ },
+ "judge_call_latency_seconds": {
+  "n": 9882,
+  "p50": 0.7,
+  "p90": 1.4,
+  "mean": 0.9
+ },
+ "per_question_model_time_seconds": {
+  "questions_with_every_component": 698,
+  "router": {
+   "n": 698,
+   "p50": 1.7,
+   "p90": 3.2,
+   "mean": 2.0
+  },
+  "search": {
+   "n": 698,
+   "p50": 115.3,
+   "p90": 202.7,
+   "mean": 125.0
+  },
+  "relevance_filter_slowest_batch": {
+   "n": 698,
+   "p50": 20.2,
+   "p90": 34.8,
+   "mean": 20.6
+  },
+  "packager_median_used": 9.1,
+  "planner": {
+   "n": 698,
+   "p50": 214.3,
+   "p90": 369.6,
+   "mean": 217.6
+  },
+  "answerer": {
+   "n": 698,
+   "p50": 20.7,
+   "p90": 90.4,
+   "mean": 36.9
+  },
+  "total": {
+   "n": 698,
+   "p50": 398.7,
+   "p90": 629.6,
+   "mean": 411.3
+  }
+ },
+ "latency_split": {
+  "preprocessing": {
+   "per_new_session_note_seconds": {
+    "n": 29488,
+    "p50": 1.4,
+    "p90": 2.7,
+    "mean": 1.7
+   },
+   "per_new_session_notebook_seconds": {
+    "n": 2161,
+    "p50": 0.4,
+    "p90": 0.4,
+    "mean": 0.4
+   },
+   "per_history_cold_minutes": 3.8,
+   "per_history_cold_basis": "Canary A part 1, fully fresh: notes, index and notebook for 5 histories (4,037 sessions) took 1142 s at one 4.8-requests-per-second gate; divided by 5."
+  },
+  "query_retrieval_seconds": {
+   "n": 698,
+   "p50": 147.6,
+   "p90": 234.1,
+   "mean": 156.8
+  },
+  "query_answer_seconds": {
+   "n": 698,
+   "p50": 248.2,
+   "p90": 442.7,
+   "mean": 254.5
+  },
+  "query_total_seconds": {
+   "n": 698,
+   "p50": 398.7,
+   "p90": 629.6,
+   "mean": 411.3
+  },
+  "note": "Pre-processing builds the memory before any question arrives: in live use, a session is noted when it ends. Query time is what a question costs once its memory exists: retrieval (router, search, relevance filter, packaging) builds the context, and the planner and answerer write the answer. Cold start, a new history and then its first question, is about the sum."
+ },
+ "wall_clock": {
+  "canary-a-part1": {
+   "from_ist": "2026-10-11 01:14:23",
+   "to_ist": "2026-10-11 01:51:03"
+  },
+  "canary-a-part2": {
+   "from_ist": "2026-10-11 02:02:18",
+   "to_ist": "2026-10-11 02:40:24"
+  },
+  "canary-b": {
+   "from_ist": "2026-10-11 17:51:02",
+   "to_ist": "2026-10-11 21:02:01"
+  },
+  "remaining-340": {
+   "from_ist": "2026-10-12 01:23:29",
+   "to_ist": "2026-10-12 04:19:11"
+  }
+ },
+ "concurrency": {
+  "requests_per_second_to_hive": 4.8,
+  "max_in_flight": {
+   "canary-a": 64,
+   "sealed runs": 100
+  }
+ }
+}

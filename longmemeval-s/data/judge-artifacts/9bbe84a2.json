@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 730.0783749960829,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: What was my previous goal for my Apex Legends level before I updated my goal?\n\nCorrect Answer: level 100\n\nModel Response: Your previous Apex Legends level goal was level 100, before you updated it to level 150.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "9bbe84a2",
+  "request_id": "chatcmpl-E7WHaC3Si9MUbeQfJXcljVQGgw8u5",
+  "response": "Yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 132,
+    "total_tokens": 133
+  }
+}

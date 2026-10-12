@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1250.3011250082636,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many online courses have I completed in total?\n\nCorrect Answer: 5\n\nModel Response: You have completed 5 online courses in total: 3 on Coursera and 2 on edX.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "c2ac3c61",
+  "request_id": "chatcmpl-E7WHY8EMTaCZ2dOdtcz7v56ErxAIH",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 142,
+    "total_tokens": 144
+  }
+}

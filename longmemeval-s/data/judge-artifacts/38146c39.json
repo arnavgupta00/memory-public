@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 693.9138330053538,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I've been feeling like my chocolate chip cookies need something extra. Any advice?\n\nRubric: The user would prefer responses that build upon their previous experimentation with turbinado sugar, suggesting ingredients or techniques that complement its richer flavor. They might not prefer generic cookie-making advice or suggestions that don't take into account their existing use of turbinado sugar.\n\nModel Response: Build on the flavors you\u2019ve already been exploring: try replacing about 1/4 of the cookie\u2019s usual sugar with turbinado sugar for caramel-like depth, or use a smaller amount of muscovado if you want a bolder molasses note. For texture, fold in sliced almonds, as you planned for the clafoutis. A small amount of thawed, well-patted-dry frozen cherries could also make a striking cherry-almond variation with the chocolate chips, but use them sparingly so the dough does not become wet. Finish with a pinch of flaky salt if you have it\u2014it will sharpen the chocolate and caramel flavors.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "38146c39",
+  "request_id": "chatcmpl-E7WHZ8HgqlmkQ8X9EMGUzcoWcbYoN",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 292,
+    "total_tokens": 294
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1784.7468749969266,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How long have I been collecting vintage cameras?\n\nCorrect Answer: three months\n\nModel Response: You have been collecting vintage cameras for about three months as of today, 2023/05/30.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "15745da0",
+  "request_id": "chatcmpl-E7WHVciJURg33CZkKaxDpLDYQxCzq",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 141,
+    "total_tokens": 142
+  }
+}

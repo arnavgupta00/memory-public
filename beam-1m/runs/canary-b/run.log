@@ -1,0 +1,135 @@
+[2026-10-11 17:51:02] STATUS: starting
+[2026-10-11 17:51:09] translator: {"ok":true,"spent_usd":0,"blocked":null,"model":"deepseek-ai/deepseek-v4.1-flash","effort":"max","mode":"object"}
+[2026-10-11 17:51:09] STATUS: pipeline running
+[2026-10-11 19:00:47] incomplete; resume 1
+}
+
+Node.js v24.8.0
+[2026-10-11 19:01:41] incomplete; resume 2
+}
+
+Node.js v24.8.0
+[2026-10-11 19:02:35] incomplete; resume 3
+}
+
+Node.js v24.8.0
+[2026-10-11 19:03:28] incomplete; resume 4
+}
+
+Node.js v24.8.0
+runs/canary-b-r9-20261011/scripts/run.sh:29: no such file or directory: /Users/arnav/programming/projects/memory/runs/canary-b-r9-20261011/canary-b/predictions.jsonl
+[2026-10-11 19:04:21] STATUS: STOPPED: not all 260 answered ()
+[2026-10-11 19:09:32] relaunch after the stage 8 spend guard stop (--jev-cap 20)
+[2026-10-11 19:09:32] STATUS: starting
+[2026-10-11 19:09:39] translator: {"ok":true,"spent_usd":17.214748200000013,"blocked":null,"model":"deepseek-ai/deepseek-v4.1-flash","effort":"max","mode":"object"}
+[2026-10-11 19:09:39] STATUS: pipeline running
+[2026-10-11 19:24:29] incomplete; resume 1
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+Node.js v24.8.0
+[2026-10-11 19:40:07] incomplete; resume 2
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+Node.js v24.8.0
+[2026-10-11 19:44:41] relaunch after TypeSafe max_tokens_exceeded (split-on-refusal amendment)
+[2026-10-11 19:44:41] STATUS: starting
+[2026-10-11 19:44:49] translator: {"ok":true,"spent_usd":17.214748200000013,"blocked":null,"model":"deepseek-ai/deepseek-v4.1-flash","effort":"max","mode":"object"}
+[2026-10-11 19:44:49] STATUS: pipeline running
+[2026-10-11 20:18:56] incomplete; resume 1
+    at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+
+Node.js v24.8.0
+[2026-10-11 20:19:51] incomplete; resume 2
+    at async file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:299:22
+
+Node.js v24.8.0
+[2026-10-11 20:20:46] incomplete; resume 3
+    at async file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:299:22
+
+Node.js v24.8.0
+[2026-10-11 20:21:41] incomplete; resume 4
+    at async file:///Users/arnav/programming/projects/memory/src/agents/current/src/pipeline/a6/run.mjs:299:22
+
+Node.js v24.8.0
+runs/canary-b-r9-20261011/scripts/run.sh:30: no such file or directory: /Users/arnav/programming/projects/memory/runs/canary-b-r9-20261011/canary-b/predictions.jsonl
+[2026-10-11 20:22:36] STATUS: STOPPED: not all 260 answered ()
+[2026-10-11 20:25:49] relaunch after packager partial (discarded-answer trim amendment)
+[2026-10-11 20:25:49] STATUS: starting
+[2026-10-11 20:25:57] translator: {"ok":true,"spent_usd":34.20730770000002,"blocked":null,"model":"deepseek-ai/deepseek-v4.1-flash","effort":"max","mode":"object"}
+[2026-10-11 20:25:57] STATUS: pipeline running
+[2026-10-11 20:58:49] STATUS: judging
+stage 12 judge on runs/canary-b-r9-20261011/canary-b: official BEAM evaluator (pinned 3e12035, gpt-4.1-mini, temperature 0)
+judge exited 0
+{
+ "run": "runs/canary-b-r9-20261011/canary-b",
+ "questions": 260,
+ "score_pinned": 75.97,
+ "macro_over_abilities": 75.97,
+ "by_ability": {
+  "abstention": {
+   "n": 26,
+   "score": 80.77
+  },
+  "contradiction_resolution": {
+   "n": 26,
+   "score": 78.85
+  },
+  "event_ordering": {
+   "n": 26,
+   "score": 31.13
+  },
+  "information_extraction": {
+   "n": 26,
+   "score": 92.31
+  },
+  "instruction_following": {
+   "n": 26,
+   "score": 96.15
+  },
+  "knowledge_update": {
+   "n": 26,
+   "score": 84.62
+  },
+  "multi_session_reasoning": {
+   "n": 26,
+   "score": 69.55
+  },
+  "preference_following": {
+   "n": 26,
+   "score": 92.63
+  },
+  "summarization": {
+   "n": 26,
+   "score": 81.78
+  },
+  "temporal_reasoning": {
+   "n": 26,
+   "score": 51.92
+  }
+ },
+ "by_conversation": {
+  "chat-01": 72.76,
+  "chat-02": 73.01,
+  "chat-09": 72.28,
+  "chat-10": 77.06,
+  "chat-12": 84.4,
+  "chat-14": 71.71,
+  "chat-17": 76.15,
+  "chat-22": 79.75,
+  "chat-24": 71.19,
+  "chat-26": 86.81,
+  "chat-27": 78.59,
+  "chat-30": 69.2,
+ability                     official  rubric basis
+abstention                      80.8          80.8
+contradiction_resolution        78.8          78.8
+event_ordering                  31.1          78.2
+information_extraction          92.3          92.3
+instruction_following           96.2          97.1
+knowledge_update                84.6          84.6
+multi_session_reasoning         69.6          70.4
+preference_following            92.6          93.3
+summarization                   81.8          83.6
+temporal_reasoning              51.9          52.9
+OVERALL                         76.0          81.2   (n=260)
+[2026-10-11 21:02:01] STATUS: DONE

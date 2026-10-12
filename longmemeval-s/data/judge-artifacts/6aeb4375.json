@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 781.4844999957131,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How many Korean restaurants have I tried in my city?\n\nCorrect Answer: four\n\nModel Response: You have tried four different Korean restaurants in your city so far. This later statement supersedes the earlier count of three.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "6aeb4375",
+  "request_id": "chatcmpl-E7WHWcGImwJHWns7Aq4Wew8z3ei7d",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 129,
+    "total_tokens": 131
+  }
+}

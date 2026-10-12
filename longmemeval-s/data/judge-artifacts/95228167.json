@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 672.8118329920107,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I'm getting excited about my visit to the music store this weekend. Any tips on what to look for in a new guitar?\n\nRubric: The user would prefer responses that highlight the differences between Fender Stratocaster and Gibson Les Paul electric guitars, such as the feel of the neck, weight, and sound profile. They might not prefer general tips on buying an electric guitar or suggestions that do not take into account their current guitar and desired upgrade.\n\nModel Response: Since you\u2019re moving up from a Fender Stratocaster toward a Gibson Les Paul, use your Strat as the comparison point rather than shopping by appearance alone. In the store:\n\n1. **Check the physical fit.** Play the Les Paul seated and standing, and pay attention to its added weight\u2014typically about 9\u201310 pounds versus roughly 7\u20138 for a Strat\u2014and whether its thicker neck and single-cutaway body feel comfortable.\n2. **Test the tonal contrast.** Play clean and overdriven through the bridge and neck humbuckers. Look for the warm, full, sustainful Les Paul sound you want, while checking that it still has enough clarity for your playing.\n3. **Prioritize coil-splitting or coil-tap controls.** Switch between full humbucker and split/tapped sounds, then try them in open D. Make sure the brighter setting genuinely gives you useful definition rather than just a lower-volume version of the same tone.\n4. **Bring open D into the test.** Tune to D\u2013A\u2013D\u2013F\u266f\u2013A\u2013D and check tuning stability, intonation, fret buzz, and whether the lower strings still feel firm. Ask what string gauge and setup the guitar currently has; heavier gauges such as 0.012\u20130.052 or 0.013\u20130.056 may suit that tuning.\n5. **Try your fingerpicking example.** Play the \u201cBlackbird\u201d intro or another delicate pattern with a light touch. Check note separation and whether the action and neck feel comfortable; use the neck pickup for a warmer, mellower test. If fingerpicking is a major priority, compare the Les Paul directly with an acoustic or guitar designed more specifically for fingerstyle.\n6. **Inspect the basic setup.** Play every fret and control position, listen for buzz or dead notes, and verify that the action and intonation feel comfortable before deciding.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "95228167",
+  "request_id": "chatcmpl-E7WHXXkRyZnkmuy3GwKl6hTjlnCfp",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 574,
+    "total_tokens": 576
+  }
+}

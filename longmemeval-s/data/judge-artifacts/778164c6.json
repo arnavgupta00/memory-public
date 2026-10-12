@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 822.2267499950249,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: I was looking back at our previous conversation about Caribbean dishes and I was wondering, what was the name of that Jamaican dish you recommended I try with snapper that has fruit in it?\n\nCorrect Answer: Grilled Snapper with Mango Salsa\n\nModel Response: The Jamaican dish recommended was Escovitch Fish. The fruit-containing option was Grilled Snapper with Mango Salsa, but that was presented as a broader Caribbean dish rather than specifically Jamaican.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "778164c6",
+  "request_id": "chatcmpl-E7WHaRQDzY6jxNklglysEvNF2LFkT",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 189,
+    "total_tokens": 191
+  }
+}

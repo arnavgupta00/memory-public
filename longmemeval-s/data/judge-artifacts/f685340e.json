@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 861.3664169970434,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How often do I play tennis with my friends at the local park previously? How often do I play now?\n\nCorrect Answer: Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).\n\nModel Response: Previously, you played tennis with your friends weekly. Now, you play every other week (approximately once every two weeks).\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "f685340e",
+  "request_id": "chatcmpl-E7WHaGItd3aEFPNZWhFhueDjAXn94",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 168,
+    "total_tokens": 170
+  }
+}

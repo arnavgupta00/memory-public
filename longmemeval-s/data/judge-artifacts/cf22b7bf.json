@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 803.4768749930663,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How much weight have I lost since I started going to the gym consistently?\n\nCorrect Answer: 10 pounds\n\nModel Response: You have lost 10 pounds since you started going to the gym consistently.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "cf22b7bf",
+  "request_id": "chatcmpl-E7WHZsi9xJ5CERfHvG0UVXs2UopRD",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 126,
+    "total_tokens": 127
+  }
+}

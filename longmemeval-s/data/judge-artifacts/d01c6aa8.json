@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 740.0217499962309,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. In addition, do not penalize off-by-one errors for the number of days. If the question asks for the number of days/weeks/months, etc., and the model makes off-by-one errors (e.g., predicting 19 days when the answer is 18), the model's response is still correct. \n\nQuestion: How old was I when I moved to the United States?\n\nCorrect Answer: 27\n\nModel Response: Approximately 27 years old, based on being 32 and having lived in the United States for about five years. The exact age cannot be determined from the package.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "d01c6aa8",
+  "request_id": "chatcmpl-E7WHYjX8lfAop4PVab3sTAwJsq0yu",
+  "response": "Yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 219,
+    "total_tokens": 220
+  }
+}

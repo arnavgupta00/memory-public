@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 816.118374990765,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: Can you suggest some activities that I can do in the evening?\n\nRubric: The user would prefer suggestions that involve relaxing activities that can be done in the evening, preferably before 9:30 pm. They would not prefer suggestions that involve using their phone or watching TV, as these activities have been affecting their sleep quality.\n\nModel Response: A structured evening could center on your own projects and interests: spend 30\u201360 minutes continuing your first beanie with the purple worsted-weight yarn, or experiment with fabric stamping using the vintage scarf and your acrylic paints and brushes. On an earlier evening, take a gentle, joint-friendly walk or beginner hike\u2014ideally a safe scenic route near a lake or waterfall, and only while there is sufficient daylight. You could also plan a community movie night around \"The Farewell,\" perhaps followed by a discussion, but schedule the screening early enough to stop screen use before your 9:30 pm wind-down. For the final 30\u201360 minutes, choose gentle yoga or stretching, meditation, reading, deep breathing, soothing music, or journaling rather than social media or other stimulating screens.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "195a1a1b",
+  "request_id": "chatcmpl-E7WHXI4zPw8JzVT2wXUorhxMzOCKg",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 317,
+    "total_tokens": 319
+  }
+}

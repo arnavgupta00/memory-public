@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1132.5580830016406,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?\n\nCorrect Answer: The Sugar Factory at Icon Park.\n\nModel Response: The dessert shop was The Sugar Factory at Icon Park, known for its giant milkshakes.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "e9327a54",
+  "request_id": "chatcmpl-E7WHZlGNkLsxEGcIKDItyVRlyImLQ",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 164,
+    "total_tokens": 166
+  }
+}

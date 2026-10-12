@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 756.5200840035686,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How much money did I raise for charity in total?\n\nCorrect Answer: $3,750\n\nModel Response: Using the more recent statement for the bake sale, you raised more than $8,750 in total: over $1,000 + $250 + $500 + $2,000 + over $5,000. The exact total is higher than $8,750 because two amounts were stated as \u201cover.\u201d\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "d851d5ba",
+  "request_id": "chatcmpl-E7WHVhvQROziDi6oGCftmgG5HwOwH",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 186,
+    "total_tokens": 188
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 776.3215419981861,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How many hours have I spent on my abstract ocean sculpture?\n\nCorrect Answer: 10-12 hours\n\nModel Response: As of 2023/06/17, you had spent approximately 10\u201312 hours on your abstract ocean sculpture. This later estimate supersedes the earlier 5\u20136-hour estimate.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "71315a70",
+  "request_id": "chatcmpl-E7WHaz2Kcuobd1HwD11HkMBEaIrp3",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 149,
+    "total_tokens": 151
+  }
+}

@@ -1,0 +1,35 @@
+[2026-10-11 02:02:18] translator: {"ok":true,"spent_usd":0,"blocked":null,"model":"deepseek-ai/deepseek-v4.1-flash","effort":"max","mode":"object"}
+[2026-10-11 02:02:24] seeded: { "seeded_from": "runs/a6/canary-a-screen20-hive-r9", "what": "stage 2 session notes + voyage index (per history, question-independent)", "sessions_needed": 4037, "notes_seeded": 4037}
+[2026-10-11 02:02:28] run incomplete after attempt 1
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+Node.js v24.8.0
+[2026-10-11 02:02:51] run incomplete after attempt 2
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+Node.js v24.8.0
+[2026-10-11 02:06:20] relaunch after TypeSafe credits added (402 at 02:02; 8 notebook JEV calls failed, archived on resume)
+[2026-10-11 02:06:28] translator: {"ok":true,"spent_usd":0,"blocked":null,"model":"deepseek-ai/deepseek-v4.1-flash","effort":"max","mode":"object"}
+stage 12 judge on runs/a6/canary-a-other80-hive-r9: official BEAM evaluator (pinned 3e12035, gpt-4.1-mini, temperature 0)
+judge exited 0
+CANARY A 100 (R9 20 + R10 80): {
+ "runs": [
+  "runs/a6/canary-a-screen20-hive-r9 (20)",
+  "runs/a6/canary-a-other80-hive-r9 (80)"
+ ],
+ "questions": 100,
+ "score_pinned": 77.71,
+ "by_ability": {
+  "abstention": 80.0,
+  "contradiction_resolution": 77.5,
+  "event_ordering": 25.17,
+  "information_extraction": 88.33,
+  "instruction_following": 100.0,
+  "knowledge_update": 95.0,
+  "multi_session_reasoning": 82.5,
+  "preference_following": 100.0,
+  "summarization": 78.57,
+  "temporal_reasoning": 50.0
+ }
+}
+[2026-10-11 02:40:24] DONE

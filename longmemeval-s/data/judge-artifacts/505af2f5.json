@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 652.4608339968836,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I was thinking of trying a new coffee creamer recipe. Any recommendations?\n\nRubric: The user would prefer responses that suggest variations on their existing almond milk, vanilla extract, and honey creamer recipe or new ideas that align with their goals of reducing sugar intake and saving money. They might not prefer responses that recommend commercial creamer products or recipes that are high in sugar or expensive.\n\nModel Response: Try a lower-sugar Lemon Ginger creamer using your almond milk and vanilla extract: gently warm 1 cup almond milk with a little lemon zest and a pinch of ground ginger, then stir in 1/4 teaspoon vanilla extract. Add only 1 teaspoon honey\u2014or skip it\u2014to support your sugar-reduction goal. Use lemon zest rather than juice so the almond milk stays smooth. This reuses what you already have while building on the Lemon Ginger flavor you wanted to try, helping keep costs down.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "505af2f5",
+  "request_id": "chatcmpl-E7WHXkj14VUtOJUdIAagHmgUixW4z",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 270,
+    "total_tokens": 272
+  }
+}

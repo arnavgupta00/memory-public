@@ -1,0 +1,627 @@
+{
+ "verdict": "PASS: no use of a sealed history before its sealed run",
+ "structured_scan": {
+  "scanned_files": 559,
+  "file_types": [
+   "cohort.json",
+   "dataset.json",
+   "judge.json",
+   "manifest.json",
+   "predictions.jsonl",
+   "slice.json"
+  ],
+  "canary_b": {
+   "files_mentioning_these_histories": 14,
+   "earlier_files_outside_the_sealed_run": []
+  },
+  "expansion": {
+   "files_mentioning_these_histories": 9,
+   "earlier_files_outside_the_sealed_run": []
+  }
+ },
+ "full_text_scan": {
+  "files_with_any_history_reference": 82322,
+  "patterns": [
+   "beam-1m/chat-\\d+/",
+   "chats/1M/\\d+/",
+   "\"conversation_id\":\\s*\"?\\d+\"?"
+  ],
+  "excluded": [
+   "!**/site-packages/**",
+   "!**/node_modules/**"
+  ],
+  "canary_b": {
+   "sealed_run_started_utc": "2026-10-11T12:21:10+00:00",
+   "files_mentioning_these_histories": 10742,
+   "modified_before_the_sealed_run": [
+    {
+     "file": "runs/canary-b-r9-20261011/scripts/canary-b-questions.json",
+     "conversations": [
+      1,
+      2,
+      9,
+      10,
+      12,
+      14,
+      17,
+      22,
+      24,
+      26,
+      27,
+      30,
+      35
+     ],
+     "modified_utc": "2026-10-11T12:21:02+00:00",
+     "explanation": "the sealed run's own question list, written just before the run started"
+    },
+    {
+     "file": "runs/final-all-deepseek-20261009/scripts/canary-b-questions.json",
+     "conversations": [
+      1,
+      2,
+      9,
+      10,
+      12,
+      14,
+      17,
+      22,
+      24,
+      26,
+      27,
+      30,
+      35
+     ],
+     "modified_utc": "2026-10-08T22:18:39+00:00",
+     "explanation": "R7's Canary B question list (IDs only), prepared on 9 Oct for a gated run that never happened: R7 failed its gate"
+    },
+    {
+     "file": "src/agents/current/eval-slices/beam-1m/beam-1m-canary-b-certification-v1.json",
+     "conversations": [
+      1,
+      2,
+      9,
+      10,
+      12,
+      14,
+      17,
+      22,
+      24,
+      26,
+      27,
+      30,
+      35
+     ],
+     "modified_utc": "2026-07-31T17:27:29+00:00",
+     "explanation": "the 1 Aug split file itself: question IDs and checksums only"
+    },
+    {
+     "file": "src/agents/current/tests/beamCompression.test.ts",
+     "conversations": [
+      1
+     ],
+     "modified_utc": "2026-08-08T18:39:43+00:00",
+     "explanation": "unit-test fixture with an invented question ID and invented text; no BEAM data"
+    }
+   ],
+   "outside_sealed_run_and_post_run_folders": [
+    {
+     "file": "runs/final-all-deepseek-20261009/scripts/canary-b-questions.json",
+     "conversations": [
+      1,
+      2,
+      9,
+      10,
+      12,
+      14,
+      17,
+      22,
+      24,
+      26,
+      27,
+      30,
+      35
+     ],
+     "explanation": "R7's Canary B question list (IDs only), prepared on 9 Oct for a gated run that never happened: R7 failed its gate"
+    },
+    {
+     "file": "src/agents/current/eval-slices/beam-1m/beam-1m-canary-b-certification-v1.json",
+     "conversations": [
+      1,
+      2,
+      9,
+      10,
+      12,
+      14,
+      17,
+      22,
+      24,
+      26,
+      27,
+      30,
+      35
+     ],
+     "explanation": "the 1 Aug split file itself: question IDs and checksums only"
+    },
+    {
+     "file": "src/agents/current/tests/beamCompression.test.ts",
+     "conversations": [
+      1
+     ],
+     "explanation": "unit-test fixture with an invented question ID and invented text; no BEAM data"
+    }
+   ],
+   "unexplained": []
+  },
+  "expansion": {
+   "sealed_run_started_utc": "2026-10-11T19:53:38+00:00",
+   "files_mentioning_these_histories": 3194,
+   "modified_before_the_sealed_run": [
+    {
+     "file": "runs/final-700-r9-20261012/scripts/questions.json",
+     "conversations": [
+      7,
+      16,
+      21,
+      34
+     ],
+     "modified_utc": "2026-10-11T19:52:50+00:00",
+     "explanation": "the sealed run's own question list, written just before the run started"
+    },
+    {
+     "file": "src/agents/current/eval-slices/beam-1m/beam-1m-blind-reserve-v1.json",
+     "conversations": [
+      7,
+      16,
+      21,
+      34
+     ],
+     "modified_utc": "2026-07-31T17:27:29+00:00",
+     "explanation": "the 1 Aug split file itself: question IDs and checksums only"
+    },
+    {
+     "file": "src/agents/current/eval-slices/beam-1m/beam-1m-compression-holdout40-v1.json",
+     "conversations": [
+      7,
+      16,
+      21,
+      34
+     ],
+     "modified_utc": "2026-08-08T17:49:49+00:00",
+     "explanation": "8 Aug holdout list, question IDs only; never run, later read only as an exclusion list"
+    }
+   ],
+   "outside_sealed_run_and_post_run_folders": [
+    {
+     "file": "src/agents/current/eval-slices/beam-1m/beam-1m-blind-reserve-v1.json",
+     "conversations": [
+      7,
+      16,
+      21,
+      34
+     ],
+     "explanation": "the 1 Aug split file itself: question IDs and checksums only"
+    },
+    {
+     "file": "src/agents/current/eval-slices/beam-1m/beam-1m-compression-holdout40-v1.json",
+     "conversations": [
+      7,
+      16,
+      21,
+      34
+     ],
+     "explanation": "8 Aug holdout list, question IDs only; never run, later read only as an exclusion list"
+    }
+   ],
+   "unexplained": []
+  }
+ },
+ "all_structured_hits": {
+  "expansion": [
+   {
+    "file": "final-700-r9-20261012/remaining-340/predictions.jsonl",
+    "conversations": [
+     7,
+     16,
+     21,
+     34
+    ],
+    "modified_utc": "2026-10-11T22:44:48+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "final-700-r9-20261012/remaining-340/cohort.json",
+    "conversations": [
+     7,
+     16,
+     21,
+     34
+    ],
+    "modified_utc": "2026-10-11T22:44:48+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "final-700-r9-20261012/remaining-340/manifest.json",
+    "conversations": [
+     7,
+     16,
+     21,
+     34
+    ],
+    "modified_utc": "2026-10-11T21:11:35+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "final-700-r9-20261012/remaining-340/input/slice.json",
+    "conversations": [
+     7,
+     16,
+     21,
+     34
+    ],
+    "modified_utc": "2026-10-11T19:54:03+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "final-700-r9-20261012/remaining-340/input/dataset.json",
+    "conversations": [
+     7,
+     16,
+     21,
+     34
+    ],
+    "modified_utc": "2026-10-11T19:54:03+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "final-700-r9-20261012/remaining-340/judge/judge.json",
+    "conversations": [
+     7,
+     16,
+     21,
+     34
+    ],
+    "modified_utc": "2026-10-11T22:49:11+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "final-700-r9-20261012/remaining-340/package/cohort.json",
+    "conversations": [
+     7,
+     16,
+     21,
+     34
+    ],
+    "modified_utc": "2026-10-11T22:04:34+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "final-700-r9-20261012/remaining-340/package/downstream/jev050-4/predictions.jsonl",
+    "conversations": [
+     7,
+     16,
+     21,
+     34
+    ],
+    "modified_utc": "2026-10-11T22:16:22+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "final-700-r9-20261012/remaining-340/package/downstream/jev050-4/manifest.json",
+    "conversations": [
+     7,
+     16,
+     21,
+     34
+    ],
+    "modified_utc": "2026-10-11T22:16:22+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   }
+  ],
+  "canary_b": [
+   {
+    "file": "canary-b-r9-20261011/canary-b/predictions.jsonl",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T15:28:48+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "canary-b-r9-20261011/canary-b/cohort.json",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T15:28:48+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "canary-b-r9-20261011/canary-b/manifest.json",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T14:55:57+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "canary-b-r9-20261011/canary-b/input/slice.json",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T12:21:29+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "canary-b-r9-20261011/canary-b/input/dataset.json",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T12:21:29+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "canary-b-r9-20261011/canary-b/judge/judge.json",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T15:32:00+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "canary-b-r9-20261011/canary-b/package/cohort.json",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T14:56:22+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "canary-b-r9-20261011/canary-b/package/downstream-attempt1-partial/jev050-4/predictions.jsonl",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T14:48:56+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "canary-b-r9-20261011/canary-b/package/downstream-attempt1-partial/jev050-4/manifest.json",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T14:48:56+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "canary-b-r9-20261011/canary-b/package/downstream/jev050-4/predictions.jsonl",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T14:59:28+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "canary-b-r9-20261011/canary-b/package/downstream/jev050-4/manifest.json",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T14:59:28+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "packager-answers-20261012/canary-b/predictions.jsonl",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T19:44:26+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "packager-answers-20261012/canary-b/cohort.json",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T19:44:26+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   },
+   {
+    "file": "packager-answers-20261012/canary-b/judge/judge.json",
+    "conversations": [
+     1,
+     2,
+     9,
+     10,
+     12,
+     14,
+     17,
+     22,
+     24,
+     26,
+     27,
+     30,
+     35
+    ],
+    "modified_utc": "2026-10-11T19:47:37+00:00",
+    "before_sealed_run": false,
+    "post_run_or_sealed_run_folder": true
+   }
+  ]
+ },
+ "limitation": "Absence of earlier use in the project records; not a proof that no person opened the files."
+}

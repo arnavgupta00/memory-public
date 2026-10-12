@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 789.595249996637,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How many free night's stays can I redeem at any Hilton property with my accumulated points?\n\nCorrect Answer: Two\n\nModel Response: You can redeem 2 free night's stays at any Hilton property, based on your most recent statement.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "7401057b",
+  "request_id": "chatcmpl-E7WHZQn0TYSL8CqbLwLl0jVR8YtE9",
+  "response": "Yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 131,
+    "total_tokens": 132
+  }
+}

@@ -1,0 +1,44 @@
+{
+ "model": "deepseek-ai/deepseek-v4.1-flash (Hive)",
+ "events": {
+  "hive_response": 13283,
+  "hive_error": 25,
+  "invalid_structured_output": 259,
+  "hive_transport_error": 1
+ },
+ "responses": 13283,
+ "zero_output_responses": 0,
+ "discarded_answer_trims": 0,
+ "http_errors_retried": {
+  "429": 23,
+  "500": 2
+ },
+ "list_usd_total": 65.04,
+ "by_stage": {
+  "session_notes (reasoning none)": {
+   "calls": 10875,
+   "list_usd": 4.31,
+   "prompt_tokens": 8464919,
+   "completion_tokens": 1479364
+  },
+  "router_search_targeted (reasoning low)": {
+   "calls": 1498,
+   "list_usd": 12.9,
+   "prompt_tokens": 10196871,
+   "completion_tokens": 8200812
+  },
+  "packager_discarded_answer (reasoning none)": {
+   "calls": 389,
+   "list_usd": 17.49,
+   "prompt_tokens": 54810514,
+   "completion_tokens": 870795
+  },
+  "planner_answerer (reasoning max)": {
+   "calls": 521,
+   "list_usd": 30.34,
+   "prompt_tokens": 46964031,
+   "completion_tokens": 13540345
+  }
+ },
+ "pricing_note": "list price $0.30 / $1.20 per 1M tokens; Hive billed about 0.53x list in practice"
+}

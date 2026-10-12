@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 757.6554580009542,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How much more was the pre-approval amount than the final sale price of the house?\n\nCorrect Answer: $25,000\n\nModel Response: The pre-approval amount was $25,000 more than the final sale price ($350,000 \u2212 $325,000).\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "3fe836c9",
+  "request_id": "chatcmpl-E7WHXts87NbknV0clXnK1TFk2Bx6M",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 156,
+    "total_tokens": 158
+  }
+}

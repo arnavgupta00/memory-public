@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 881.9942499976605,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many properties did I view before making an offer on the townhouse in the Brookside neighborhood?\n\nCorrect Answer: I viewed four properties before making an offer on the townhouse in the Brookside neighborhood. The reasons I didn't make an offer on them were: the kitchen of the bungalow needed serious renovation, the property in Cedar Creek was out of my budget, the noise from the highway was a deal-breaker for the 1-bedroom condo, and my offer on the 2-bedroom condo was rejected due to a higher bid.\n\nModel Response: You viewed 3 properties before making the offer: the Cedar Creek property, the downtown 1-bedroom condo, and the 3-bedroom Brookside townhouse.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "gpt4_7fce9456",
+  "request_id": "chatcmpl-E7WHVQWR581aHLO59yiep8Um0J3Fx",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 239,
+    "total_tokens": 241
+  }
+}

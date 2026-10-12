@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 806.1777920083841,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How much total money did I spend on attending workshops in the last four months?\n\nCorrect Answer: $720\n\nModel Response: The documented spending within the last four months totals $220 ($200 for the November writing workshop + $20 for the December 12 mindfulness workshop + $0 for the February 22 photography workshop). The complete total cannot be confirmed because the January entrepreneurship workshop and other workshops lack stated costs.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "gpt4_731e37d7",
+  "request_id": "chatcmpl-E7WHYDR8ojUA642nx0zK92e66ZKCn",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 183,
+    "total_tokens": 185
+  }
+}

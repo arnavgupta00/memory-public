@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 611.5574169962201,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you an unanswerable question, an explanation, and a response from a model. Please answer yes if the model correctly identifies the question as unanswerable. The model could say that the information is incomplete, or some other information is given but the asked information is not.\n\nQuestion: How many engineers do I lead when I just started my new role as Software Engineer Manager?\n\nExplanation: The information provided is not enough. You mentioned starting the role as Senior Software Engineer but not Software Engineer Manager.\n\nModel Response: You lead 5 engineers. An earlier statement said 4, but your later statement updated the count to 5.\n\nDoes the model correctly identify the question as unanswerable? Answer yes or no only.",
+  "question_id": "031748ae_abs",
+  "request_id": "chatcmpl-E7WHaD2J7XVeCqkiHAiRl2iBsu8Y0",
+  "response": "No",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 154,
+    "total_tokens": 155
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 689.201333996607,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: Do I go to the gym more frequently than I did previously?\n\nCorrect Answer: Yes\n\nModel Response: Yes. You increased from 3 gym visits per week to 4 per week, which is 1 additional visit per week.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "c4ea545c",
+  "request_id": "chatcmpl-E7WHaQl2v841X6hnzP5vqeO76zNT2",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 133,
+    "total_tokens": 135
+  }
+}

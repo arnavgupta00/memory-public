@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 762.778292002622,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I've been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?\n\nRubric: The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.\n\nModel Response: Yes\u2014attending your high-school reunion sounds like a good idea, especially since you have genuinely happy memories of the debate team and advanced-placement economics. Approach it as a chance to revisit those experiences and have a few meaningful in-person conversations, not as an obligation or a social-media event. Beforehand, use your dedicated journal to write down what you hope to reconnect with; afterward, reflect on whether the experience felt restorative. If the reunion falls on a Sunday, consider keeping your social-media-free boundary and focusing on being present rather than documenting the event.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "d6233ab6",
+  "request_id": "chatcmpl-E7WHZDLmfFwKxMeSQkbqZ7ZQeQM6E",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 314,
+    "total_tokens": 316
+  }
+}

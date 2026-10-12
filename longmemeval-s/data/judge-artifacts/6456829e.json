@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 753.2345829968108,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many plants did I initially plant for tomatoes and cucumbers?\n\nCorrect Answer: 8\n\nModel Response: You initially planted 8 plants in total: 5 tomato plants and 3 cucumber plants.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "6456829e",
+  "request_id": "chatcmpl-E7WHYEwQvESvW9BBCcgIoRg3gyXAt",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 142,
+    "total_tokens": 144
+  }
+}

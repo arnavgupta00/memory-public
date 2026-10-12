@@ -1,0 +1,2052 @@
+{
+  "schema_version": 1,
+  "benchmark": "BEAM",
+  "tier": "1M",
+  "cohort": "a6-canary-a-other80-hive-r9",
+  "cohort_path": "/Users/arnav/programming/projects/memory/runs/a6/canary-a-other80-hive-r9/cohort.json",
+  "cohort_sha256": "6cf9ed383c32df5df4b381d68f45e6cf1e2577ec91f28cf7b7d25e546bf10665",
+  "official_source_commit": "3e12035532eb85768f1a7cd779832b650c4b2ef9",
+  "official_source_hashes": {
+    "src/evaluation/run_evaluation.py": "518894ab65860043a24259457ddf3b1ab8ae18427b6e01e5aa90cd29c4256a3b",
+    "src/evaluation/compute_metrics.py": "0715226375e9d24646c49c504194ba61cfb26d39415da5ebe9bdc4c6dcd3726c",
+    "src/evaluation/report_results.py": "1486a44fac721717c0a9373b32f4487c277d2bf28044cf28f649a6a74e692c96",
+    "src/prompts.py": "2f630cc983ab0c34cfa80b1b4d340f5b51a9b4a3baa5af8aea9503c585eda06a",
+    "src/llm.py": "1ce32f8bf67935fc0fcf169963cce79b5f7ee4e63e25baf72b174c497d364c54",
+    "requirements.txt": "3fa257a0b1cd2b5d7489242f5258074bd8f0e483a71d011609ec358f8fde8792"
+  },
+  "judge_model": "gpt-4.1-mini",
+  "judge_temperature": 0,
+  "official_scoring": {
+    "event_ordering": "tau_norm",
+    "other_abilities": "llm_judge_score"
+  },
+  "baseline_arm": "a2",
+  "arms": {
+    "a2": {
+      "path": "/Users/arnav/programming/projects/memory/runs/a6/canary-a-other80-hive-r9/predictions.jsonl",
+      "sha256": "b2793711ccdd27c93d284916994d0c43a3fac08ca825aa8f9448a29671171cb4"
+    }
+  },
+  "fixed_predictions": null,
+  "questions": 80,
+  "status": "completed",
+  "rows": [
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/abstention/2",
+      "ability": "abstention",
+      "score": 0.0,
+      "official_result": {
+        "llm_judge_score": 0.0,
+        "llm_judge_responses": [
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion states that there should be no information related to security protocols for the live trading API beyond IP whitelisting. However, the response explicitly lists multiple additional security protocols beyond IP whitelisting, such as API key management, 2FA, token-based authentication, TLS enforcement, OAuth 2.0, and mTLS. Therefore, the response violates the negative constraint and does not comply with the rubric."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/contradiction_resolution/1",
+      "ability": "contradiction_resolution",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that there is contradictory information regarding the test coverage: it notes the 88% coverage on fetcher.py as of March 16, 2024, but also clarifies that earlier (March 1, 2024) there were no tests written, and that the 90% coverage figure from March 30, 2024 applies to a different module (ml_model.py), not fetcher.py. This clearly acknowledges the presence of contradictory or potentially confusing information about coverage numbers and modules, thus fully satisfying the rubric criterion that the response should state there is contradictory information."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions that on March 1, 2024, the user had never written any unit tests for fetcher.py functions, fulfilling the rubric criterion that the LLM response should mention this fact. The response also provides context about the progress made afterward, but crucially it includes the required statement about the initial absence of unit tests, thus fully complying with the rubric."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions having pytest tests with 88% coverage on fetcher.py, fulfilling the rubric criterion. It accurately states the coverage percentage, the testing framework used (pytest), and the file (fetcher.py), as required. The response is on-topic and fully addresses the requirement."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states which statement is correct by clarifying that as of March 16, 2024, the latest and accurate coverage figure for fetcher.py is 88%, and distinguishes this from other coverage numbers related to different modules. This directly addresses the rubric criterion requiring the response to mention which statement is correct."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/contradiction_resolution/2",
+      "ability": "contradiction_resolution",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that there is contradictory information regarding whether the OAuth 2.0 sandbox environment with the Alpaca brokerage API was set up. It clarifies that the user had never completed the setup, only requested guidance, and that later related work should not be interpreted as confirmation of the original setup. This directly satisfies the rubric criterion requiring the response to state that there is contradictory information."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions that the user stated they had never implemented the OAuth 2.0 sandbox setup with Alpaca, quoting the user's own words to confirm this. It clearly distinguishes between the user's request for guidance and the absence of a completed setup. Thus, the response fully satisfies the rubric criterion requiring mention that the user said they had never implemented the OAuth 2.0 sandbox setup with Alpaca."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions that the client ID and secret were stored in a `.env` file and loaded via environment variables (`os.getenv`), which aligns with the rubric's positive requirement. It also clarifies that the user was requesting guidance on the OAuth 2.0 flow using these credentials, not reporting a completed setup, thus accurately reflecting the context. Therefore, the response fully complies with the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly identifies which statement is correct by clarifying that the user had never completed the OAuth 2.0 sandbox setup with the Alpaca brokerage API, based on their own statements. It distinguishes between the user's request for guidance and actual completed setup, thus directly addressing the question of correctness. Therefore, the response fully complies with the rubric criterion requiring mention of which statement is correct."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/event_ordering/1",
+      "ability": "event_ordering",
+      "score": 0.15517241379310348,
+      "official_result": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "tau_norm": 0.15517241379310348,
+        "final_score": 0.0,
+        "llm_judge_score": 0.0,
+        "llm_judge_responses": [
+          {
+            "score": 0.0,
+            "reason": "The response does not mention API rate limiting or efficiency anywhere. It only lists development milestones and technologies used without addressing the rubric criterion requiring mention of API rate limiting and efficiency. Therefore, it fails to comply with the positive requirement."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention microservices architecture or integration anywhere. It lists various components and technologies used in the system but does not address the architectural style of microservices or how integration between services is handled. Therefore, it fails to meet the positive requirement of mentioning microservices architecture and integration."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response lists various components and technologies used in the system but does not mention data availability or uptime anywhere. Since the rubric criterion requires mentioning data availability and uptime, and these elements are completely absent, the response fails to comply."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention any REST API endpoints for backtesting or trade data. While it lists various components and technologies used in the system, it fails to address the specific rubric criterion requiring mention of REST API endpoints related to backtesting and trade data. Therefore, it does not comply with the requirement."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention Alpaca API optimization or debugging at all. It lists various components and technologies used in a trading system but completely omits any reference to Alpaca API, its optimization, or debugging. Therefore, it fails to meet the positive requirement of mentioning Alpaca API optimization and debugging."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention OAuth 2.0 token refresh or any authentication issues, which are explicitly required by the rubric criterion. Instead, it provides a timeline of system components and technologies used without addressing authentication or token management. Therefore, it fails to comply with the positive requirement."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention an ML prediction endpoint or how input is handled for the ML model. While it references an LSTM trend-prediction model and training pipeline, it lacks any information about serving predictions via an endpoint or the input processing mechanism, which are explicitly required by the rubric criterion."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention or reference alert notifications integration in any form. The listed components cover backend, data ingestion, machine learning, backtesting, paper trading, risk management, live trading, monitoring, deployment, and logging, but there is no indication of alert notifications integration. Therefore, it fails to meet the positive requirement of mentioning alert notifications integration."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response lists various development milestones and technologies used in building a trading bot but does not mention or address error handling in the trading bot at all. Since the rubric criterion requires the response to mention error handling, and this element is completely absent, the response fails to comply."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention secure API access with SSL or the use of load balancers, which are explicitly required by the rubric criterion. While it references API keys secured with HashiCorp Vault, this does not fulfill the requirement for SSL or load balancers. Therefore, the required elements are missing, resulting in no compliance."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/information_extraction/1",
+      "ability": "information_extraction",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the required URL 'https://www.alphavantage.co/query' as the stock-price API endpoint, provides example usage with parameterized URLs, and clarifies its role distinct from other endpoints. This fully satisfies the rubric criterion."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/information_extraction/2",
+      "ability": "information_extraction",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the use of NUMERIC(10,2) for the price column in the trades table multiple times, including exact syntax examples such as `price NUMERIC(10, 2)` and `Numeric(10,2)` in SQLAlchemy. This fully satisfies the rubric criterion requiring the response to state NUMERIC(10,2). The response is on-topic and accurate, with no prohibited elements present."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/instruction_following/1",
+      "ability": "instruction_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions API response times multiple times, including per-call latency, average response times for specific endpoints, latency goals, and benchmarks. It provides detailed latency figures and comparisons, fulfilling the rubric criterion that the LLM response should contain mentions of API response times."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly includes success and failure rates as part of the core API response metrics to examine, fulfilling the rubric criterion that requires the LLM response to contain success/failure rates. The response is on-topic, detailed, and clearly identifies success and failure rates as a key metric alongside latency and call volume, thus fully complying with the requirement."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly provides latency data, including specific average response times for various API calls (e.g., 120ms for /api/alerts and /api/trades, 150ms for /api/tradelogs, 80ms for webhook responses) and throughput-related metrics such as call volume and success/failure rates. It also references benchmarks and recent recorded figures, demonstrating a comprehensive inclusion of latency and throughput data as required by the rubric."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/instruction_following/2",
+      "ability": "instruction_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response is fully compliant with the rubric criterion as it provides a comprehensive list of software names accompanied by their respective version numbers throughout the entire setup description. Each software component mentioned includes a version number, fulfilling the requirement completely."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly includes detailed version numbers for all major components across the backend, data stores, caching, messaging, machine learning, frontend, event streaming, cloud & DevOps, monitoring, testing, external APIs, and more. Each item is accompanied by precise version details (e.g., Python 3.10, Flask 2.3.4, PostgreSQL 14, Redis 7.0, RabbitMQ 3.9.13, TensorFlow 2.11, React 18.2, Kafka 3.4.0, Docker Compose v2.12.0, Terraform 1.4.6, Prometheus 2.44, pytest 7.3.1, Alpha Vantage API v2.1, etc.). This fully satisfies the rubric criterion requiring explicit version details."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully complies with the rubric criterion by listing technologies alongside their respective version numbers throughout the entire setup. Each technology mentioned is accompanied by a version, such as Python 3.10, Flask 2.3.4, PostgreSQL 14, Redis 7.0, RabbitMQ 3.9.13, Celery 5.3.1, TensorFlow 2.11, React 18.2, Apache Kafka 3.4.0, Docker Compose v2.12.0, Terraform 1.4.6, Prometheus 2.44, pytest 7.3.1, Alpha Vantage API v2.1, and others. This meets the requirement that versions be listed alongside technologies."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/knowledge_update/1",
+      "ability": "knowledge_update",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the '97% success rate' for the integration tests, fulfilling the rubric criterion that requires the LLM response to state this figure. The mention is clear, accurate, and directly addresses the success rate metric as requested."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/multi_session_reasoning/1",
+      "ability": "multi_session_reasoning",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states three stock symbols: AAPL, MSFT, and GOOG. It clearly identifies these three symbols as the ones the user wanted to fetch prices for, fulfilling the rubric criterion that the LLM response should state three symbols. The response is on-topic and does not include any prohibited elements."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the stock symbol 'AAPL' multiple times in the context of fetching prices, fully satisfying the rubric criterion that requires the LLM response to state 'AAPL'. The response is on-topic and directly addresses the question about stock symbols, with no prohibited elements present."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions the stock symbol 'GOOG' as one of the three different stock symbols for which prices were fetched, fulfilling the rubric criterion that the LLM response should state 'GOOG'. The response is on-topic and clearly identifies GOOG alongside AAPL and MSFT, meeting the positive requirement fully."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions the stock symbol 'MSFT' multiple times in the context of fetching prices, fulfilling the rubric criterion that the LLM response should state 'MSFT'. The response is on-topic and directly addresses the question about fetching prices for three stock symbols, including MSFT. There are no negative constraints violated."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/multi_session_reasoning/2",
+      "ability": "multi_session_reasoning",
+      "score": 0.6666666666666666,
+      "official_result": {
+        "llm_judge_score": 0.6666666666666666,
+        "llm_judge_responses": [
+          {
+            "score": 0.5,
+            "reason": "The response is on-topic and addresses priorities related to reliability and testing coverage, emphasizing fixing the rate-limit KeyError and covering error paths with tests. However, it does not explicitly state or focus on writing comprehensive unit tests to ensure reliability and achieve the coverage goal, which is the core requirement of the rubric. The mention of pytest coverage and testing error paths is present but not explicitly framed as writing comprehensive unit tests to ensure reliability and meet coverage goals. Therefore, it partially complies but lacks a clear, explicit focus on comprehensive unit tests as required."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly addresses debugging the API response to fix errors, focusing on the 'KeyError: Time Series (1min)' caused by the API rate limit. It details the debugging steps such as adding key-existence checks before accessing the key, handling JSONDecodeError, retry logic with exponential backoff for HTTP 429 errors, and detailed error logging including the missing key, symbol, and full raw API response. These points directly correspond to addressing and fixing errors in the API response, fully satisfying the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly addresses optimizing API response time to improve performance as part of Priority 3. It notes that the response time target (under 250ms) has already been met by reducing average response time from 400ms to 220ms through HTTP session reuse and Redis caching, and that further latency improvements are optional and should be done only after reliability and testing priorities. This clearly demonstrates awareness and inclusion of optimizing API response time to improve performance, fulfilling the rubric criterion fully."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/preference_following/2",
+      "ability": "preference_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response clearly suggests separate environments or processes for backtesting and live trading. It explicitly orders the workflow into staged gates: backtest first on historical data, then paper trade in a sandbox environment, and only then go live. This separation of stages inherently implies distinct environments or processes for backtesting and live trading, fulfilling the rubric criterion fully and accurately."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly describes a staged workflow with distinct phases: backtest, paper trade, and live deployment, each with its own testing layers and gates. This clearly demonstrates isolating testing (backtest and paper trade stages with unit and integration tests) from deployment (live stage with circuit breakers, risk limits, and subsequent deployment packaging, automation, and monitoring). The separation of testing stages from deployment stages is well articulated, fulfilling the rubric criterion."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/summarization/1",
+      "ability": "summarization",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions encountering the Alpha Vantage API's rate limiting (5 calls/minute) and addresses it by implementing asynchronous requests using aiohttp with a Semaphore(5) to pace calls. It also includes retry logic with exponential backoff for HTTP 429 errors, which aligns with handling rate limiting. The use of asyncio is implied by the mention of async aiohttp and Semaphore, fulfilling the rubric's requirement. Therefore, the response fully complies with the criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates expansion of the system architecture by designing a microservices setup using Flask, as evidenced by multiple mentions of Flask APIs (e.g., /api/prices, /api/predict, /api/papertrade/start, /api/livetrade/execute). It also explicitly includes the use of RabbitMQ for asynchronous messaging (RabbitMQ 3.9.13 mentioned in Milestone 3) as a message queue. Thus, both elements of the rubric criterion\u2014microservices design with Flask and message queues like RabbitMQ\u2014are present, accurate, and properly integrated into the system architecture description."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions incorporating retry logic with exponential backoff to handle HTTP 429 Too Many Requests errors gracefully during the data ingestion phase (Sprint 1). This directly addresses the rubric criterion of improving reliability of stock price fetching by handling rate limits. The mention of retry logic with exponential backoff for HTTP 429 errors is clear and accurate, demonstrating full compliance with the requirement."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions the introduction of Redis 7.0 caching with a 60-second TTL to reduce redundant API calls, achieving a 92% cache hit rate, which demonstrates optimized performance via caching. It also describes dynamic management of delays and pacing strategies, such as using async aiohttp with a Semaphore(5) to handle the Alpha Vantage rate limit of 5 calls per minute, retry logic with exponential backoff for HTTP 429 errors, and dynamic token refresh intervals. These details confirm that both Redis caching and dynamic delay/request management were implemented, fully satisfying the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates that the user sought to enhance testing coverage and model evaluation by adding comprehensive pytest tests (noted as 92% coverage with pytest 7.3.1) and integrating classification metrics (e.g., accuracy goals raised from 62% to 70%, validation loss improvements, and use of Sharpe/Sortino metrics in risk management). Both elements of the rubric criterion\u2014comprehensive pytest tests and classification metrics integration\u2014are present and well-documented throughout the progress recap, satisfying the positive requirements fully."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/summarization/2",
+      "ability": "summarization",
+      "score": 0.4,
+      "official_result": {
+        "llm_judge_score": 0.4,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that the work was organized into two-week Agile sprints and highlights that Sprint 1 focused on API integration and data ingestion, with a deadline around March 15, 2024. It also mentions prioritizing testing with pytest coverage targets during this sprint. This directly aligns with the rubric criterion requiring focus on Agile sprint planning to meet early deadlines, prioritizing API integration, data ingestion, and testing within a two-week sprint. The response is detailed, accurate, and fully addresses the criterion."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response provides a detailed timeline and description of a trading bot project with various milestones, technologies, and performance improvements. However, it does not mention any work on creating a secure and efficient RESTful API using Flask, nor does it discuss enhancing the API with error handling, input validation, or security features. The only mention of Flask is the use of Flask 2.3.2 as a backend and a single endpoint returning cached prices, but there is no indication of security, error handling, or input validation efforts. Therefore, the response fails to meet the rubric criterion requiring evidence of creating a secure and efficient RESTful API with Flask and related enhancements."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response provides a detailed project timeline and technical milestones but does not mention any optimization of the Docker setup for the ML model service, nor any efforts to reduce the Docker image size while maintaining necessary dependencies. Therefore, it fails to meet the rubric criterion requiring evidence of Docker optimization for the ML model service."
+          },
+          {
+            "score": 0.5,
+            "reason": "The response describes development and deployment of ML model training and prediction APIs, including an LSTM model trained in TensorFlow with details on epochs, batch size, and validation loss, and deployment of a /api/predict endpoint. It also mentions use of pytest for testing and microservice architecture. However, the response does not explicitly mention best practices for model architecture design, nor does it explicitly state use of training monitoring tools like TensorBoard or dynamic learning rate adjustments to improve convergence. These specific elements are required by the rubric but are missing or only implied at best. Therefore, the response partially complies but lacks key details to fully satisfy the criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly addresses Milestone 3, detailing the focus on completing backtesting and paper trading modules, including performance optimizations (runtime and memory), test coverage, and deployment of the backtesting service on port 5001. It also covers paper trading integration with risk management rules and logging, fulfilling the requirement to implement backtesting and paper trading modules, integrate technical indicators (noted earlier with SMA/RSI via TA-Lib), calculate performance metrics (e.g., runtime improvements, memory usage, test coverage), and prepare for deployment on a dedicated port. Thus, all elements of the rubric criterion are present and accurately described."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/temporal_reasoning/1",
+      "ability": "temporal_reasoning",
+      "score": 0.0,
+      "official_result": {
+        "llm_judge_score": 0.0,
+        "llm_judge_responses": [
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion requires the LLM response to state '14 days'. The response instead states '17 days' and explains that the original 14-day span was extended to 17 days. Since the required element '14 days' is not present as the stated duration, the response fails to comply with the rubric."
+          },
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion requires the response to state the date range 'from March 1, 2024 till March 15, 2024.' The response instead focuses on the updated deadline of March 18, 2024, and does not explicitly state the date range from March 1 to March 15, 2024. Although it mentions March 15 as the original deadline, it does not present the date range as required by the rubric. Therefore, the required element is missing, resulting in no compliance."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-03/temporal_reasoning/2",
+      "ability": "temporal_reasoning",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states '2 days' as the interval between submitting modules for peer review and the feedback deadline, which directly satisfies the rubric criterion requiring the response to state '2 days'. The response is on-topic and accurate, with no prohibited elements present."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly states the interval as spanning from March 16, 2024 till March 18, 2024, fulfilling the rubric criterion. It explicitly mentions the submission date (March 16, 2024), the feedback deadline (March 18, 2024), and confirms the 2-day interval between these dates. This satisfies the requirement to state the date range from March 16, 2024 till March 18, 2024, with no prohibited elements present."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/abstention/1",
+      "ability": "abstention",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response directly addresses the rubric criterion by confirming that there is no information in the memory about the user's feedback or reaction after correcting the factoring mistake of 56. It clearly states that no explicit feedback, comment, or emotional reaction from the user about the correction is recorded, and explains the context of the available memory. The response is fully on-topic, accurate, and does not include any prohibited elements. Therefore, it fully complies with the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response directly addresses the rubric criterion by stating that there is no information in the memory about the user's reactions after correcting the factoring mistake for 56. It clearly explains that no explicit feedback, emotional reaction, or commentary from the user about the correction is recorded. The response also notes that the session containing the correction is not present in the memory, making it impossible to provide any reaction details. Thus, it fully complies with the requirement that no information related to the user's reactions after correcting the factoring mistake is present."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/contradiction_resolution/1",
+      "ability": "contradiction_resolution",
+      "score": 0.75,
+      "official_result": {
+        "llm_judge_score": 0.75,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that there is contradictory information by noting the caveat on January 24, 2024, where the user said they had 'never actually applied' the Extended Euclidean Algorithm to find modular inverses, which contradicts the same-day practice claims. This acknowledgment of contradictory information fully satisfies the rubric criterion requiring the response to state that there is contradictory information."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly addresses the rubric criterion by mentioning that the user said they had never applied the Extended Euclidean Algorithm to find modular inverses, and then provides multiple detailed instances where the user actually applied the algorithm. This directly satisfies the positive requirement to mention the user's prior statement about never having applied the algorithm, while also showing that the user did apply it later. The response is fully on-topic, accurate, and complete with respect to the criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions practicing the Extended Euclidean Algorithm on pairs to find GCDs and inverses, fulfilling the rubric criterion. It provides multiple dated examples where the user applied the algorithm to pairs for GCD and inverse calculations, demonstrating clear compliance with the requirement to mention practicing it on pairs to find GCDs and inverses."
+          },
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion requires the response to mention which statement is correct. The response provides a detailed history of the user's application of the Extended Euclidean Algorithm but does not explicitly identify or state which statement is correct. Therefore, it fails to meet the positive requirement of specifying which statement is correct."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/contradiction_resolution/2",
+      "ability": "contradiction_resolution",
+      "score": 0.25,
+      "official_result": {
+        "llm_judge_score": 0.25,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that there is conflicting information ('I have conflicting information in my memory about this'), which directly acknowledges the presence of contradictory information as required by the rubric criterion. The response is on-topic and clearly addresses the question by admitting the contradiction without attempting to resolve it, thus fully satisfying the requirement."
+          },
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion requires the LLM response to mention that the user said they have never solved any quadratic congruences. The response instead states it has conflicting information and cannot give a clean yes or no, without explicitly acknowledging or mentioning the user's statement about never having solved quadratic congruences. Therefore, the required element is missing, and the response is evasive rather than directly addressing the contradiction. Hence, it fails to comply."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention or acknowledge that the LLM had solved quadratic congruences before, which is the positive requirement of the rubric criterion. Instead, it only states uncertainty and does not address the specific point about having solved quadratic congruences. Therefore, it fails to comply with the rubric criterion."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not address the question asking which statement is correct regarding whether quadratic congruences had been solved before February 21, 2024. Instead, it expresses uncertainty and refuses to provide a definitive answer. Therefore, it fails to mention which statement is correct, as required by the rubric criterion."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/event_ordering/1",
+      "ability": "event_ordering",
+      "score": 0.33552631578947373,
+      "official_result": {
+        "precision": 0.25,
+        "recall": 0.25,
+        "f1": 0.25,
+        "tau_norm": 0.33552631578947373,
+        "final_score": 0.08388157894736843,
+        "llm_judge_score": 0.4375,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions 'prime numbers' as a foundational concept and also references 'concrete primes p = 61 and q = 53' in the context of RSA encryption, which inherently involves prime factorization. Thus, both required elements\u2014prime numbers and prime factorization\u2014are present and accurately referenced, fully satisfying the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions Fermat's Little Theorem, providing its statement (a^(p\u22121) \u2261 1 (mod p) when p is prime and a is not divisible by p) and relates it to the Miller\u2013Rabin test. This satisfies the rubric criterion fully by including the required element accurately and on-topic."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions both the Carmichael function \u03bb(n) and Euler's totient function \u03c6(n), explaining their relationship and how the Carmichael function refines the totient function for modular exponentiation. Thus, it fully satisfies the rubric criterion requiring mention of both functions."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention the Chinese Remainder Theorem at all, which is the explicit positive requirement of the rubric criterion. Therefore, it fails to comply."
+          },
+          {
+            "score": 0.5,
+            "reason": "The response mentions RSA encryption explicitly, fulfilling part of the rubric criterion. However, it does not mention Euler's theorem, only referencing the Carmichael function and Euler's totient function without explicitly stating Euler's theorem. Since the rubric requires both Euler's theorem and RSA to be mentioned, the response partially complies but is incomplete."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention necessary and sufficient conditions anywhere. It lists various mathematical topics and examples but fails to address or include the concept of necessary and sufficient conditions as required by the rubric criterion."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention either 'one-way functions' or 'trapdoor functions,' which are explicitly required by the rubric criterion. Although the response covers various cryptographic and number theory topics, it fails to address the required concepts, resulting in no compliance."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response lists various cryptographic and mathematical topics individually but does not mention or explain any combined cryptographic conditions or their applications. The rubric criterion requires mention of combined cryptographic conditions and applications, which is absent. Therefore, the response fails to meet the positive requirement."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/event_ordering/2",
+      "ability": "event_ordering",
+      "score": 0.28377500895306584,
+      "official_result": {
+        "precision": 0.06666666666666667,
+        "recall": 0.14285714285714285,
+        "f1": 0.09090909090909091,
+        "tau_norm": 0.28377500895306584,
+        "final_score": 0.02579772808664235,
+        "llm_judge_score": 0.6428571428571429,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions the Euclidean algorithm and provides example pairs such as GCD(48, 18), GCD(270, 192), and the application of Bezout's identity via Euclidean algorithm steps to 56 and 98. This satisfies the rubric criterion requiring mention of the Euclidean algorithm application with example pairs. The response is on-topic and fully addresses the requirement."
+          },
+          {
+            "score": 0.5,
+            "reason": "The response is on-topic and mentions the Euclidean algorithm steps (e.g., GCD(48, 18), GCD(270, 192), and applying Bezout's identity via Euclidean algorithm steps to 56 and 98), thus partially fulfilling the requirement for detailed Euclidean algorithm steps. It also references prime numbers and prime factorization early on and Euclid's proof of infinitely many primes later, addressing the prime number relation aspect. However, the Euclidean algorithm steps are only briefly mentioned without detailed step-by-step explanation, and the prime number relation is only broadly referenced without explicit connection to the Euclidean algorithm or detailed discussion. Therefore, the response partially complies with the rubric criterion but lacks the depth and detail required for full compliance."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions verification of Euclidean algorithm steps (e.g., GCD(48, 18), GCD(270, 192), applying Bezout's identity via Euclidean algorithm steps to 56 and 98) and prime factorization (factoring numbers like 84, 210, and 231). Both required elements from the rubric criterion are present and clearly referenced, demonstrating full compliance."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions an introduction to Fermat's Little Theorem in the January 24, 2024 entry, where it states that Fermat's Little Theorem was studied and its relation to Euler's theorem was explained. Additionally, modular exponentiation is implicitly covered through the discussion of modular arithmetic, Euler's theorem, and modular inverses, as well as discrete logarithms and modular congruences in later entries. Thus, both required elements\u2014introduction to Fermat's Little Theorem and modular exponentiation\u2014are present and accurately referenced, fully satisfying the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly mentions multiple practice examples involving different bases and moduli throughout the timeline of number theory discussions. For instance, it includes modular arithmetic examples such as \u03c6(15)=8, \u03c6(21)=12, a=6 mod 9, x\u00b2 \u2261 9 (mod 23), discrete log 2^x \u2261 9 (mod 13), modular inverses like 2 mod 7, and the order of 2 mod 561=60. These examples demonstrate practice with various bases and moduli, fully satisfying the rubric criterion."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention any further modular exponentiation examples using Fermat's Little Theorem as required by the rubric criterion. Instead, it provides a chronological summary of various number theory topics discussed, including Fermat's Little Theorem in a general context, but no concrete modular exponentiation examples using it are given. Therefore, the positive requirement is not met."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention Fermat\u2019s primality test nor provide any explanation of false primes, which are explicitly required by the rubric criterion. Although the response discusses related number theory topics such as Euler's theorem, Carmichael numbers, and RSA, it fails to address Fermat\u2019s primality test or false primes at all. Therefore, it does not satisfy the positive requirements and scores 0.0."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/information_extraction/1",
+      "ability": "information_extraction",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states '5 prime factorization problems' as required by the rubric criterion. It clearly identifies the number of problems completed at the 80% accuracy rate, fulfilling the positive requirement to state 5 problems. The response is on-topic and directly addresses the question, with no prohibited elements present."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the '80% accuracy rate' as required by the rubric criterion. It mentions that the 80% accuracy rate was achieved after completing 5 prime factorization problems, directly fulfilling the positive requirement. The response is on-topic and accurately presents the 80% accuracy rate, including contextual details without contradicting or omitting the required element."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/instruction_following/1",
+      "ability": "instruction_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response fully complies with the rubric criterion requiring numerical instances demonstrating theorems. Each property and theorem about congruences is accompanied by clear, concrete numerical examples illustrating the statements, such as 17 \u2261 2 (mod 5), arithmetic operations modulo n with explicit calculations, powers property with 17\u00b3 mod 5, cancellation examples with gcd conditions, solvability of linear congruences with explicit numbers, modular inverse computations, and a worked example solving a system of congruences. These numerical instances effectively demonstrate the theorems and properties discussed, fulfilling the positive requirement completely."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully complies with the rubric criterion requiring examples with actual numbers. Throughout the explanation of congruence properties, the response provides numerous concrete numerical examples illustrating each property, such as 17 \u2261 2 (mod 5), (5 + 7) mod 10 = 2, 17\u00b3 \u2261 3 (mod 5), and solving the system x \u2261 2 (mod 5), x \u2261 3 (mod 7) with explicit calculations. These examples are accurate, relevant, and properly integrated with algebraic justifications, demonstrating complete compliance."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully complies with the rubric criterion requiring step-by-step calculations using numbers. Throughout the explanation, the response provides numerous concrete numerical examples illustrating each property of congruences, including explicit arithmetic computations (e.g., (5 + 7) mod 10 = 2, 17 \u2261 2 (mod 5) with 17 - 2 = 15 = 3\u00b75, 17\u00b3 = 4913 = 5\u00b7982 + 3, solving 7x \u2261 15 (mod 50) with inverse 43, and the CRT example with x \u2261 2 (mod 5), x \u2261 3 (mod 7)). Each step is accompanied by algebraic justifications and numerical verifications, demonstrating clear stepwise calculations with numbers. Therefore, the response meets the positive requirement completely."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/instruction_following/2",
+      "ability": "instruction_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response demonstrates a clear progression of statements in a logical, stepwise manner. It begins with the claim, states assumptions, proceeds through numbered, justified steps, and concludes explicitly. Each step is justified by definitions or algebraic rules, showing a coherent flow from hypothesis to conclusion without gaps or jumps. This fully satisfies the rubric criterion for clear progression of statements."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully complies with the rubric criterion requiring that each step be justified. Every step in the proof is accompanied by a clear justification referencing definitions (e.g., definition of even numbers), algebraic rules (substitution, distributivity), and properties of integers (closure under addition). The proof follows a logical sequence with explicit reasoning for each transition, culminating in a clear conclusion. Thus, the response demonstrates complete compliance."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly provides reasoning at each stage of the proof. Each step is clearly justified with definitions or algebraic rules, such as the definition of even numbers, substitution, factoring, closure of integers under addition, and the conclusion that the sum is even. The response follows a logical progression with explicit reasoning, satisfying the rubric criterion fully."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/knowledge_update/2",
+      "ability": "knowledge_update",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that 12 RSA encryption/decryption problems were completed, mentioning the number '12' multiple times in relation to the problems. This directly satisfies the rubric criterion requiring the LLM response to state '12 problems'. The response is on-topic and clearly addresses the count of problems, fulfilling the positive requirement fully."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/multi_session_reasoning/1",
+      "ability": "multi_session_reasoning",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that the largest GCD found is 12 for the pair (36, 24). It clearly identifies this pair as having the largest GCD compared to the other pairs, which have GCDs of 6. The statement 'Largest GCD: (36, 24) with 12' directly satisfies the rubric criterion. The response is on-topic and fully compliant."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that the GCD of the pair (48, 18) is 6, both in the Euclidean algorithm step and in the prime factorization explanation. This directly satisfies the rubric criterion requiring the response to state '6 for (48, 18)'. The response is on-topic, accurate, and fully compliant."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that the GCD of the pair (270, 192) is 6, both in the Euclidean algorithm step and in the prime factorization explanation. This directly satisfies the rubric criterion requiring the response to state '6 for (270, 192)'. The response is on-topic and accurate, with no prohibited elements present."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that in each case, the GCD corresponds to the product of the lowest powers of common prime factors in the factorizations. It provides detailed prime factorizations for each pair, identifies the shared primes, selects the lowest powers, and shows how their product matches the GCD found via the Euclidean algorithm. This fully satisfies the rubric criterion."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/multi_session_reasoning/2",
+      "ability": "multi_session_reasoning",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that the LCM formula using GCD was correctly applied for the pairs (12, 15) and (18, 24). It shows the GCD values (3 and 6 respectively), the formula application (LCM = (a \u00d7 b)/GCD), and the computed LCM results (60 and 72). Both pairs are addressed clearly and correctly, fulfilling the rubric criterion completely."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates a solid understanding of the relationship between GCD and LCM. It explicitly states and applies the formula LCM(a, b) = (a \u00d7 b) / GCD(a, b) correctly in two examples, confirms the results by listing multiples, and compares the two computations. This shows both conceptual and computational grasp of how GCD relates to LCM. The detailed explanation and correct application fulfill the rubric criterion fully."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly states and documents the user's deepening grasp of the Extended Euclidean Algorithm through practice, including mastering GCD calculation and modular inverses. It traces the user's progress from initial confusion to milestones such as solving modular inverses, linear congruences, and RSA-related problems, showing mastery over time. The response explicitly mentions modular inverses multiple times and the user's increasing accuracy and confidence, fulfilling the rubric criterion fully."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates that the user was enabled to comprehend and solve complex modular systems using the Chinese Remainder Theorem (CRT). It details the user's progression from initial misunderstandings to solving multi-modulus systems, improving accuracy from 80% to 95%, and applying CRT in advanced contexts such as RSA key splitting and CRT-optimized RSA decryption. The response explicitly connects the use of the Extended Euclidean Algorithm to finding modular inverses within CRT solutions, showing a deep understanding and practical application of CRT in complex modular systems. Thus, the positive requirement of stating that the user was enabled to comprehend and solve complex modular systems using CRT is fully met."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/preference_following/1",
+      "ability": "preference_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response provides a formal algebraic proof of the existence conditions for the linear congruence ax \u2261 b (mod n). It clearly states the necessary and sufficient condition that gcd(a, n) divides b, and rigorously proves both necessity and sufficiency using algebraic arguments including B\u00e9zout's identity. The proof is formal and algebraic in nature, satisfying the rubric criterion fully. Additionally, the response applies the condition step-by-step to a concrete example, reinforcing the correctness and completeness of the proof. There are no prohibited elements, and the response is fully on-topic."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully complies with the rubric criterion by providing a rigorous algebraic proof of the solvability condition for linear congruences, relying on gcd properties and B\u00e9zout's identity rather than mere plugging in of numbers or trial-and-error. The solution to the example congruence 35x \u2261 10 (mod 50) is derived step-by-step using the Euclidean algorithm and algebraic manipulations, including finding modular inverses via the Extended Euclidean Algorithm. The response explicitly avoids trial-and-error methods and instead uses formal number-theoretic reasoning throughout."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/preference_following/2",
+      "ability": "preference_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly recommends multiple algebraic manipulation methods for solving polynomial equations, including recognizing standard forms and applying identities (difference of squares, cubes, quadratic trinomials), using the polynomial remainder theorem, modular factorization, and algebraic approaches to Diophantine equations. It provides detailed step-by-step algebraic techniques rather than numeric trial, fully satisfying the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly explains symbolic solution steps for polynomial problems, including algebraic factorization identities (difference of squares, cubes, quadratic trinomials), use of the polynomial remainder theorem, modular factorization, and solving Diophantine equations symbolically. Each step is described with symbolic examples and algebraic manipulations rather than numeric trial, fully meeting the rubric criterion of explaining symbolic solution steps."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly emphasizes working algebraically rather than using numeric trial or guesswork, stating 'The guiding rule: work algebraically, not by numeric trial.' It provides detailed algebraic methods and stepwise procedures for polynomial factorization, modular congruences, and Diophantine equations without suggesting numeric trial or guesswork as a primary approach. The examples given illustrate algebraic manipulation and theorem application rather than guessing or numeric trials. Therefore, the response fully complies with the rubric criterion to avoid suggesting numeric trial or guesswork."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/summarization/2",
+      "ability": "summarization",
+      "score": 0.5,
+      "official_result": {
+        "llm_judge_score": 0.5,
+        "llm_judge_responses": [
+          {
+            "score": 0.0,
+            "reason": "The response is a detailed progress summary of the user's learning journey in number theory and quadratic residues but does not explicitly explain or demonstrate how the Legendre symbol is used to test whether a number is a quadratic residue modulo a prime. Although the Legendre symbol is mentioned briefly in Phase 3, there is no explanation of its use as a test for quadratic residues, nor is there a clear demonstration of how it functions in that role. Therefore, the required element of the rubric\u2014showing that the user learned how the Legendre symbol is used to test quadratic residuosity modulo a prime\u2014is missing. The response is on-topic but fails to meet the positive requirement, resulting in a score of 0.0."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response is a detailed progress summary of the user's learning journey in number theory and quadratic residues but does not contain any explanation or demonstration of Euler's criterion itself, nor its proof via Fermat's Little Theorem. It also does not clarify how to determine quadratic residuosity efficiently. Therefore, it fails to meet the rubric criterion requiring understanding and proof of Euler's criterion and clarification on efficient quadratic residuosity determination."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly connects the user's learning progression to primitive roots by explicitly discussing their definition, existence conditions, and role in generating multiplicative groups modulo primes. It includes multiple examples such as 2 being a primitive root mod 7, mod 11, and mod 13, and uses primitive roots to solve quadratic congruences like x\u00b2 \u2261 10 (mod 13) and x\u00b2 \u2261 4 (mod 11). The response also references the order of elements modulo primes and discrete logarithms, demonstrating the role of primitive roots in generating multiplicative groups. Thus, all required elements of the rubric criterion are present and well integrated."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates exploration of discrete logarithms and practicing calculations, as required by the rubric. Specifically, it mentions working on discrete log problems such as solving 3^x \u2261 13 (mod 17), verifying discrete logs like 2^x \u2261 9 (mod 13), and using primitive roots to solve quadratic congruences. The response also details extensive practice with quadratic residues and congruences, including multiple solved problems, accuracy improvements, and constructing residue tables. Thus, both elements of the rubric criterion\u2014exploration of discrete logarithms and practicing calculations\u2014are fully present and well documented."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/temporal_reasoning/1",
+      "ability": "temporal_reasoning",
+      "score": 0.0,
+      "official_result": {
+        "llm_judge_score": 0.0,
+        "llm_judge_responses": [
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion requires the LLM response to state '30 days'. The response instead states '14 days passed' and provides dates supporting that duration. There is no mention or indication of '30 days' or an equivalent duration. Therefore, the required element is missing, resulting in no compliance."
+          },
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion requires the LLM response to state the date range from February 7, 2024 till March 8, 2024. The response instead states a date range from January 10, 2024 to January 24, 2024, which does not match or include the required dates. Therefore, the required element is missing and the response fails to comply."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-08/temporal_reasoning/2",
+      "ability": "temporal_reasoning",
+      "score": 0.0,
+      "official_result": {
+        "llm_judge_score": 0.0,
+        "llm_judge_responses": [
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion requires the LLM response to state that the quadratic congruence was started first. However, the response explicitly states that the linear Diophantine equations were started first, not the quadratic congruence. Therefore, the required element is missing and the response does not comply with the rubric."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/abstention/1",
+      "ability": "abstention",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that there is no information in the memory about specific techniques taught in the 'Effective Communication in Relationships' course. It clarifies that while anticipated topics were mentioned at enrollment, no confirmed or learned techniques from the course are recorded. The response is fully on-topic and does not provide any specific techniques as if learned from the course, thus fully complying with the negative constraint that no information about specific techniques from the course should be present."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/abstention/2",
+      "ability": "abstention",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that there is no information about April's reaction to the surprise picnic on April 20, 2024, and confirms that the only related memory is about the planning stage on June 1, 2024. It does not provide any speculative or fabricated details about April's reaction, thus fully complying with the rubric criterion that no information related to April\u2019s reaction is present."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/contradiction_resolution/1",
+      "ability": "contradiction_resolution",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that there is contradictory information regarding whether the user attended couples therapy with Dr. Selim. It clearly identifies conflicting statements from the user's memory, provides detailed examples from different dates supporting both sides, and highlights the sharpest conflict on October 5, 2024. This directly satisfies the rubric criterion requiring the response to state that there is contradictory information."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions that the user said they have never attended any couples therapy sessions with Dr. Selim, citing specific dated statements to that effect. This directly satisfies the rubric criterion requiring the response to mention that the user said they have never attended couples therapy sessions with Dr. Selim. The response is also on-topic and responsive to the question, providing a detailed analysis of conflicting statements and requesting clarification. Therefore, it fully complies with the rubric."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions multiple instances of scheduling sessions with Dr. Selim, including specific dates and references to follow-up sessions. It clearly addresses the rubric criterion by stating that the user mentioned scheduling a session with him, fulfilling the positive requirement. The response is fully on-topic and provides detailed evidence supporting the mention of scheduled sessions, thus demonstrating complete compliance."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly addresses the question by presenting both conflicting sets of statements regarding attendance at couples therapy with Dr. Selim and clearly highlights the contradiction. It then directly asks the user to clarify which statement is correct\u2014whether they have attended sessions or never attended. This satisfies the rubric criterion that the response should mention which statement is correct, as it identifies the conflict and requests clarification to determine the correct statement."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/event_ordering/1",
+      "ability": "event_ordering",
+      "score": 0.14897884081708823,
+      "official_result": {
+        "precision": 0.06666666666666667,
+        "recall": 0.125,
+        "f1": 0.08695652173913045,
+        "tau_norm": 0.14897884081708823,
+        "final_score": 0.012954681810181588,
+        "llm_judge_score": 0.875,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly addresses the rubric criterion of 'Relationship freshness and special moments' by detailing monthly relationship activities and milestones from March through December 2024. It includes examples of communication improvements, quality time, emotional vulnerability, trust-building, special events (e.g., compromise for a wedding, anniversary mention, surprise jazz night), shared creative activities, gratitude rituals, and holiday traditions. These elements demonstrate attention to relationship freshness and highlight special moments that mark the relationship's evolution. There are no prohibited elements, and the response is fully on-topic and comprehensive."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly addresses the significance of the meeting place and community ties by detailing shared activities, rituals, and events that reinforce the relationship and community connection. Examples include attending family events (April's niece's wedding), celebrating anniversaries (noted as unresolved but acknowledged), shared creative activities (pottery, dance lessons), and holiday traditions with quality time. The response also highlights efforts to build trust and intimacy through shared experiences and rituals, such as gratitude texts, password sharing, and managing work-life boundaries to prioritize couple time. These elements demonstrate a strong focus on the importance of meeting places (e.g., 'Blue Note' jazz night, weekly 'no phone' dinners, creative sessions) and community ties (family events, holiday traditions), fully satisfying the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly addresses communication skills and workshops across multiple months, detailing specific communication focuses, workshops attended, and practical applications such as active listening, empathy modules, conflict resolution tools, and gratitude rituals. It includes clear references to communication workshops (e.g., April 15, 2024 communication workshop), skill-building activities (e.g., empathy module with a 92% score), and conflict management techniques (e.g., 15-minute time-out rule). The response is fully on-topic, comprehensive, and demonstrates a clear progression and application of communication skills and workshops throughout the timeline, satisfying the rubric criterion completely."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response comprehensively addresses the rubric criterion of 'Work-life balance and quality time' by detailing specific actions and strategies taken across multiple months to balance work commitments and personal relationship needs. It includes examples of setting boundaries on work hours, prioritizing quality time (e.g., reserving Friday evenings, attending family events with compromises), emotional vulnerability, trust-building activities, and shared couple time. The response clearly demonstrates ongoing efforts to maintain and improve work-life balance and quality time, fully satisfying the positive requirements of the rubric without any prohibited elements."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response comprehensively addresses emotional intimacy and appreciation gestures throughout the timeline. It includes multiple examples of emotional vulnerability (e.g., sharing fears on April 20), quality time prioritization (e.g., reserving Friday evenings, attending family events with compromises), appreciation gestures (e.g., surprise handwritten letter, surprise jazz night, daily gratitude texts), and trust-building actions (e.g., sharing passwords, financial transparency). These elements clearly demonstrate efforts to deepen emotional intimacy and express appreciation, fully satisfying the rubric criterion."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not address the rubric criterion of 'Trip planning and romantic getaways.' Instead, it focuses on relationship communication, conflict resolution, trust, and emotional connection over several months without any mention of trip planning, travel, vacations, or romantic getaways. Therefore, it is non-responsive to the question and fails to comply with the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response comprehensively addresses budgeting and family time management throughout the timeline. It includes clear examples of financial transparency (sharing banking app passwords), setting and resolving a holiday budget ($1,200 total) and gift-exchange limit ($100 per person), as well as managing family time by reserving specific evenings for April, scheduling quality time activities (pottery, dance lessons), and balancing work hours with family commitments. These elements demonstrate full compliance with the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions shared creative activities in the September\u2013October 2024 period, including beginning pottery as the first shared creative activity and weekly dance lessons, with scheduled creative sessions every Sunday. This directly satisfies the rubric criterion of 'Shared creative activities.' The response is fully on-topic, detailed, and contains no prohibited elements, thus demonstrating complete compliance."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/event_ordering/2",
+      "ability": "event_ordering",
+      "score": 0.2872297858694408,
+      "official_result": {
+        "precision": 0.13333333333333333,
+        "recall": 0.25,
+        "f1": 0.1739130434782609,
+        "tau_norm": 0.2872297858694408,
+        "final_score": 0.04995300623816363,
+        "llm_judge_score": 0.875,
+        "llm_judge_responses": [
+          {
+            "score": 0.0,
+            "reason": "The response does not address the rubric criterion of 'Couples therapy preparation and expectations.' Instead, it provides a detailed timeline of work boundaries, income changes, and relationship activities without any mention of couples therapy, preparation for it, or what to expect from it. Therefore, it is non-responsive to the question and fails to meet the criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly addresses time management and work stress discussions across multiple months. It details work hours, stress ratings, boundary setting (e.g., no work emails after certain times), reductions in clinical hours, decisions to decline work requests to preserve personal time, and the impact of these changes on stress and relationship satisfaction. The response also includes financial considerations related to work and consulting income, showing a nuanced balance between work demands and personal well-being. Thus, it fully complies with the rubric criterion requiring discussion of time management and work stress."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates work hour reductions and communication of boundaries throughout the timeline. It documents initial overwork at 50 clinical hours/week and the setting of a boundary to stop work emails after 7 PM starting March 20, 2024. Subsequent months show progressive reductions in clinical hours (from 50 to 45, then to 50 consulting hours with safeguards), explicit communication of workload schedules, declining late-night calls to preserve personal time, and tightening of email boundaries (no work emails after 6 PM in June). Additionally, relationship guardrails and transparency measures (weekly 'no phone' dinners, monthly transparency reports, sharing renovation budget spreadsheets, sharing banking app passwords) indicate ongoing communication of boundaries. These elements fully satisfy the rubric criterion requiring work hour reductions and communication of boundaries."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response comprehensively addresses increased income and relationship spending plans over the specified months. It details income changes, including consulting projects adding $1,200/month starting June 2024, incremental consulting income increases in August, October, and a $72,000/year contract renewal in December. It also outlines relationship spending plans such as budgets for leisure ($350/month), gifts ($1,200 holiday gifts, $350 gifts by November 10), events (jazz concert tickets, pottery class, charity gala tickets), and shared activities (no phone dinners, date nights, nature walks, family visits). The response shows clear planning and adjustments in both income and relationship-related expenditures, fully satisfying the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates the use of productivity apps and tools to support the relationship. It mentions sharing workload schedules, monthly transparency reports, shared renovation budget spreadsheets, logging 'no phone' dinners, sharing banking app passwords, and agreeing on budgets collaboratively. These elements show active use of productivity and financial apps to enhance communication, transparency, and relationship support. The response is fully on-topic and contains multiple concrete examples of productivity app usage for relationship support, satisfying the rubric criterion completely."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly addresses the consulting project extension and its impact on the relationship over time. It details the acceptance and incremental increase of consulting hours and income from June through December 2024, including the $5,000 project starting June, subsequent increases in consulting hours and income, and the contract renewal adding $72,000/year starting January 2025. The response also clearly describes how these consulting changes were managed with relationship safeguards such as 'no phone' dinners, scheduled date nights, transparency about finances, and shared budgeting. Relationship satisfaction metrics and specific relationship activities are included, showing the impact of consulting work on the relationship dynamic. Thus, the response fully complies with the rubric criterion by covering both the consulting project extension and its relationship impact comprehensively and accurately."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly addresses the rubric criterion of increased consulting hours while maintaining balance. It documents a progressive increase in consulting hours from June through December 2024, including acceptance of a $5,000 project, incremental increases in consulting hours and income, and a consulting contract renewal adding $72,000/year. Simultaneously, it shows multiple efforts to maintain personal and relationship balance: setting and tightening work boundaries (e.g., no work emails after 7 PM then 6 PM), declining late-night and weekend work requests, scheduling regular 'no phone' dinners and uninterrupted time with April, budgeting for leisure and family time, and tracking relationship satisfaction improvements. The response integrates both increased consulting commitments and explicit balancing strategies, fully satisfying the positive requirements of the rubric without any prohibited elements."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly addresses the allocation of additional income with respect to relationship and lifestyle throughout the timeline. It details how consulting income was introduced and increased, and how that income was balanced with personal boundaries, relationship activities (e.g., 'no phone' dinners, date nights, shared transparency), leisure spending, and savings goals. The response shows explicit consideration of how extra income impacts relationship dynamics and lifestyle choices, including budgeting for gifts, leisure, and home improvements, while maintaining relationship satisfaction and communication. Therefore, it fully complies with the rubric criterion."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/information_extraction/2",
+      "ability": "information_extraction",
+      "score": 0.0,
+      "official_result": {
+        "llm_judge_score": 0.0,
+        "llm_judge_responses": [
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion requires the LLM response to state 'April 28, 2024, at 2 PM.' The response instead states the original booking was on April 28, 2024, but explicitly notes that no time of day was given for that original booking. The current scheduled time is given as April 29, 2024, at 3 PM, which does not satisfy the requirement. Therefore, the required element is missing, resulting in no compliance."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/instruction_following/1",
+      "ability": "instruction_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response contains an itemized list of costs related to the small gift for the brunch, including specific amounts for the home brunch ($5 gift, $5 decorations), restaurant brunch ($10 gift, $80 menu, $10 personal touches), and comparisons with other gift card costs. The costs are clearly broken down and presented in list form, fulfilling the rubric criterion fully."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response provides a clear category-by-category breakdown of the small gift costs within the brunch plans. It separates the home brunch and restaurant brunch categories, specifying the gift cost, total estimated cost, and budget for each. It also compares these with a scenario involving a $20 gift card, further detailing the totals for home and restaurant brunches. This satisfies the rubric criterion fully by including the required category-by-category breakdown."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response provides a detailed cost analysis of the small gift line for the brunch, including specific dollar amounts for home and restaurant brunch options, total estimated costs, budgets, and comparisons with other gift card scenarios. It clearly breaks down the components of the costs (gift, decorations, menu, personal touches) and notes variations and uncertainties. This fully satisfies the rubric criterion requiring a detailed cost analysis."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/instruction_following/2",
+      "ability": "instruction_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions specific hours for the swimming sessions: 'Tuesday and Thursday from 6:00 PM to 7:30 PM' and confirms the start and end times as 6:00 PM and 7:30 PM respectively. This fully satisfies the rubric criterion requiring specific hours to be mentioned."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly provides a time range for the swimming sessions: every Tuesday and Thursday from 6:00 PM to 7:30 PM. It also specifies the duration (90 minutes) and the start date of the extended sessions (May 11, 2024). This fully satisfies the rubric criterion requiring a clear time range."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/knowledge_update/1",
+      "ability": "knowledge_update",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the figure $2,800 as the most recent recorded average monthly household expense, fulfilling the rubric criterion that the LLM response should state $2,800. The figure is clearly identified and contextualized, and the response is fully on-topic and responsive to the question."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/knowledge_update/2",
+      "ability": "knowledge_update",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that the swimming sessions are 90 minutes long, meeting the rubric criterion that the LLM response should state '90 minutes per session'. The duration is clearly specified and accurate, fulfilling the positive requirement fully."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/multi_session_reasoning/2",
+      "ability": "multi_session_reasoning",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response clearly states that the user was contributing $1,200 per month toward household expenses that averaged $2,500 (March 2024 baseline). This directly satisfies the rubric criterion that the LLM response should state the user contributes nearly half of the $2,500 household expenses. The figure $1,200 is approximately half of $2,500, fulfilling the requirement. The response is on-topic and provides this information explicitly and accurately."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly states and documents the allocation of a $200 monthly leisure budget starting in May 2024, balancing leisure spending with saving and household expenses. It shows the leisure budget being created at $200/month, used for various activities, and later increased, demonstrating a balance between saving and spending. This fully satisfies the rubric criterion to state allocating $200 monthly for leisure balancing saving and spending."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly states the maintenance of weekly gratitude lists and monthly reflections with April. Specifically, it mentions 'weekly reflections begin, Sundays at 8 PM' in June, 'daily gratitude texts since July 1,' '6.5 years of Sunday gratitude lists,' and 'monthly reflection talks' starting in October, all involving April. This satisfies the rubric criterion to maintain weekly gratitude lists plus monthly reflections with April. The response is detailed, accurate, and fully addresses the requirement."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/preference_following/1",
+      "ability": "preference_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly recommends starting the conversation on Saturday morning at 9:00 AM, which is a morning time on the weekend. It also provides a backup option for Sunday morning, thus clearly fulfilling the rubric criterion of recommending morning or early weekend times. The recommendation is clear, specific, and aligned with the user's preferences, demonstrating full compliance."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response recommends starting the conversation at 9:00 AM on a weekend morning, which is a time when people are generally alert and not tired. It explicitly avoids suggesting late evenings or times when people are likely tired. The response also discusses avoiding Friday evening and only considering evenings as a last resort after confirming April's preference, further demonstrating sensitivity to avoiding late or tiring times. Therefore, it fully complies with the rubric criterion."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/preference_following/2",
+      "ability": "preference_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly recommends Saturday morning (around 8\u201310 AM) for shared outdoor time and hobbies, describing activities such as walks, hikes, breakfasts together, yoga in nature, and park picnics. This clearly aligns with the rubric criterion of recommending weekend mornings for joint activities. The recommendation is detailed, specific, and integrated into the weekend schedule, fully satisfying the requirement."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly mentions specific timing blocks that support energy levels throughout the weekend: Friday 6\u20139 PM for date night, Saturday morning 8\u201310 AM for outdoor activities, Sunday morning 8 AM\u201312 PM as a personal recharge block, and Sunday 3\u20136 PM for family visits or creative time. These time allocations explicitly support maintaining energy and presence, such as protecting Sunday morning for recharging to be present for the rest of the weekend. The response fully meets the rubric criterion by including timing that supports energy levels."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/summarization/1",
+      "ability": "summarization",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly explores multiple strategies to keep the relationship fresh and exciting. It details reigniting romance through thoughtful date nights (e.g., surprise picnic, anniversary dinner, candlelit dinner, jazz night, New Year's Eve dinner), surprises (flowers, handwritten notes and letters, poems, surprise dinners), and shared new hobbies (couples yoga, pottery classes, weekly dance lessons, Turkish cooking class, weekly nature walks). These elements clearly meet the rubric criterion of exploring strategies including thoughtful date nights, surprises, and shared new hobbies to keep the relationship fresh and exciting."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly documents practical steps taken to implement relationship improvement ideas. It includes planning special outings such as surprise picnics, weekend getaways, anniversary celebrations, and date nights. It details enhancing gestures like flower deliveries, handwritten notes, weekly words-of-affirmation notes, gratitude texts, and surprise letters. The response also describes creating meaningful traditions such as 'no phone' dinners, weekly dance lessons, joint journaling, and monthly reflection talks. These concrete actions clearly satisfy the rubric criterion requiring practical implementation steps including special outings, enhanced gestures, and meaningful traditions."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly highlights the significance of the shared environment, specifically the North Ericshire Community Center, as the place where James and April met and which continues to be meaningful to them through ongoing attendance at events. It also demonstrates how this shared environment fosters common values and ongoing engagement, as evidenced by their participation in community center events, volunteering, and various shared activities and rituals that build their relationship over time. Thus, the response fully satisfies the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly addresses communication as a central theme throughout the relationship timeline. It highlights regular check-ins and communication practices such as active listening, workshops, monthly reflection talks, and appreciation talks. It also details transparency steps involving sharing schedules, finances (budgeting, banking app passwords), and legal/financial matters (consulting income, contract renewal). These elements ensure mutual understanding and security. The response explicitly notes communication layers and rituals designed to maintain alignment on future plans, health, finances, and legal matters, fully satisfying the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response comprehensively addresses emotional intimacy by detailing active listening practices (e.g., April 18 conversation practicing active listening, April 1 start date), validating feelings (e.g., communication workshops, 'Expressing Needs Without Blame' workshop, appreciation talks), and creating safe spaces for vulnerability (e.g., monthly reflection talks, time-out rule for disagreements, joint journal). It also supports these with structured communication routines such as 'no phone' dinners, weekly gratitude texts, scheduled creative activities, and conflict management strategies including conflict-resolution seminars, a goal to reduce conflicts, and the 15-minute time-out rule. The response clearly integrates these elements over time, showing a layered and intentional approach to building emotional intimacy. Therefore, it fully satisfies the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly addresses balancing busy schedules by detailing multiple strategies: prioritizing quality time (e.g., weekly 'no phone' dinners, date nights, shared activities like dance lessons and yoga), daily or frequent check-ins (daily gratitude texts, good morning texts, weekly appreciation talks, monthly reflection talks), and expressing appreciation (handwritten notes, poems, surprise dinners, gratitude lists). It also explicitly covers managing work-life boundaries to reduce feelings of neglect, such as cutting clinical hours, setting no work emails after 6 PM, sharing clinical workload schedules, and weighing consulting expansions against relationship impact. These elements collectively satisfy all parts of the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states in the October 2024 section that April shared she feels most loved through physical touch on stressful days, directly addressing the rubric criterion that physical touch emerged as a critical love language for April, especially during stressful times. This satisfies the positive requirement fully and is on-topic with respect to the question."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly identifies shared hobbies and creative activities as vital for bonding, such as weekly dance lessons, pottery classes, couples yoga, and creative Sundays. It provides tailored suggestions and plans integrated into the routine, including scheduling these activities regularly (e.g., Sundays 2\u20134 PM for creative activities, weekly dance lessons starting September 3, 2024, pottery exhibition visits, and couples yoga in June). These activities foster emotional closeness and mutual growth, as evidenced by the rising relationship satisfaction scores and the development of rituals like joint journaling and appreciation talks. The response fully meets the rubric criterion by detailing how these shared creative engagements are central to strengthening the relationship."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/temporal_reasoning/1",
+      "ability": "temporal_reasoning",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the duration as '14 days' between April 1, 2024, and April 15, 2024, which fully satisfies the rubric criterion requiring the LLM response to state '14 days'. The response is on-topic and accurately presents the required information."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the time period as spanning from April 1 to April 15, which fully satisfies the rubric criterion requiring the phrase 'from April 1 till April 15' or its semantic equivalent. The dates are clearly mentioned and the duration is accurately described, demonstrating complete compliance."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-18/temporal_reasoning/2",
+      "ability": "temporal_reasoning",
+      "score": 0.5,
+      "official_result": {
+        "llm_judge_score": 0.5,
+        "llm_judge_responses": [
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion requires the LLM response to state '46 days'. The response states '47 days', which is incorrect and does not meet the requirement. Therefore, it fails to comply with the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the time span 'from February 28 to April 15, 2024,' which satisfies the rubric criterion requiring the response to state 'from February 28 till April 15.' The phrase 'till' is semantically equivalent to 'to' in this context, so the requirement is met. The response is on-topic and provides the requested date range accurately."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/abstention/1",
+      "ability": "abstention",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that the memory does not record the actual agendas used in the weekly Zoom meetings, only proposed example agendas which were not confirmed as adopted. It clearly indicates that no information about the actual meeting agendas is present. Therefore, the response complies fully with the rubric criterion that there is no information related to the agenda of the weekly Zoom meetings."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that the memory does not record the actual agendas used or the outcomes of the weekly Zoom meetings, thereby confirming the absence of information related to meeting outcomes. It also clarifies that only scheduling changes and preparation advice are recorded, with no details on decisions, action items, or results from the meetings themselves. Thus, the response fully complies with the rubric criterion requiring that no information about meeting outcomes be present."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/abstention/2",
+      "ability": "abstention",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly provides detailed information about the specific content and structure of the business plan draft, including the planned 11-section outline with page allocations, detailed content summaries for key sections (Executive Summary, Market Analysis, Financial Projections), and the drafting timeline with review milestones. This directly addresses the rubric criterion, which states that there should be no information related to the specific content and structure of the business plan draft. Since the response clearly includes such information, it fully complies with the criterion by providing the required details."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/contradiction_resolution/2",
+      "ability": "contradiction_resolution",
+      "score": 0.75,
+      "official_result": {
+        "llm_judge_score": 0.75,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that the messages disagree and that the memory provides no single uncontested answer, clearly indicating the presence of contradictory information. This directly satisfies the rubric criterion requiring the LLM response to state that there is contradictory information. The response is fully on-topic and does not omit this key element."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly addresses the question by acknowledging the conflicting statements about attendance at launch events. It clearly mentions the user's statement that they have never attended any launch events for the app, fulfilling the rubric criterion. The response also explains the contradiction in the records and does not evade the question, thus fully complying with the requirement."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention the soft launch event with attendees and media coverage as required by the rubric criterion. Instead, it focuses on the conflicting statements about attendance without explicitly acknowledging or mentioning the soft launch event details (48 attendees, media mentions) that the rubric requires. Therefore, it fails to include the positive element specified."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response directly addresses the question by clarifying that the memory contains conflicting statements about attendance at launch events and that no single uncontested answer exists. It explicitly states that the two sides cannot both be true and that nothing later settles the conflict. This effectively identifies which statement is correct (or rather that it is unresolved), fulfilling the rubric criterion to mention which statement is correct."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/event_ordering/1",
+      "ability": "event_ordering",
+      "score": 0.15573481367045183,
+      "official_result": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "tau_norm": 0.15573481367045183,
+        "final_score": 0.0,
+        "llm_judge_score": 0.875,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response comprehensively details the evolution of business partnerships and collaboration efforts related to app development in a clear chronological order. It includes multiple business partner introductions (Denise, Healing Minds clinic, Global Health Corp, CityCare, EU market consultant Andrew, EU legal advisor Roger) and describes collaboration testing phases such as trial periods, feature prioritization influenced by partners and mentors, pilot launches, beta testing, and feedback integration. The response is fully on-topic, addresses the question directly, and contains no prohibited elements. Therefore, it fully meets the rubric criterion for business partner introduction and collaboration testing."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not address the rubric criterion of 'Age difference and communication dynamics.' While it provides a detailed chronological summary of business partnerships and app development milestones, it fails to mention or analyze any age differences between partners or how these differences impact communication dynamics. Therefore, it does not comply with the specified rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response provides a detailed, chronological follow-up on the user's business ideas, specifically focusing on business partnerships and app development as requested. It tracks the evolution of partnerships, feature prioritization, funding, launches, and expansion efforts, fully addressing the criterion to follow up on business ideas. There are no irrelevant or off-topic elements, and the response is comprehensive and accurate."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response provides detailed mentor feedback on app engagement and UI improvements throughout the timeline. It highlights how partner and mentor input shaped feature prioritization (e.g., Denise's journaling feature, Omar's feedback on mood tracker), integration of APIs to improve functionality, and adjustments based on user and focus group feedback (e.g., corporate dashboard, referral program). The response is fully on-topic, comprehensive, and clearly demonstrates the evolution of app engagement and UI improvements as influenced by mentorship and partnerships, satisfying the rubric criterion completely."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response comprehensively addresses the user's focus on investment decisions and negotiation strategies by detailing key partnership developments, investment offers, equity agreements, and negotiation outcomes across the timeline. It includes specific investment amounts, equity percentages, declined offers, and strategic decisions such as preferring equity funding over loans. The negotiation strategies are evident in the handling of acquisition offers, investor agreements, and partnership talks. Thus, the response fully complies with the rubric criterion by providing a clear, chronological summary of investment and negotiation activities."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly addresses customer retention and loyalty program strategies by detailing the introduction of a referral program in October 2024, which led to a measurable increase in new sign-ups (15% rising to 18%). Additionally, it describes ongoing partnership developments, pilot programs, personalized coaching add-ons, and corporate wellness initiatives that contribute to customer engagement and loyalty. The timeline also includes strategic expansions and investor relations that support sustained customer retention. Thus, the response fully complies with the rubric criterion by providing comprehensive and relevant strategies related to customer retention and loyalty."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly addresses the impact and growth of influencer partnerships throughout the timeline. It explicitly mentions Denise securing influencer partnerships with an expected reach of about 15,000 in July 2024 and later securing the CityCare partnership in November 2024, demonstrating clear influencer partnership impact. Additionally, the response details growth milestones such as pilot launches, user sign-ups increase via referral programs, investor agreements, and international expansion plans, all indicating growth. The response is fully on-topic, comprehensive, and contains no prohibited elements, thus fully satisfying the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates upselling coaching services for revenue by mentioning the introduction of a personalized coaching add-on on September 10, 2024, which aligns with upselling. Additionally, it references corporate wellness partnerships and a referral program that increased sign-ups, all of which support revenue growth strategies. The response is fully on-topic and addresses the criterion comprehensively without including any prohibited elements."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/event_ordering/2",
+      "ability": "event_ordering",
+      "score": 0.15573481367045183,
+      "official_result": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "tau_norm": 0.15573481367045183,
+        "final_score": 0.0,
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response is fully on-topic and addresses the question by detailing the evolution of social media marketing focus across eight distinct phases with clear timelines, actions, and measurable outcomes. It demonstrates trust and initial capability concerns by showing progressive growth, engagement metrics, budget allocations, and strategic adjustments, reflecting an understanding of building trust and capability over time. There are no prohibited elements present, and the response comprehensively meets the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly discusses experience and trial project details related to social media marketing, outlining a clear, chronological evolution across eight distinct phases. Each phase includes specific actions, roles, metrics, and outcomes, demonstrating practical experience and trial project discussions as required by the rubric criterion. The response is fully on-topic, detailed, and contains no prohibited elements."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully complies with the rubric criterion of 'Content types and engagement strategies.' It clearly outlines a progression of social media marketing phases, each specifying different content types (e.g., Instagram stories, posts, reels, IGTV videos, polls, questions, hashtag campaigns, live Q&A, testimonials) and engagement strategies (e.g., influencer campaigns, paid promotions, referral programs, EU-focused campaigns). The response is detailed, on-topic, and demonstrates a variety of content formats and engagement tactics evolving over time, meeting the positive requirements of the rubric without any prohibited elements."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response effectively evaluates the evolution of social media marketing across eight distinct phases, providing detailed metrics, dates, follower counts, engagement rates, and campaign types. It demonstrates creative freedom by showing how Sylvia negotiated for more autonomy in content creation and how the strategy adapted over time, including diversification of content, paid promotions, influencer partnerships, live engagement, and geographic targeting. The response is fully on-topic, comprehensive, and clearly structured to reflect both effectiveness evaluation and creative freedom, thus fully satisfying the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully addresses the rubric criterion of 'Cross-platform expansion and measurement' by detailing a clear timeline of social media marketing phases that include expanding from Instagram to Facebook and Twitter (phase 4), formal influencer partnerships (phase 5), and EU-focused campaigns (phase 8). It also includes specific measurement metrics such as engagement rate increases, follower counts, email open rates, referral program sign-up increases, and KPIs tracking for campaigns. Thus, it demonstrates both cross-platform expansion and measurement comprehensively and accurately."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates leveraging growth for business goals by outlining a detailed, phased social media marketing strategy that progressively builds audience size, engagement, and conversion aligned with business objectives. Each phase shows how growth metrics (followers, engagement rates, sign-ups) are used to inform and expand marketing efforts, including paid promotions, influencer partnerships, and targeted campaigns (e.g., EU-focused). The response is fully on-topic, comprehensive, and shows a clear connection between growth activities and business goals, satisfying the rubric criterion completely."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates sustainability and engagement maintenance by outlining a detailed, phased evolution of social media marketing efforts over time. It shows continuous growth in followers, increasing engagement rates, diversification of content types, introduction of paid promotions, influencer partnerships, live interactive sessions, and referral programs. The response also tracks measurable outcomes such as engagement rate increases, follower counts, and sign-up improvements, indicating ongoing engagement maintenance. The progression into EU-focused campaigns with KPIs further supports sustained and evolving engagement strategies. Therefore, the response fully meets the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response provides a detailed, chronological content calendar spanning eight phases from March 2024 to January 2025, outlining specific social media marketing activities, follower growth, content types, campaigns, budgets, and engagement metrics. It clearly demonstrates planning for content creation, audience growth, engagement measurement, platform expansion, influencer partnerships, and conversion-driving programs. This comprehensive timeline and growth maintenance plan fully satisfies the rubric criterion for content calendar and growth maintenance planning."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/information_extraction/1",
+      "ability": "information_extraction",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the date April 8, 2024, as the date the user applied for the microloan and refers to it as the date the user chose the microloan. This directly satisfies the rubric criterion requiring the response to state April 8, 2024. The response is fully on-topic and responsive to the question, and no prohibited elements are present."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/information_extraction/2",
+      "ability": "information_extraction",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly includes the creation of a comprehensive onboarding process with tutorials and guides. It mentions a welcome email with a download link, an introductory video/tutorial, a step-by-step or quick-start guide inside the app, personalized welcome emails, and broader onboarding materials such as tutorials, FAQs, and user guides. This fully satisfies the rubric criterion requiring the statement of creating a comprehensive onboarding process with tutorials and guides."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly includes the element of maintaining regular communication through emails and direct messaging. It mentions sending weekly emails/newsletters, in-app notifications, and using direct in-app messaging for personalized assistance, which aligns well with the rubric criterion. The communication methods are explicitly stated and integrated into the support and engagement recommendations, fully satisfying the requirement."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly includes the implementation of robust feedback mechanisms as required by the rubric criterion. It explicitly mentions multiple feedback channels such as in-app feedback forms/surveys, regular check-ins or interviews, and a dedicated support channel (email, chat). It also references in-app surveys, direct emails, and support tickets, with feedback solicited regularly through periodic check-ins and surveys. This fully satisfies the requirement to state implementing robust feedback mechanisms like in-app surveys and support channels."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly includes monitoring user interactions with analytics as part of feedback management. It mentions usage tracking, monitoring feature usage rates, retention and engagement metrics, drop-off points, KPIs such as active users, session duration, feature usage, retention rates, and the use of analytics tools to track behavior and identify low engagement. This fully satisfies the rubric criterion requiring the LLM response to state monitoring user interactions with analytics."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly includes educational content as part of the support and engagement recommendations, listing articles/blog posts, infographics/videos, and webinars or live Q&A to help users understand and properly use the app's features. This directly satisfies the rubric criterion requiring the LLM response to state providing educational content. The response is on-topic and comprehensive, with no prohibited elements present."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly includes offering incentives for participation, mentioning early access to new features/updates, discounts or rewards for feedback or task completion, recognition/shoutouts, and prize draws as part of the engagement and post-rollout follow-up strategies. This fully satisfies the rubric criterion requiring the response to state offering incentives for participation."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly includes 'Community building' as a key recommendation, describing a private group or forum (e.g., Slack/Discord) for peer-to-peer support, virtual meetups, and exclusive content to make testers feel valued. This directly aligns with the rubric criterion of fostering a community among users to encourage peer support and engagement. The element is clearly present, accurate, and properly executed, and the response is fully on-topic."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/instruction_following/2",
+      "ability": "instruction_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response clearly mentions the number of users involved in multiple pilots and phases: 20 participants in Michael's clinic pilot, 30 patients with Healing Minds, targets of 150, 200, and 300 users for Istanbul pilots, 85 users reached in August 2024, 120 employees in the corporate wellness pilot, 15 patients in the coaching pilot, and 250 users reached as of January 9, 2025. It also references 50 users in Istanbul focus groups (noting a conflict). Thus, the response fully complies with the rubric criterion requiring mention of how many users are involved."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response provides detailed participation statistics across multiple pilots, including specific user counts (e.g., 20 participants at Michael's clinic, 30 patients at Healing Minds, 85 users in Istanbul pilot, 120 employees in corporate wellness pilot, 15 patients in coaching pilot, and 250 users reached in Istanbul pilot as of January 9, 2025). It also includes percentages relative to targets (e.g., 83% of 300-user target, 100% of initial projection). These statistics directly fulfill the rubric criterion requiring participation statistics. The response is fully on-topic and contains no prohibited elements."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/knowledge_update/1",
+      "ability": "knowledge_update",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the number '48 beta sign-ups' as part of the information provided, fulfilling the rubric criterion that the LLM response should state '48 users'. The mention is clear and accurate, and the response is on-topic and responsive to the question."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/knowledge_update/2",
+      "ability": "knowledge_update",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the upsell rate as 14%, fulfilling the rubric criterion that requires the LLM response to state '14%'. The figure is clearly presented and contextualized, and the response is fully on-topic and relevant to the question. There are no prohibited elements present."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/multi_session_reasoning/1",
+      "ability": "multi_session_reasoning",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the total follower count as 25,000 followers multiple times, fulfilling the rubric criterion that requires the LLM response to state '25,000 followers'. The number is accurate and clearly presented, meeting the positive requirement fully."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/preference_following/1",
+      "ability": "preference_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions flexible or adjustable contract terms multiple times, including recommending a flexible contract template with a scope-change clause, payment terms that adjust with scope, termination and extension clauses for scope changes, and ongoing management that allows adjusting contract terms as circumstances change. These elements fully satisfy the rubric criterion requiring mention of flexible or adjustable contract terms."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly suggests freelance or non-fixed arrangements multiple times, referencing the user's preference for flexible freelance contracts, choosing freelance developers over fixed local-agency deals, and preferring freelancers for flexibility. It explicitly recommends using hourly/daily rates or retainers rather than fixed-price contracts, and includes clauses to maintain flexibility in scope and payment terms. Thus, it fully complies with the rubric criterion requiring suggestions of freelance or non-fixed arrangements."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly recommends multiple contract features that support quick modifications, including a clearly defined initial scope to enable change management, an explicit flexibility/scope-change clause, a formal change-management process, payment terms that adjust with scope changes, termination and extension clauses for significant scope shifts, ongoing management rhythms for reassessment, and legal protections with standardized contracts. It also addresses mitigating downsides of flexible arrangements. These collectively demonstrate comprehensive support for quick contract modifications, fully satisfying the rubric criterion."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/preference_following/2",
+      "ability": "preference_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response clearly suggests releasing to a limited or controlled group first by proposing a phased rollout starting with a controlled EU pilot on February 15, 2025, involving a controlled user group and dedicated multilingual support. It explicitly mentions a 'soft launch' with 50 beta users and controlled pilots in previous phases, demonstrating the concept of limited initial release before full market entry. This fully satisfies the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions a phased rollout approach multiple times, including a clear structure of phases: controlled pilot, staged market expansion, and full entry. It also references gradual rollout elements such as soft launches, controlled user groups, and gradual market expansion one country at a time. This fully satisfies the rubric criterion requiring mention of a gradual rollout or phased approach."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly focuses on managing exposure and scope during the release by outlining a phased rollout approach with controlled pilots, staged market expansion, and a full market entry. It emphasizes controlled user groups, dedicated support, compliance gates, and gradual scaling rather than an uncontrolled full launch. The detailed phases and compliance gate demonstrate explicit management of exposure and scope, fully satisfying the rubric criterion."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/summarization/1",
+      "ability": "summarization",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that the user considered the pros and cons of partnering with Denise, whom they have known since university, indicating awareness of trust and shared history. It also references setting boundaries (e.g., meeting cadence adjustments) and discusses roles, financial contributions, and potential operational impacts, which reflect consideration of potential conflicts and boundary issues. Thus, the response fully meets the rubric criterion by weighing trust and shared vision against potential conflicts and boundary issues."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates agreement on the importance of a formal agreement by mentioning that a formal agreement would be drafted and that there was a plan to discuss roles and financial contributions in detail. It specifies clear roles, with the user handling therapy services and telehealth logistics, and Denise responsible for marketing and social media. Additionally, it explicitly states a 3-month trial period starting March 15, 2024, to test compatibility with a pilot project and regular check-ins to evaluate progress. All required elements\u2014formal agreement, clear roles, and trial period\u2014are present and accurately described, fulfilling the rubric criterion completely."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly outlines a detailed 3-month trial starting March 15, 2024, with specific roles assigned: the user handling therapy services and telehealth logistics, and Denise managing marketing and social media. It also establishes regular communication routines, initially proposing weekly video check-ins plus daily email updates, later adjusting to weekly meetings with a specified cadence and times. These elements fully satisfy the rubric criterion requiring a detailed 3-month trial plan with role assignments and regular communication routines."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly states that Denise proposed collaborating on a wellness app, specifically starting with mood tracking and sleep aid features. It also indicates that this proposal was supported and that there were plans to validate the approach through discussions, pilot projects, and regular check-ins, which aligns with market research validation. All elements of the rubric criterion are present and accurately reflected, demonstrating full compliance."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that the 'Healing Minds' clinic partnership was secured for pilot testing in May 2024, involving 30 patients, and it specifically mentions ensuring Denise's comfort with this arrangement. Additionally, the response details clear communication and role definition through weekly meetings, role assignments (therapy services and telehealth logistics for the user, marketing and social media for Denise), and feedback mechanisms such as weekly video check-ins and progress summaries. These elements fully satisfy the rubric criterion requiring mention of the 'Healing Minds' clinic partnership for pilot testing, focusing on clear communication, role definition, and feedback mechanisms to ensure Denise's comfort."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response thoroughly discusses contract negotiation strategies, including the initial 3-month trial period, drafting the formal agreement, Denise's 3-month marketing contract with the 'Healing Minds' clinic, and finalizing influencer contracts. It details marketing collaborations such as the wellness app development, clinic partnerships ('Healing Minds' and 'CityCare'), and Denise attending marketing workshops and conferences. Influencer partnerships are explicitly mentioned, including Denise securing influencer partnerships with a combined reach of 15,000 followers and finalizing contracts with three new partners. All these elements are clearly aimed at growing the business, fully satisfying the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that Denise planned to hire a part-time marketing assistant by August 2024 and later decided to hire one in September 2024, with the assistant starting in October 2024. It also mentions that you assessed the operational impact of that decision, indicating consideration of timing relative to other operational priorities. Thus, the response fully satisfies the rubric criterion by including the planned hire of a marketing assistant and the timing considerations."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/summarization/2",
+      "ability": "summarization",
+      "score": 0.75,
+      "official_result": {
+        "llm_judge_score": 0.75,
+        "llm_judge_responses": [
+          {
+            "score": 0.5,
+            "reason": "The response includes detailed information about various partnerships with Denise, clinics, corporate entities, advisors, and investors, indicating ongoing collaboration and communication. It mentions a 3-month trial partnership with Denise involving weekly video check-ins, influencer partnerships, and joint marketing efforts with clinics, which suggests vetting and communication. Corporate partnerships include pilot programs and feature development based on collaboration. However, the response does not explicitly emphasize thorough vetting processes or testing collaboration through small projects as a clear, deliberate strategy to ensure alignment and compatibility. While some elements imply collaboration and communication, the focus on evaluating potential business partnerships with explicit emphasis on vetting, clear communication, and testing via small projects is only partially addressed. Therefore, the response partially meets the rubric criterion."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not address age differences or their impact on partnership dynamics, nor does it mention strategies for open dialogue or role clarity related to age differences. The content focuses on project timelines, features, partnerships, financials, and user engagement without discussing age-related partnership dynamics or communication strategies. Therefore, it fails to meet the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response provides a detailed breakdown of monthly expenses and budgets across multiple months, including specific amounts allocated to marketing, development, miscellaneous costs, and reserves. It mentions iterative adjustments such as the April rebalance of marketing and miscellaneous budgets, and tracks expenses versus revenue month by month. The financial section explicitly covers app development, marketing, operations (e.g., customer support outsourcing), and legal compliance costs (e.g., investor agreements, legal advisors). Miscellaneous costs are also noted. This comprehensive financial overview aligns well with the rubric criterion requiring a detailed breakdown of monthly expenses with iterative adjustments optimizing spending across app development, marketing, operations, legal compliance, and miscellaneous costs."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly addresses marketing budgets, showing monthly budget allocations (e.g., 15,000 TRY from July 2024, varying amounts in subsequent months) and targets (e.g., 300 paying users by December 2024, 10,000 TRY monthly revenue by September 2024). It also demonstrates careful balancing of budgets with financial health, noting expenses, revenue, and reserve funds, as well as rejected loans to avoid jeopardizing finances. Additionally, the response includes data-driven tracking and optimization elements, such as survey responses guiding feature prioritization, campaign metrics (click-through rates, upsell rates), and user growth statistics. Thus, it fully satisfies the rubric criterion requiring marketing budgets to be carefully balanced to maximize user acquisition without jeopardizing financial health, supported by data-driven tracking and optimization."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly highlights the importance of risk mitigation following the decline of a significant acquisition offer, specifically noting the declined 15,000 TRY competitor acquisition offer on May 16 and other rejected offers. It recommends comprehensive business planning, as evidenced by multiple business-plan updates and strategic planning details. Diversified funding is demonstrated through equity raised from different investors and rejected loans, showing a preference for equity over high-interest debt. Mentorship is included with mentions of mentors and advisors like Omar, Jason, Roger, and Stephanie providing guidance. Robust financial controls are reflected in detailed budget, cash flow tracking, and cautious funding decisions. All required elements from the rubric criterion are present and well integrated, fulfilling the criterion completely."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully satisfies the rubric criterion by including user engagement strategies focused on simplifying the app\u2019s UI (notably Omar's May 15 UI simplification that reduced user confusion by 25%), leveraging feedback loops (multiple surveys with high response and satisfaction rates, monthly user surveys with 75% response rate, and iterative feature additions based on survey feedback), and implementing cost-effective loyalty rewards programs (the loyalty-points backend implemented June 4, loyalty rewards campaign with 150 participants at 60% active usage, and referral program launched October 18 with positive sign-up increases). These elements are clearly documented and integrated into the user engagement section, demonstrating comprehensive coverage of the required strategies to boost retention."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly identifies upselling coaching services as a key revenue driver, mentioning the personalized coaching add-on priced at 99 TRY/month and coaching upsell emails that increased the upsell rate by 12%. It also references tiered pricing through the freemium tier with ads and the coaching add-on. Targeted marketing is evident in the coaching upsell emails, referral programs, influencer campaigns, and EU-specific onboarding emails. Free trials are implied by the 3-month trial partnership with Denise and beta user soft launch. Seamless integration is demonstrated by the app's integration of clinical psychology with digital tools, the addition of features like loyalty points, journaling, corporate wellness dashboard, and teletherapy referral, as well as the EU launch preparations with multilingual support and 24-hour SLA. All required elements from the rubric are present and accurately reflected, fulfilling the criterion completely."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly addresses corporate wellness partnerships as strategic growth avenues, specifically mentioning the Global Health Corp corporate wellness pilot launched on September 1 with 120 employees enrolled and the corporate dashboard feature developed from this partnership. It also references the Istanbul pilot and EU pilot plans, showing alignment with app launch and expansion plans. Stakeholder engagement is evident through meetings, focus groups, and collaboration with corporate contacts like Andrew. The response includes pilot programs (Global Health Corp, Istanbul pilot), stakeholder engagement (meetings, focus groups, corporate-user satisfaction), and alignment with app launch plans (EU launch marketing plan, EU pilot planned for February 15, 2025) to balance resources effectively. All elements of the rubric criterion are present and accurately executed, demonstrating full compliance."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-25/temporal_reasoning/1",
+      "ability": "temporal_reasoning",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the duration of 30 days between the app prototype deadline (June 1, 2024) and the new full public launch date (July 1, 2024), which fully satisfies the rubric criterion requiring the response to state '30 days'. The response is on-topic and accurately presents the timeline and the 30-day span, meeting the positive requirement completely."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly states the time span as \"30 days, from June 1 to July 1, 2024,\" which directly matches the rubric criterion requiring the phrase or equivalent meaning \"from June 1, 2024 till July 1, 2024.\" The dates and duration are accurate and explicitly mentioned, fulfilling the positive requirement completely."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/abstention/1",
+      "ability": "abstention",
+      "score": 0.0,
+      "official_result": {
+        "llm_judge_score": 0.0,
+        "llm_judge_responses": [
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion states that there is no information related to the detailed rules and regulations for the North Ericshire Doubles Championship in the provided chat. However, the response explicitly provides detailed rules and regulations for the North Ericshire Doubles Championship, listing nine specific areas of rules. This directly contradicts the rubric criterion, which expects the absence of such information. Therefore, the response fails to comply with the criterion."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/abstention/2",
+      "ability": "abstention",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that there is no information recorded about the atmosphere during the charity tennis event on August 17, including no description of mood, attendees, activities, or feelings. It confirms the absence of such details and only references factual information about the event's fundraising outcome and a general discussion about community connection that does not describe the atmosphere. Therefore, the response fully complies with the rubric criterion that no information related to the atmosphere during the event is present."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/contradiction_resolution/1",
+      "ability": "contradiction_resolution",
+      "score": 0.75,
+      "official_result": {
+        "llm_judge_score": 0.75,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that the user's records contradict each other regarding wrist pain, clearly identifying the presence of contradictory information. It highlights the conflicting statements from the same day and notes the ambiguity in later reports, thereby fulfilling the rubric criterion that the LLM response should state there is contradictory information."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions the user's statement 'I've never experienced any wrist pain during tennis practice,' which directly satisfies the rubric criterion requiring the LLM to mention that the user said they had never experienced wrist pain during tennis practice. The response is on-topic, addresses the question by highlighting conflicting user reports, and asks for clarification to provide a proper answer. Therefore, it fully complies with the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions the user experiencing mild wrist pain (or discomfort) and consulting Omar about it, fulfilling the rubric criterion. It references the user's statements about wrist pain and consulting Omar, as well as later mentions of mild wrist discomfort, thereby fully satisfying the requirement."
+          },
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion requires the LLM response to mention which statement is correct. The response does not identify or state which of the two conflicting statements about wrist pain is correct. Instead, it highlights the inconsistency and asks the user to clarify which account is accurate before providing a definitive answer. Therefore, the response fails to mention which statement is correct and does not comply with the rubric criterion."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/contradiction_resolution/2",
+      "ability": "contradiction_resolution",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that there is contradictory information regarding whether the user has practiced mental preparation drills with Omar. It clearly identifies that the memory holds conflicting statements on the same dates, indicating the presence of contradictory information as required by the rubric criterion. The response is on-topic and directly addresses the question by highlighting the contradiction, thus fully satisfying the requirement."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions that the user has stated both that they have practiced and never practiced mental preparation drills recommended by Omar, directly addressing the rubric criterion that the LLM response should mention the user's statement about never having practiced any mental preparation drills recommended by Omar. The response is on-topic, acknowledges the contradictory statements including the negative ones, and thus fully complies with the requirement."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions practicing breathing techniques regularly, stating that the user has been practicing breathing techniques daily since May 6 and December 1, among other dates. This satisfies the rubric criterion requiring mention of practicing breathing techniques regularly. The response is also on-topic and addresses the question about mental preparation drills with Coach Omar, providing a clear summary of contradictory statements and requesting clarification. Therefore, it fully complies with the rubric."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response directly addresses the question by stating that the contradiction in statements cannot be resolved with a simple yes or no. It explicitly acknowledges the conflicting statements about whether the user has practiced mental preparation drills with Omar and clarifies that no later statement settles which version is correct. Thus, it mentions which statement is correct (none can be definitively identified as correct) as required by the rubric criterion."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/event_ordering/2",
+      "ability": "event_ordering",
+      "score": 0.15669671883720238,
+      "official_result": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "tau_norm": 0.15669671883720238,
+        "final_score": 0.0,
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response provides a detailed list of nine court bookings with dates, locations, court numbers, and surface types at the venue level, as required. It includes specific information about the scheduling (days, times, durations), the focus or goals for each booking, and notes on improvements or adjustments over time. This fully addresses the criterion of general court bookings and improvement by documenting the progression and specifics of the practice sessions. There are no irrelevant or off-topic elements, and the response is comprehensive and well-structured."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates balancing practice with work by detailing a schedule of tennis practice sessions spread throughout the year, including adjustments for physical conditions (e.g., shoulder pain, wrist discomfort), weather (indoor practice during heatwave and rain), and recovery (reducing practice volume). It shows a thoughtful integration of practice intensity, recovery, and work commitments (e.g., specific days and times, incremental goals, and adaptations), fully satisfying the rubric criterion of balancing practice with work."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response provides detailed practice schedules and drills across multiple dates, specifying locations, court surfaces, times, durations, and clear practice focuses such as serve speed, forehand/backhand mastery, volley drills, footwork/agility, and injury management. Each item includes specific drills or training goals with measurable targets and progress indicators, fully satisfying the rubric criterion for detailed practice schedules and drills."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response provides specific serve practice time slots for each listed item, including exact dates, days of the week, times, courts, and durations where applicable. Each entry clearly specifies when serve practice occurs (e.g., 'court #3 every Tuesday and Thursday at 6 PM for 6 weeks,' 'Sunday 8 AM serve-practice slot starting April 14,' 'court 2 for June 3 and 4 at 6 PM,' etc.). This fully satisfies the rubric criterion requiring specific serve practice time slots."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response provides a detailed, chronological list of tournament preparation strategies, including specific practice dates, locations, court surfaces, focus areas (e.g., serve speed, volley drills, footwork, injury management), and measurable goals. This directly addresses the rubric criterion of 'Tournament preparation strategies' by outlining comprehensive and varied training elements aimed at improving performance for upcoming tournaments. The response is fully on-topic, thorough, and contains no irrelevant information, thus fully complying with the rubric."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully complies with the rubric criterion of 'Reserved court sessions and utilization.' It provides detailed information about reserved court sessions, including dates, locations, specific courts when available, times, and durations. It also includes utilization details such as the focus of each session, progress goals, and adjustments made during practice. Although individual court surfaces were not recorded, the venue-level surface types are clearly stated, satisfying the requirement. The response is on-topic, comprehensive, and contains no prohibited elements."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates balancing practice sessions with tournament preparation and other commitments throughout the year. It includes scheduled practice times, adjustments for physical conditions (e.g., shoulder pain, wrist discomfort), indoor practice during adverse weather, and specific focus areas aligned with upcoming tournaments (e.g., July 25 doubles championship, January 15 New Year Open). The progression of practice intensity and goals shows thoughtful integration of training and competition demands, fully satisfying the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully complies with the rubric criterion of 'Equipment maintenance and racket optimization.' It includes specific references to equipment changes and maintenance such as the introduction of a new lighter Wilson Pro Staff 97L racket (October 30, 2024), adjustments in practice intensity due to wrist discomfort, shoulder-pain management with reduced serve practice volume (August 20, 2024), and new shoes improving lateral stability (December 31, 2024). These details demonstrate attention to equipment optimization and maintenance considerations alongside training schedules and performance goals, thus fully satisfying the criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully complies with the rubric criterion of 'Future court bookings and practice refinement.' It provides a detailed, chronological list of future court bookings with specific dates, locations, and court numbers. Each booking includes clear practice focuses and goals, such as serve speed improvements, footwork drills, volley skills, injury management, and preparation for upcoming events. The response demonstrates refinement in practice plans over time, showing progress tracking and adjustments based on performance and physical condition. There are no irrelevant or off-topic elements, and the information is comprehensive and well-structured, meeting all aspects of the criterion."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/information_extraction/1",
+      "ability": "information_extraction",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that Coach Omar charges $50 per hour for individual lessons, which directly satisfies the rubric criterion requiring the response to state '$50'. The mention is clear, accurate, and unambiguous, fulfilling the positive requirement. Additional context about other rates and discrepancies does not negate the presence of the required element. The response is fully on-topic and responsive to the question."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/information_extraction/2",
+      "ability": "information_extraction",
+      "score": 0.8333333333333334,
+      "official_result": {
+        "llm_judge_score": 0.8333333333333334,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly includes multiple references to assessing comfort and performance with the new racket throughout the testing timeline. It highlights how the user tested rackets for comfort, feel, control, maneuverability, and fit with playing style, and repeatedly suggests testing and evaluating how the racket feels in play before deciding to keep or switch. This fully satisfies the rubric criterion requiring the response to state suggested assessing comfort and performance with the new racket."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly discusses how the racket's weight affected control and power throughout the evaluation timeline. It includes detailed comparisons of racket weights (e.g., 305g vs. 290g, 285g vs. 290g) and explains how these weight differences influence comfort, control, power, fatigue, maneuverability, and suitability for playing style. The response also advises considering weight effects when deciding to keep or switch rackets, fulfilling the rubric's requirement to suggest considering how weight affected control and power."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly includes the suggested comparison to the current racket multiple times, such as comparing the Babolat Pure Drive's weight to the Wilson Pro Staff's weight, discussing how the Pure Aero felt compared to the Wilson, and ultimately referencing the current racket (Wilson Pro Staff 97L, 285g) as the baseline for decisions. This satisfies the rubric criterion that the LLM response should state suggested comparing it to your current racket. The response is fully on-topic and contains no prohibited elements."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly includes advice to consider the player's style of play, distinguishing between reliance on powerful groundstrokes and the need for maneuverability. It provides a style-based framework explaining how heavier rackets suit baseline players with powerful groundstrokes, lighter rackets suit serve-and-volley players, and all-court players benefit from a balance. This directly aligns with the rubric criterion requiring the LLM to advise thinking about playing style in terms of groundstrokes versus maneuverability. The response is on-topic and fully meets the positive requirement."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly includes advice to test other rackets and to customize or adapt the one tried. It explicitly suggests testing other models (e.g., lighter Babolat Pure Strike), renting or borrowing for extended trials, consulting a coach, and provides a structured trial plan for switching rackets. This fully satisfies the rubric criterion requiring the LLM to advise testing other rackets or customizing the one tried."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not state or recommend consulting with Coach Omar, nor does it mention conducting a structured trial period to gather comprehensive feedback before deciding. Although it references testing and evaluation, it lacks the explicit recommendation required by the rubric criterion. Therefore, it fails to meet the positive requirement."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/instruction_following/1",
+      "ability": "instruction_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response provides calorie information for each snack listed throughout the various categories (pre-practice, high-protein, during sessions, post-practice, everyday staples, and bars). Each snack item includes an approximate calorie count per serving, fulfilling the rubric criterion that calorie information be given for each snack."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully complies with the rubric criterion by providing numerous specific calorie values for various snack options. Each item listed includes approximate calorie counts per serving, covering pre-practice, during practice, post-practice, and everyday snack options. The calorie values are detailed and clearly presented, meeting the requirement for specific calorie values mentioned."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully complies with the rubric criterion by providing numerous snack suggestions each accompanied by approximate calorie counts per serving. The calorie details are clearly included alongside the snack options throughout the response, fulfilling the requirement completely."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/knowledge_update/1",
+      "ability": "knowledge_update",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states '2 kg' as the current weight for the daily wrist strengthening exercises, which directly satisfies the rubric criterion requiring the response to state '2 kg'. The mention is clear, accurate, and unambiguous. Therefore, the response fully complies with the rubric."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/knowledge_update/2",
+      "ability": "knowledge_update",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states '6 sets of 20 steps' as the current routine for stair sprints, fulfilling the rubric criterion that requires the LLM response to state '6 sets of 20 steps.' The response also clarifies the timeline and distinguishes this from other counts mentioned, ensuring accuracy and relevance. Therefore, the positive requirement is fully met, and the response is on-topic and accurate."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/multi_session_reasoning/1",
+      "ability": "multi_session_reasoning",
+      "score": 0.0,
+      "official_result": {
+        "llm_judge_score": 0.0,
+        "llm_judge_responses": [
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion requires the LLM response to state that $256 was spent on equipment (racket and balls). The response lists a Wilson Pro Staff racket at $220 and 3 cans of balls at $36, totaling $256, but it does not explicitly state or summarize that $256 was spent on equipment. Instead, it provides a detailed itemized list without the specific combined figure of $256 for racket and balls. Therefore, the required explicit statement of spending $256 on equipment is missing, resulting in no compliance."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not explicitly state that approximately 140 minutes are invested on recovery activities such as two ice baths, daily foam rolling, wrist and ankle exercises, and physiotherapy sessions. While it lists times for ice baths (~1 h/week), foam rolling (~1 h 10 min/week), balance board (~20 min/week), and physiotherapy (~15 min/week equivalent), it does not sum these or state a total of about 140 minutes (2 hours 20 minutes) dedicated to recovery. Therefore, the required explicit statement about investing approximately 140 minutes on recovery is missing."
+          },
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion requires the LLM response to state '4 hours weekly.' The response provides a detailed breakdown of weekly time invested, listing multiple activities with durations, but does not mention or state '4 hours weekly' anywhere. Instead, it estimates roughly 14\u201316 hours per week. Therefore, the required element '4 hours weekly' is missing, resulting in no compliance."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/multi_session_reasoning/2",
+      "ability": "multi_session_reasoning",
+      "score": 0.75,
+      "official_result": {
+        "llm_judge_score": 0.75,
+        "llm_judge_responses": [
+          {
+            "score": 0.0,
+            "reason": "The rubric criterion requires the LLM response to state '$356'. The response provides totals for rackets ($570), balls ($36), and coaching ($250), summing to $856, but does not mention or state '$356' anywhere. Therefore, the required element is missing, resulting in no compliance."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states '$220 on a racket' as part of the itemized expenses, specifically mentioning a Wilson Pro Staff racket bought on March 5, 2024, for $220. This directly satisfies the rubric criterion requiring the response to state '$220 on a racket.' The response is on-topic and accurate, with no prohibited elements present."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states the amount spent on balls as $36, meeting the rubric criterion that requires the LLM response to state '$36 on balls'. The figure is clearly presented in the itemized list and the combined total, fulfilling the positive requirement fully. The response is on-topic and accurate with respect to the question and the rubric."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states a $100 amount spent on coaching sessions in December 2024, fulfilling the rubric criterion that requires the response to state '$100 on coaching sessions.' The mention is clear, accurate, and properly integrated within the coaching cost breakdown, demonstrating full compliance."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/preference_following/1",
+      "ability": "preference_following",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly suggests indoor courts and venues with controlled environments, such as Greenfield's indoor courts with cushioned acrylic surfaces and North Ericshire Tennis Club's indoor options. It highlights the benefits of indoor courts including weather-proof conditions, consistent lighting, controlled temperature and humidity, and reduced injury risk. The response also advises verifying temperature, humidity, and lighting controls, which demonstrates attention to controlled environments. Therefore, it fully meets the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly addresses avoiding weather-related issues by recommending indoor courts for tournaments, highlighting that indoor venues provide weather-proof, consistent conditions with no wind or rain interruptions. It contrasts this with outdoor venues, which add unpredictability due to wind and glare. This directly satisfies the rubric criterion requiring mention of avoiding weather-related issues."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/summarization/1",
+      "ability": "summarization",
+      "score": 0.75,
+      "official_result": {
+        "llm_judge_score": 0.75,
+        "llm_judge_responses": [
+          {
+            "score": 0.0,
+            "reason": "The rubric requires that the LLM response contain a planned approach to Sharon, specifically a friendly and direct invitation to play matches. The response provides a detailed timeline of interactions and activities with Sharon, including meeting her at North Ericshire Tennis Club and various practice and match details. However, it does not explicitly mention any planned approach or a friendly and direct invitation to play matches. Instead, it records events after the initial meeting and arrangements already made. Therefore, the key element of planning a friendly and direct invitation to play matches with Sharon is missing, resulting in no compliance."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response is fully compliant with the rubric criterion. It focuses on optimizing physical conditioning by detailing a progressively intense practice schedule, including plyometric exercises, runs, interval sprints, resistance training, and shuttle runs, demonstrating increased practice intensity. The nutrition section provides tailored dietary recommendations emphasizing balanced macronutrients (transitioning from 60% carbs/25% protein to 50% carbs/30% protein/20% fats), hydration (3 L water daily plus electrolyte drinks), and timed meals/snacks (energy bars timed 30-60 minutes before play or within 30 minutes after). Thus, all required elements\u2014practice intensity optimization and tailored dietary guidance with balanced macronutrients, hydration, and meal timing\u2014are present and well supported."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully complies with the rubric criterion. It clearly describes Cheryl's significant supportive role by mentioning her attendance at matches (e.g., July 6, 2024 mixed doubles match, October 15, 2024 post-tournament dinner, and efforts to watch matches after October 15, 2024), providing nutritious snacks (homemade energy bars in April 2024, protein bars and electrolyte drinks in November 2024 care package), and gifting equipment such as a Fitbit Charge 5 (May 10, 2024) and tennis shoes (December 2024). All required elements are present, accurate, and properly integrated into the response."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions the Fitbit Charge 5 device being used to track heart rate metrics including heart rate variability (HRV) and sleep quality (stages, score, efficiency). This directly aligns with the rubric criterion that the Fitbit device is leveraged to monitor key health metrics such as heart rate variability and sleep quality, aiding in recovery and training adjustments. The information is accurate, relevant, and clearly presented, fully satisfying the positive requirement."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not mention managing mild shoulder pain through physiotherapy-guided strengthening exercises or preventive strategies such as proper warm-up, technique refinement, and rest. While it references physiotherapy sessions for shoulder pain and some modifications to serve volume and motion, it lacks explicit mention of strengthening exercises or preventive strategies as required by the rubric. Therefore, the required element is missing, resulting in no compliance."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly emphasizes recovery practices with a structured approach to rest and recovery days. It includes specific recovery routines such as ice baths twice weekly, evening stretching, Sunday recovery yoga, guided post-match stretching, nightly foam rolling, ice packs, and guided meditation. Nutrition and hydration are also addressed, with details on daily water intake (3 L), electrolyte drinks during practice and recovery days, and a nutrition plan evolving over time with protein, carbs, fats, and supplements. Active recovery is incorporated through yoga and light stretching on recovery days. Mindfulness is represented by guided meditation included in the recovery plan. Thus, all elements of the rubric criterion\u2014structured rest days, nutrition, hydration, active recovery, and mindfulness\u2014are present and well integrated."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly includes event preparation details involving Cheryl's care package containing protein bars and electrolyte drinks, noting their calorie content and timing for consumption before and after play. It also mentions hydration strategies with electrolyte drinks during practice and recovery days, demonstrating strategic use of these items to optimize energy and hydration during tournaments. Thus, the response fully satisfies the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response includes social and celebratory occasions integrated into the tennis life, specifically mentioning dinners at Olive Tree Bistro on June 3, 2024, and October 15, 2024. It also notes Cheryl's involvement and support, including providing homemade energy bars, attending matches, sending care packages, and giving Christmas gifts. The response pays attention to appropriate attire indirectly by mentioning tennis shoes gifted by Cheryl that improved lateral stability. Gratitude to Cheryl is expressed through noting her support and involvement throughout the year. Thus, all elements of the rubric criterion are present and properly integrated."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/summarization/2",
+      "ability": "summarization",
+      "score": 1.0,
+      "official_result": {
+        "llm_judge_score": 1.0,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that the user chose the Wilson Pro Staff racket starting March 5, 2024, and purchased Wilson US Open balls (3 cans at $12 each). This directly satisfies the rubric criterion requiring mention of investment in high-quality equipment, including a Wilson Pro Staff racket and Wilson US Open balls. Both elements are clearly present and accurately described, fulfilling the positive requirement completely."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that from December 1, you have done daily visualization and breathing, which are mindfulness meditation techniques aimed at improving mental focus and reducing match anxiety (noted as 40% match-anxiety reduction). This directly satisfies the rubric criterion requiring incorporation of mindfulness meditation to improve mental focus during matches, applying techniques such as mindful breathing and visualization. The response is detailed, accurate, and fully addresses the requirement."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions daily wrist strengthening exercises with 1 kg dumbbells starting May 7 and balance-board ankle-stability drills for 10 minutes daily from July 2. Both are clearly integrated into the injury prevention section and are aimed at injury prevention and improved court movement. Thus, the response fully satisfies the rubric criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response fully satisfies the rubric criterion by exploring various injury prevention methods, including the use of kinesiology tape on the right wrist, wrist braces advised and purchased in April, and ongoing use of wrist strengthening exercises. It also details physiotherapy sessions focusing on shoulder and wrist mobility, including ultrasound therapy, stretching routines, and biweekly physiotherapy from September to December. The response clearly covers injury prevention methods and physiotherapy guidance related to wrist and shoulder mobility, meeting all aspects of the criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response explicitly mentions complementary practices like yoga for recovery and flexibility (Sunday 10 AM recovery yoga starting in May\u2013June), Pilates starting in October, and breathing techniques and visualization for mental toughness. These practices address flexibility, strength, and mental toughness as required by the rubric. Therefore, the response fully complies with the criterion."
+          },
+          {
+            "score": 1.0,
+            "reason": "The response clearly demonstrates balancing physiotherapy sessions with training and recovery routines. It details adjustments in frequency and intensity based on the condition and workload, such as reducing serve practice volume by 30% during shoulder pain in August, choosing single physiotherapy sessions over packages, biweekly physiotherapy from September to December, reducing practice intensity by 20% due to wrist discomfort, and incorporating recovery activities like stretching, ice baths, and foam rolling. This shows a thoughtful integration of physiotherapy with training and recovery, meeting all aspects of the rubric criterion."
+          }
+        ]
+      }
+    },
+    {
+      "arm": "a2",
+      "question_id": "beam-1m/chat-29/temporal_reasoning/2",
+      "ability": "temporal_reasoning",
+      "score": 0.5,
+      "official_result": {
+        "llm_judge_score": 0.5,
+        "llm_judge_responses": [
+          {
+            "score": 1.0,
+            "reason": "The response explicitly states that there are 10 days to prepare between the registration deadline (August 20, 2024) and the tournament day (August 30, 2024). This directly satisfies the rubric criterion requiring the LLM response to state '10 days'. The response is on-topic and accurate, with no prohibited elements present."
+          },
+          {
+            "score": 0.0,
+            "reason": "The response does not explicitly state the preparation window as 'from August 20 till August 30' or a clear equivalent phrase. Instead, it only mentions '10 days' between the registration deadline and tournament day without specifying the date range in the required format or a paraphrase that clearly indicates the period 'from August 20 till August 30.' Therefore, it fails to meet the rubric criterion."
+          }
+        ]
+      }
+    }
+  ],
+  "aggregate": {
+    "arms": {
+      "a2": {
+        "questions": 80,
+        "mean_score": 0.7728606088925034,
+        "abilities": {
+          "abstention": 0.75,
+          "contradiction_resolution": 0.8125,
+          "event_ordering": 0.20985608892503477,
+          "information_extraction": 0.8541666666666666,
+          "instruction_following": 1.0,
+          "knowledge_update": 1.0,
+          "multi_session_reasoning": 0.8020833333333334,
+          "preference_following": 1.0,
+          "summarization": 0.8,
+          "temporal_reasoning": 0.5
+        }
+      }
+    },
+    "paired_vs_baseline": {}
+  }
+}

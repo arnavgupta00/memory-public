@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1558.5577500023646,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: What time did I go to bed on the day before I had a doctor's appointment?\n\nCorrect Answer: 2 AM\n\nModel Response: You went to bed at 2 AM on the day before your doctor's appointment.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "dd2973ad",
+  "request_id": "chatcmpl-E7WHUGZDtm9xNBhgITLGXoOOnxrSS",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 144,
+    "total_tokens": 146
+  }
+}

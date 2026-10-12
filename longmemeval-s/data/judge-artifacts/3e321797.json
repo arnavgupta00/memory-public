@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 766.6624159901403,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: I wanted to follow up on our previous conversation about natural remedies for dark circles under the eyes. You mentioned applying tomato juice mixed with lemon juice, how long did you say I should leave it on for?\n\nCorrect Answer: 10 minutes\n\nModel Response: You should leave the tomato juice and lemon juice mixture on for 10 minutes, then wash it off with cold water.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "3e321797",
+  "request_id": "chatcmpl-E7WHZwC07KIlMsaM8CGIPV1waNVp9",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 176,
+    "total_tokens": 178
+  }
+}

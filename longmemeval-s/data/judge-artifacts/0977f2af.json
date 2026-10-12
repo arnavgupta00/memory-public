@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 790.220999988378,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: What new kitchen gadget did I invest in before getting the Air Fryer?\n\nCorrect Answer: Instant Pot\n\nModel Response: You invested in an Instant Pot before getting the Air Fryer.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "0977f2af",
+  "request_id": "chatcmpl-E7WHZDkRgoVmxj5jj19scg824xHsO",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 123,
+    "total_tokens": 124
+  }
+}

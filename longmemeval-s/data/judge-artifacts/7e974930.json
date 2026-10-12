@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 747.7156249951804,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How much did I earn at the Downtown Farmers Market on my most recent visit?\n\nCorrect Answer: $420\n\nModel Response: You earned $420 at the Downtown Farmers Market on your most recent visit.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "7e974930",
+  "request_id": "chatcmpl-E7WHa2W1D5BmydMwDwd3KBC4DF2EG",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 126,
+    "total_tokens": 127
+  }
+}

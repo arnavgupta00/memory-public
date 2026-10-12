@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1988.0167079973035,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many fitness classes do I attend in a typical week?\n\nCorrect Answer: 5\n\nModel Response: You attend 5 fitness classes in a typical week: 2 Zumba classes, 1 BodyPump class, 1 yoga class, and 1 Hip Hop Abs class.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "2788b940",
+  "request_id": "chatcmpl-E7WHVpdPBySYBiYcQItQPF71cMNbg",
+  "response": "Yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 158,
+    "total_tokens": 159
+  }
+}

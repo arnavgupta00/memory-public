@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 854.9034169991501,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. In addition, do not penalize off-by-one errors for the number of days. If the question asks for the number of days/weeks/months, etc., and the model makes off-by-one errors (e.g., predicting 19 days when the answer is 18), the model's response is still correct. \n\nQuestion: How many days before my best friend's birthday party did I order her gift?\n\nCorrect Answer: 7 days. 8 days (including the last day) is also acceptable.\n\nModel Response: You ordered her gift 7 days before her birthday party.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "a3045048",
+  "request_id": "chatcmpl-E7WHZ5PT99S2C1jgHFZLCIEBEz7sW",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 215,
+    "total_tokens": 217
+  }
+}

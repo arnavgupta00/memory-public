@@ -1,0 +1,10 @@
+ M src/agents/current/architecture/expert-review-20260927/26-EVENT-ORDERING-TEMPORAL-DIAGNOSIS.md
+ M src/agents/current/architecture/expert-review-20260927/RUN-LEDGER.md
+ M src/agents/current/src/jev/recursiveArtifacts.mjs
+ M src/agents/current/src/pipeline/a6/FROZEN.json
+ M src/agents/current/src/pipeline/a6/run.mjs
+ M src/agents/current/src/pipeline/a6/stages/s07_fusion_jev.mjs
+ M src/agents/current/src/pipeline/a7/hive-proxy.mjs
+ M src/agents/current/src/retrieval/semanticProviders.ts
+?? src/agents/current/architecture/expert-review-20260927/27-CANARY-B-POSTMORTEM.md
+?? src/agents/current/src/pipeline/a8/

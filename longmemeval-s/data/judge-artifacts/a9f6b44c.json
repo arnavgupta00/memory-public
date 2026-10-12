@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1985.0134169973899,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many bikes did I service or plan to service in March?\n\nCorrect Answer: 2\n\nModel Response: You serviced or planned to service 2 distinct bikes in March: your commuter bike (planned front-tire replacement) and your road bike (chain maintenance and service at Pedal Power).\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "a9f6b44c",
+  "request_id": "chatcmpl-E7WHVFBDcC6kxzieAbuSfdP0AlBS8",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 160,
+    "total_tokens": 162
+  }
+}

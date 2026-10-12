@@ -1,0 +1,49 @@
+[2026-10-12 01:23:29] STATUS: starting
+[2026-10-12 01:23:37] translator: {"ok":true,"spent_usd":0,"blocked":null,"model":"deepseek-ai/deepseek-v4.1-flash","effort":"max","mode":"object"}
+[2026-10-12 01:23:37] STATUS: pipeline running
+[2026-10-12 02:29:59] incomplete; resume 1
+    at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+
+Node.js v24.8.0
+[2026-10-12 02:31:14] incomplete; resume 2
+    at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+
+Node.js v24.8.0
+[2026-10-12 02:32:28] incomplete; resume 3
+    at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+
+Node.js v24.8.0
+[2026-10-12 02:33:47] incomplete; resume 4
+    at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+
+Node.js v24.8.0
+[2026-10-12 02:35:04] STATUS: STOPPED: not all 340 answered
+[2026-10-12 02:41:27] relaunch after the Voyage batch-size refusal (split-on-refusal amendment)
+[2026-10-12 02:41:27] STATUS: starting
+[2026-10-12 02:41:35] translator: {"ok":true,"spent_usd":5.906322600000028,"blocked":null,"model":"deepseek-ai/deepseek-v4.1-flash","effort":"max","mode":"object"}
+[2026-10-12 02:41:35] STATUS: pipeline running
+[2026-10-12 04:14:48] STATUS: judging
+stage 12 judge on runs/final-700-r9-20261012/remaining-340: official BEAM evaluator (pinned 3e12035, gpt-4.1-mini, temperature 0)
+judge exited 0
+set                                           n  official  +half credit  rubric avg
+Canary A (100, dev)                         100     77.71         78.19       83.28
+Canary B (260, sealed)                      260     75.97         76.49       81.19
+Remaining 340                               340     77.23         77.85       82.70
+Expansion 80 (sealed, in remaining)          80     76.09         77.37       83.50
+Unseen total: Canary B + expansion (340)    340     76.00         76.70       81.74
+ALL 700                                     700     76.83         77.39       82.23
+
+ALL 700 by ability (official / rubric):
+   abstention                   83.6 /   83.6  (n=70)
+   contradiction_resolution     81.1 /   81.1  (n=70)
+   event_ordering               28.7 /   77.0  (n=70)
+   information_extraction       90.0 /   90.7  (n=70)
+   instruction_following        98.6 /   98.9  (n=70)
+   knowledge_update             82.9 /   82.9  (n=70)
+   multi_session_reasoning      77.7 /   79.4  (n=70)
+   preference_following         93.8 /   94.5  (n=70)
+   summarization                82.0 /   83.8  (n=70)
+   temporal_reasoning           50.0 /   50.4  (n=70)
+
+conversation scores: n=35, mean 76.83, sd 5.52, min 61.1, max 86.8
+[2026-10-12 04:19:11] STATUS: DONE

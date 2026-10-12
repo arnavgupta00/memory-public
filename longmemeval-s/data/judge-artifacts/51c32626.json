@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 698.3887500100536,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: When did I submit my research paper on sentiment analysis?\n\nCorrect Answer: February 1st\n\nModel Response: The available memory does not contain this information.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "51c32626",
+  "request_id": "chatcmpl-E7WHaFKepCRP8Kd4Pb2YaX135lX3O",
+  "response": "No",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 132,
+    "total_tokens": 133
+  }
+}

@@ -1,0 +1,196 @@
+{
+ "source": "https://api.github.com/repos/arnavgupta00/memory/activity?per_page=100",
+ "retrieved_utc": "2026-10-12T13:56:30+00:00",
+ "note": "GitHub's server-side activity log for the public repository; anyone can fetch it again from the source URL.",
+ "events": [
+  {
+   "timestamp": "2026-07-21T22:31:39Z",
+   "activity_type": "branch_creation",
+   "ref": "refs/heads/main",
+   "before": "0000000000000000000000000000000000000000",
+   "after": "389e6431f34ad9a7ab00d546ceb4639ad405661b"
+  },
+  {
+   "timestamp": "2026-07-21T23:01:58Z",
+   "activity_type": "push",
+   "ref": "refs/heads/main",
+   "before": "389e6431f34ad9a7ab00d546ceb4639ad405661b",
+   "after": "1adcbf915fbcad007454cc999fd149b57372050e"
+  },
+  {
+   "timestamp": "2026-07-22T01:21:58Z",
+   "activity_type": "push",
+   "ref": "refs/heads/main",
+   "before": "1adcbf915fbcad007454cc999fd149b57372050e",
+   "after": "c3c2846ba900d48c4a28d7c88707558a1668852a"
+  },
+  {
+   "timestamp": "2026-07-22T17:39:04Z",
+   "activity_type": "push",
+   "ref": "refs/heads/main",
+   "before": "c3c2846ba900d48c4a28d7c88707558a1668852a",
+   "after": "0c760c77d236057252586a6e254ea40802f00536"
+  },
+  {
+   "timestamp": "2026-07-25T20:06:47Z",
+   "activity_type": "push",
+   "ref": "refs/heads/main",
+   "before": "0c760c77d236057252586a6e254ea40802f00536",
+   "after": "0da7d60ebc08f6b2e0e3ebe973b4e85f7fcc1185"
+  },
+  {
+   "timestamp": "2026-07-25T20:06:50Z",
+   "activity_type": "branch_creation",
+   "ref": "refs/heads/checkpoint/0003.2-hybrid-graph-reader",
+   "before": "0000000000000000000000000000000000000000",
+   "after": "0da7d60ebc08f6b2e0e3ebe973b4e85f7fcc1185"
+  },
+  {
+   "timestamp": "2026-07-25T23:37:12Z",
+   "activity_type": "push",
+   "ref": "refs/heads/main",
+   "before": "0da7d60ebc08f6b2e0e3ebe973b4e85f7fcc1185",
+   "after": "85ed45f709275bf31365a60376967b56fd9f5c69"
+  },
+  {
+   "timestamp": "2026-07-25T23:37:14Z",
+   "activity_type": "branch_creation",
+   "ref": "refs/heads/checkpoint/0004-session-retrieval-backbone",
+   "before": "0000000000000000000000000000000000000000",
+   "after": "85ed45f709275bf31365a60376967b56fd9f5c69"
+  },
+  {
+   "timestamp": "2026-07-26T02:40:55Z",
+   "activity_type": "push",
+   "ref": "refs/heads/main",
+   "before": "85ed45f709275bf31365a60376967b56fd9f5c69",
+   "after": "45a566511922e765fb1016ba6b6afbed04b80ded"
+  },
+  {
+   "timestamp": "2026-07-26T02:40:56Z",
+   "activity_type": "branch_creation",
+   "ref": "refs/heads/checkpoint/0004.1-evidence-medium",
+   "before": "0000000000000000000000000000000000000000",
+   "after": "45a566511922e765fb1016ba6b6afbed04b80ded"
+  },
+  {
+   "timestamp": "2026-07-26T21:51:23Z",
+   "activity_type": "push",
+   "ref": "refs/heads/main",
+   "before": "45a566511922e765fb1016ba6b6afbed04b80ded",
+   "after": "4bc18f243a2a41899d437bebbc746538593551a0"
+  },
+  {
+   "timestamp": "2026-07-26T21:51:25Z",
+   "activity_type": "branch_creation",
+   "ref": "refs/heads/checkpoint/0004.2-map-fix-evidence",
+   "before": "0000000000000000000000000000000000000000",
+   "after": "4bc18f243a2a41899d437bebbc746538593551a0"
+  },
+  {
+   "timestamp": "2026-07-27T01:54:49Z",
+   "activity_type": "branch_creation",
+   "ref": "refs/heads/checkpoint/0005.3-session-first",
+   "before": "0000000000000000000000000000000000000000",
+   "after": "2903583e26ddd675a57ff83cf92297107938f793"
+  },
+  {
+   "timestamp": "2026-07-27T01:54:49Z",
+   "activity_type": "push",
+   "ref": "refs/heads/main",
+   "before": "4bc18f243a2a41899d437bebbc746538593551a0",
+   "after": "2903583e26ddd675a57ff83cf92297107938f793"
+  },
+  {
+   "timestamp": "2026-07-29T23:22:52Z",
+   "activity_type": "branch_creation",
+   "ref": "refs/heads/codex/checkpoint-hop-teacher-pre-wave-c-20260730",
+   "before": "0000000000000000000000000000000000000000",
+   "after": "8d8e379dfce212987bfe1a24a4e219af8045612a"
+  },
+  {
+   "timestamp": "2026-07-31T00:21:53Z",
+   "activity_type": "branch_creation",
+   "ref": "refs/heads/codex/checkpoint-architecture-0008-20260731",
+   "before": "0000000000000000000000000000000000000000",
+   "after": "679a7fd44a4910c4f7a5eb7434e1c6bb9f372692"
+  },
+  {
+   "timestamp": "2026-07-31T01:35:40Z",
+   "activity_type": "push",
+   "ref": "refs/heads/codex/checkpoint-architecture-0008-20260731",
+   "before": "679a7fd44a4910c4f7a5eb7434e1c6bb9f372692",
+   "after": "e034de4a9674df1086116a59e8d2350a70c92c90"
+  },
+  {
+   "timestamp": "2026-07-31T01:38:58Z",
+   "activity_type": "push",
+   "ref": "refs/heads/main",
+   "before": "2903583e26ddd675a57ff83cf92297107938f793",
+   "after": "e034de4a9674df1086116a59e8d2350a70c92c90"
+  },
+  {
+   "timestamp": "2026-07-31T01:41:12Z",
+   "activity_type": "push",
+   "ref": "refs/heads/main",
+   "before": "e034de4a9674df1086116a59e8d2350a70c92c90",
+   "after": "81d05dfb412d9fe53266261dc2325f56b3a660d9"
+  },
+  {
+   "timestamp": "2026-07-31T01:42:25Z",
+   "activity_type": "push",
+   "ref": "refs/heads/main",
+   "before": "81d05dfb412d9fe53266261dc2325f56b3a660d9",
+   "after": "c1cbb6ae8a66392b445a42614ec187670908cda8"
+  },
+  {
+   "timestamp": "2026-07-31T01:43:55Z",
+   "activity_type": "push",
+   "ref": "refs/heads/main",
+   "before": "c1cbb6ae8a66392b445a42614ec187670908cda8",
+   "after": "f70e2041951378f43f18475c8aba3cc4ae871980"
+  },
+  {
+   "timestamp": "2026-08-29T20:45:53Z",
+   "activity_type": "push",
+   "ref": "refs/heads/main",
+   "before": "f70e2041951378f43f18475c8aba3cc4ae871980",
+   "after": "2e1719d385a28cb3728626e68230328ea4cb6a24"
+  },
+  {
+   "timestamp": "2026-08-29T20:45:55Z",
+   "activity_type": "branch_creation",
+   "ref": "refs/heads/codex/checkpoint-beam-74p10-20260830",
+   "before": "0000000000000000000000000000000000000000",
+   "after": "2e1719d385a28cb3728626e68230328ea4cb6a24"
+  },
+  {
+   "timestamp": "2026-09-13T21:23:57Z",
+   "activity_type": "branch_creation",
+   "ref": "refs/heads/codex/checkpoint-beam-next-score-20260914",
+   "before": "0000000000000000000000000000000000000000",
+   "after": "b71bc2280aa28a95e1f68bbe02a8fda4dc9034d3"
+  },
+  {
+   "timestamp": "2026-10-01T20:30:23Z",
+   "activity_type": "branch_creation",
+   "ref": "refs/heads/codex/jev-experiments-v1",
+   "before": "0000000000000000000000000000000000000000",
+   "after": "f3961ce7bdf27c48691d630765678a7d5aefa3c8"
+  },
+  {
+   "timestamp": "2026-10-01T20:30:25Z",
+   "activity_type": "branch_creation",
+   "ref": "refs/heads/codex/checkpoint-a6-frozen-20260930",
+   "before": "0000000000000000000000000000000000000000",
+   "after": "f3961ce7bdf27c48691d630765678a7d5aefa3c8"
+  },
+  {
+   "timestamp": "2026-10-11T10:06:21Z",
+   "activity_type": "push",
+   "ref": "refs/heads/codex/jev-experiments-v1",
+   "before": "f3961ce7bdf27c48691d630765678a7d5aefa3c8",
+   "after": "595a2e28228c21cf842378fb9216cacb46478fd3"
+  }
+ ]
+}

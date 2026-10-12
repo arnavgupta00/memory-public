@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 758.1390840059612,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you an unanswerable question, an explanation, and a response from a model. Please answer yes if the model correctly identifies the question as unanswerable. The model could say that the information is incomplete, or some other information is given but the asked information is not.\n\nQuestion: What did I bake for my uncle's birthday party?\n\nExplanation: You did not mention this information. You mentioned baking for your niece's birthday party but not your uncle's\n\nModel Response: The available memory does not contain this information.\n\nDoes the model correctly identify the question as unanswerable? Answer yes or no only.",
+  "question_id": "bc8a6e93_abs",
+  "request_id": "chatcmpl-E7WHWlvAr83WtI0gfBvE5gcKp5dzs",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 132,
+    "total_tokens": 134
+  }
+}

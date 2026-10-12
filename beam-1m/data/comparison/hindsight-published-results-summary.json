@@ -1,0 +1,43 @@
+{
+ "source": "https://raw.githubusercontent.com/vectorize-io/agent-memory-benchmark/20751fa03d8795200a246cf4fc904605cf4a905a/outputs/beam/hindsight/single-query/1m.json.gz",
+ "sha256": "95e87a30e4e01031676d07babda22d72b033eb47ce91a200dad3b86bd0601a42",
+ "retrieved": "2026-10-12",
+ "fields_in_file": {
+  "total_queries": 700,
+  "correct": 585,
+  "accuracy": 0.7386039171368353,
+  "answer_llm": "gemini:gemini-3.1-pro-preview",
+  "judge_llm": "gemini:gemini-2.5-flash-lite",
+  "mode": "single-query",
+  "memory_provider": "hindsight"
+ },
+ "derived": {
+  "mean_rubric_score_pct": 73.86,
+  "pass_rate_pct": 83.57,
+  "per_category_mean_rubric_score_pct": {
+   "abstention": 90.0,
+   "contradiction_resolution": 59.5,
+   "event_ordering": 80.9,
+   "information_extraction": 61.3,
+   "instruction_following": 93.3,
+   "knowledge_update": 66.4,
+   "multi_session_reasoning": 46.2,
+   "preference_following": 97.0,
+   "summarization": 84.5,
+   "temporal_reasoning": 59.6
+  },
+  "per_category_pass_rate_pct": {
+   "abstention": 90.0,
+   "contradiction_resolution": 90.0,
+   "event_ordering": 92.9,
+   "information_extraction": 70.0,
+   "instruction_following": 97.1,
+   "knowledge_update": 68.6,
+   "multi_session_reasoning": 48.6,
+   "preference_following": 100.0,
+   "summarization": 92.9,
+   "temporal_reasoning": 85.7
+  }
+ },
+ "finding": "The published headline 'accuracy' (0.7386 -> 73.9%) equals the mean per-item rubric score (AMB score_result), not the pass rate (585/700 = 83.6%)."
+}

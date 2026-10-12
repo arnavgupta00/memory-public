@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 825.6637910089921,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: What percentage of the countryside property's price is the cost of the renovations I plan to do on my current house?\n\nCorrect Answer: 10%\n\nModel Response: The renovation cost is 10% of the countryside property's price: ($20,000 \u00f7 $200,000) \u00d7 100 = 10%.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "27016adc",
+  "request_id": "chatcmpl-E7WHai6njmiV9JCWtOA0QYfZ2vcEI",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 163,
+    "total_tokens": 165
+  }
+}

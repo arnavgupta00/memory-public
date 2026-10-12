@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 691.6296660056105,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: Where do I currently keep my old sneakers?\n\nCorrect Answer: in a shoe rack in my closet\n\nModel Response: The last confirmed location is under your bed. You planned to move them to a shoe rack in your closet, but the package does not confirm that this had happened yet.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "07741c45",
+  "request_id": "chatcmpl-E7WHZ87xnHdybOAbN8pVUhocPwDvQ",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 143,
+    "total_tokens": 145
+  }
+}

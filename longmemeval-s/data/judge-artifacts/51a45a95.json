@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 1554.9777080013882,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: Where did I redeem a $5 coupon on coffee creamer?\n\nCorrect Answer: Target\n\nModel Response: The available memory does not contain this information.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "51a45a95",
+  "request_id": "chatcmpl-E7WHU77J8hCav3BN2JfdwPy0gaPBq",
+  "response": "No",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 131,
+    "total_tokens": 132
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 809.0898750087945,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you an unanswerable question, an explanation, and a response from a model. Please answer yes if the model correctly identifies the question as unanswerable. The model could say that the information is incomplete, or some other information is given but the asked information is not.\n\nQuestion: How much will I save by taking the bus from the airport to my hotel instead of a taxi?\n\nExplanation: The information provided is not enough. You did not mention how much will the bus take.\n\nModel Response: Using the specific Narita-to-Shinjuku estimates, the bus costs \u00a53,200 versus \u00a520,000\u201330,000 for a taxi, so you would save about \u00a516,800\u201326,800 one way (roughly $151\u2013241).\n\nDoes the model correctly identify the question as unanswerable? Answer yes or no only.",
+  "question_id": "09ba9854_abs",
+  "request_id": "chatcmpl-E7WHVctSepYTiMPIltM5vSPV5nJAP",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 182,
+    "total_tokens": 184
+  }
+}

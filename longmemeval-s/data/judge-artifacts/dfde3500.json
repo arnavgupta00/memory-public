@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 768.394625003566,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: What day of the week did I meet with my previous language exchange tutor Juan?\n\nCorrect Answer: Wednesday\n\nModel Response: You met with your previous language exchange tutor Juan on Wednesday.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "dfde3500",
+  "request_id": "chatcmpl-E7WHa880Qmq9mM6XSbhCxKdCfDN5x",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 122,
+    "total_tokens": 123
+  }
+}

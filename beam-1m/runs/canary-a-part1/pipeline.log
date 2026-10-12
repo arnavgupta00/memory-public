@@ -1,0 +1,20 @@
+A6 pipeline (fresh mode, answer layer A2): 20 questions -> runs/a6/canary-a-screen20-hive-r9
+[11 s] stage 1 dataset: 5 histories, 20 questions (source files: 0 copied, 11 downloaded)
+[11 s] stage 2 ingestion: 4037 sessions; 0 notes and 0 index corpora reused
+[11 s]   running src/scripts/sessionAnnotate.ts (ingest) — log: runs/a6/canary-a-screen20-hive-r9/logs/ingest.log
+[42 s] stage 3 notebook: 5 histories; 0 JEV calls replayed (seeded 0), 277 sent
+[102 s] stage 5 router: 20 questions; broad 6, conflict 2, duration 2
+[160 s] stage 9 targeted: 4 conflict/duration questions; 0 JEV calls replayed (seeded 0), 12 sent
+[863 s]   running src/scripts/buildSemanticIndex.ts (index) — log: runs/a6/canary-a-screen20-hive-r9/logs/index.log
+[1123 s] stage 6 search: 20 questions; 0 reused, 20 to search
+[1123 s]   running src/scripts/hopArchitectureScreen.ts (search) — log: runs/a6/canary-a-screen20-hive-r9/logs/search.log
+[1413 s] stage 7 fusion: 20 questions, K180 (10 workers); JEV forecast 202 requests, $0.21
+[1524 s] stage 8 JEV filter: 20/20 questions; 0 calls replayed (seeded 0), 202 sent
+[1524 s] stage 10a package: 20 questions; 0 saved packager calls available for identical-request replay
+[1524 s]   running src/scripts/hopBagDownstreamGate.ts (package) — log: runs/a6/canary-a-screen20-hive-r9/logs/package.log
+[1572 s] stage 9 timeline: 6 broad questions; 0 JEV calls replayed (seeded 0), 81 sent
+[1588 s] stage 10 context: 20 memory packs (4 broad packages trimmed to 130K tokens; 10 workers)
+[1734 s] stage 11 A2: 10/20 answered
+[2022 s] stage 11 A2: 20/20 answered
+[2022 s] stage 11 A2: 20/20 answered; pipeline model spend so far $1.66
+[2022 s] done in 2022 s

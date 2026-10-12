@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 950.1896669971757,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?\n\nRubric: The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.\n\nModel Response: Build a small, low-pressure inspiration series from the resources and experiences you already have. For your 30-day challenge, choose one flower reference from Instagram and make three quick studies: an unusual crop or angle, a limited-color version, and a texture-focused version using your palette knife. Treat them as experiments rather than finished paintings. You could also turn one of your unusually solo dinners into a prompt\u2014paint the table, lighting, or feeling of the evening as an abstract color study. Put the series in Todoist, keep it as your one active creative project, and break each session into small tasks such as choosing a reference, painting for 20\u201325 minutes, and recording what surprised you. To make painting feel less solitary, post one study or ask one of the acquaintances you are reconnecting with for a photo, object, or color prompt. In your planned studio space, display the unfinished studies so they can generate ideas for the next session.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "6b7dfb22",
+  "request_id": "chatcmpl-E7WHX5CxAXWuCaBWy8KVSh1E55Ta5",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 385,
+    "total_tokens": 387
+  }
+}

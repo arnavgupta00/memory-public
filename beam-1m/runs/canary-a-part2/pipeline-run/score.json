@@ -1,0 +1,57 @@
+{
+ "run": "runs/a6/canary-a-other80-hive-r9",
+ "questions": 80,
+ "score_pinned": 77.29,
+ "macro_over_abilities": 77.29,
+ "by_ability": {
+  "abstention": {
+   "n": 8,
+   "score": 75.0
+  },
+  "contradiction_resolution": {
+   "n": 8,
+   "score": 81.25
+  },
+  "event_ordering": {
+   "n": 8,
+   "score": 20.99
+  },
+  "information_extraction": {
+   "n": 8,
+   "score": 85.42
+  },
+  "instruction_following": {
+   "n": 8,
+   "score": 100.0
+  },
+  "knowledge_update": {
+   "n": 8,
+   "score": 100.0
+  },
+  "multi_session_reasoning": {
+   "n": 8,
+   "score": 80.21
+  },
+  "preference_following": {
+   "n": 8,
+   "score": 100.0
+  },
+  "summarization": {
+   "n": 8,
+   "score": 80.0
+  },
+  "temporal_reasoning": {
+   "n": 8,
+   "score": 50.0
+  }
+ },
+ "by_conversation": {
+  "chat-03": 76.39,
+  "chat-08": 69.5,
+  "chat-18": 80.85,
+  "chat-25": 86.32,
+  "chat-29": 73.38
+ },
+ "conversation_ci95_half_width_points": 5.39,
+ "ci_rule": "finite-population 95% CI over conversation scores (N = 35); contract target <= 5 points"
+}

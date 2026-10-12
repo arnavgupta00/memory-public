@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 716.2965830066241,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: Can you suggest some activities I can do during my commute to work?\n\nRubric: The user would prefer suggestions related to listening to new podcasts or audiobooks, especially the genre beyond true crime or self-improvement, such as history. They may not be interested in activities that require visual attention, such as reading or watching videos, as they are commuting. The user would not prefer general podcast topics such as true crime or self-improvement, as the user wants to explore other topics.\n\nModel Response: Use the commute primarily for safe, screen-free audio and mental preparation. On the bus, continue with \u201cHow I Built This,\u201d but branch into history and science: make a 40-minute playlist rotating Hardcore History, Lore, The Dollop, StarTalk Radio, Radiolab, and Stuff You Should Know. You could also listen to an audiobook, language-learning audio, music, or a guided meditation. Use the ride to mentally review your priorities for the day instead of checking email or social media. If you cycle the hybrid bike, keep your attention on the road and use only audio at a low volume\u2014or skip audio if it reduces awareness of traffic and pedestrians. Your quieter, flatter creek-path route is better suited to enjoying the ride and getting exercise than to multitasking.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "1c0ddc50",
+  "request_id": "chatcmpl-E7WHXt81xnQiuiTnX4q6ifBK62plM",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 344,
+    "total_tokens": 346
+  }
+}

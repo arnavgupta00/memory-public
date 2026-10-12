@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 644.9909169896273,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: I'm going back to our previous conversation about the grant aim page on molecular subtypes and endometrial cancer. Can you remind me what were the three objectives we outlined for the project?\n\nCorrect Answer: The three objectives were: 1) to identify molecular subtypes of endometrial cancer, 2) to investigate their clinical and biological significance, and 3) to develop biomarkers for early detection and prognosis.\n\nModel Response: The three project objectives were: (1) identify molecular subtypes of endometrial cancer using genomic and transcriptomic approaches; (2) investigate their clinical and biological significance, including associations with patient outcomes and treatment response; and (3) develop subtype-based biomarkers for early detection and prognosis.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "8cf51dda",
+  "request_id": "chatcmpl-E7WHZaAWNTr8FybPVSNJl9KfVpzsC",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 245,
+    "total_tokens": 247
+  }
+}

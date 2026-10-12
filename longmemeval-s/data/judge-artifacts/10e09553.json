@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 689.994458007277,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How many largemouth bass did I catch with Alex on the earlier fishing trip to Lake Michigan before the 7/22 trip?\n\nCorrect Answer: 7\n\nModel Response: You caught 7 largemouth bass with Alex on the earlier Lake Michigan trip, on 7/10.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "10e09553",
+  "request_id": "chatcmpl-E7WHZpw3Zg3CaIPY1ekGDRiwJ7K5T",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 143,
+    "total_tokens": 144
+  }
+}

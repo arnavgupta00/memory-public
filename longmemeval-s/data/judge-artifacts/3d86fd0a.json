@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1837.4060000060126,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: Where did I meet Sophia?\n\nCorrect Answer: a coffee shop in the city\n\nModel Response: You met Sophia at a coffee shop in the city.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "3d86fd0a",
+  "request_id": "chatcmpl-E7WHVlhAIAUx1xqngDA1Lp3tKKjSE",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 131,
+    "total_tokens": 132
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 996.7730419884901,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: What is the total cost of Lola's vet visit and flea medication?\n\nCorrect Answer: $75\n\nModel Response: The total cost was $75: $50 for the vet visit plus $25 for flea medication.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "720133ac",
+  "request_id": "chatcmpl-E7WHYN8wWgqqLyPL8Syb2mhuGmTiu",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 144,
+    "total_tokens": 146
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 771.4933329989435,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How many episodes of the Science series have I completed on Crash Course?\n\nCorrect Answer: 50\n\nModel Response: You have completed 50 episodes of Crash Course's Science series.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "72e3ee87",
+  "request_id": "chatcmpl-E7WHZIE6NrgF3fV62X8Rcvq3k2CSz",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 122,
+    "total_tokens": 123
+  }
+}

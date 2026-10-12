@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 641.1381249927217,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?\n\nCorrect Answer: $400,000\n\nModel Response: The most recent amount you reported was $400,000. An earlier statement reported $350,000, so the package contains conflicting amounts.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "852ce960",
+  "request_id": "chatcmpl-E7WHY7iGt0lT42DlLs9ZLr6Rtvzc6",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 143,
+    "total_tokens": 145
+  }
+}

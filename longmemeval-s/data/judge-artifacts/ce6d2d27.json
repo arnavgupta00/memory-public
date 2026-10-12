@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 722.6152920047753,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: What day of the week do I take a cocktail-making class?\n\nCorrect Answer: Friday\n\nModel Response: Friday. Although an earlier note mentioned Thursday, the user's later statements repeatedly identify Friday as the class day.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "ce6d2d27",
+  "request_id": "chatcmpl-E7WHaPbHBVVBVOr6470IbsE5b97gV",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 128,
+    "total_tokens": 130
+  }
+}

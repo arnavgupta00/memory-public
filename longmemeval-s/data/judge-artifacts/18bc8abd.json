@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 974.065000002156,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: What brand of BBQ sauce am I currently obsessed with?\n\nCorrect Answer: Kansas City Masterpiece\n\nModel Response: You are currently obsessed with Kansas City Masterpiece BBQ sauce. This is your most recent stated preference, superseding your earlier favorite, Sweet Baby Ray's.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "18bc8abd",
+  "request_id": "chatcmpl-E7WHbSSDuqNlEQyyhdaUwBuTXMBYU",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 139,
+    "total_tokens": 141
+  }
+}

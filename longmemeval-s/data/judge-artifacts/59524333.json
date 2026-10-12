@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 957.7255000040168,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: What time do I usually go to the gym?\n\nCorrect Answer: 6:00 pm\n\nModel Response: Most recently, you usually go to the gym at 6:00 pm on Mondays, Wednesdays, and Fridays. An older note listed 7:00 pm.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "59524333",
+  "request_id": "chatcmpl-E7WHZdj75e5BQl9STcbpohk2cyXOf",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 141,
+    "total_tokens": 143
+  }
+}

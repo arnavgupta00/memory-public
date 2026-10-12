@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 776.1922089994187,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How long have I been sticking to my daily tidying routine?\n\nCorrect Answer: 4 weeks\n\nModel Response: As of September 30, 2023, you had been sticking to your daily tidying routine for 4 weeks. This is your most recent stated duration; on June 11, you had reported 3 weeks.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "7a87bd0c",
+  "request_id": "chatcmpl-E7WHZtEKesEHoWZUstVHpZeTt6qxy",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 154,
+    "total_tokens": 156
+  }
+}

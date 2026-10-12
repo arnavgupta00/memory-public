@@ -1,0 +1,49 @@
+[2026-10-11 01:14:23] translator: {"ok":true,"spent_usd":0,"blocked":null,"model":"deepseek-ai/deepseek-v4.1-flash","effort":"max","mode":"object"}
+stage 12 judge on runs/a6/canary-a-screen20-hive-r9: official BEAM evaluator (pinned 3e12035, gpt-4.1-mini, temperature 0)
+judge exited 0
+{
+ "run": "runs/a6/canary-a-screen20-hive-r9",
+ "questions": 20,
+ "score_pinned": 79.39,
+ "macro_over_abilities": 79.39,
+ "by_ability": {
+  "abstention": {
+   "n": 2,
+   "score": 100.0
+  },
+  "contradiction_resolution": {
+   "n": 2,
+   "score": 62.5
+  },
+  "event_ordering": {
+   "n": 2,
+   "score": 41.9
+  },
+  "information_extraction": {
+   "n": 2,
+   "score": 100.0
+  },
+  "instruction_following": {
+   "n": 2,
+   "score": 100.0
+  },
+  "knowledge_update": {
+   "n": 2,
+   "score": 75.0
+  },
+  "multi_session_reasoning": {
+   "n": 2,
+   "score": 91.67
+  },
+  "preference_following": {
+   "n": 2,
+   "score": 100.0
+  },
+  "summarization": {
+   "n": 2,
+   "score": 72.86
+  },
+  "temporal_reasoning": {
+   "n": 2,
+   "score": 50.0
+[2026-10-11 01:51:03] DONE

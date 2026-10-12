@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 972.9844170069555,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: I wanted to follow up on our previous conversation about mindfulness techniques. You mentioned some great resources for guided imagery exercises, can you remind me of the website that had free exercises like 'The Mountain Meditation' and 'The Body Scan Meditation'?\n\nCorrect Answer: Mindful.org.\n\nModel Response: The website was Mindful.org.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "1b9b7252",
+  "request_id": "chatcmpl-E7WHaguf16IJoV9tZmq0qLmu9EmQM",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 166,
+    "total_tokens": 167
+  }
+}

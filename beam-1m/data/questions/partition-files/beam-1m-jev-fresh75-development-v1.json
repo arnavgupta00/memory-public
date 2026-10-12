@@ -1,0 +1,854 @@
+{
+  "schema_version": 1,
+  "name": "beam-1m-jev-fresh75-development-v1",
+  "status": "selection_frozen_not_evaluated",
+  "role": "metadata_balanced_development_not_population_certification",
+  "source_commit": "3e12035532eb85768f1a7cd779832b650c4b2ef9",
+  "seed": "beam-jev-fresh75-v1-20260924",
+  "iterations": 200000,
+  "spec_sha256": "4aa96da79087dbe8ea3597ec1f5e8fa085fa9d6e5ffb515c5c160397eacf1341",
+  "selector_sha256": "4feb28a7e08c443915c710599a90079c15e2e8502aa0fbd53e63501e97d34508",
+  "input_manifest_hashes": {
+    "beam-1m-canary-design-v1": "c6538534c0290ba1ba5c4855dd50cf62bf1062ef986f46e5b33ed86077d102b4",
+    "beam-1m-blind-reserve-v1": "296a294c7ecda81f2f396893713f74d185c3cacc6a363a0191a3e4239d6d2ce7",
+    "beam-1m-canary-a-development-v1": "f0ac5d26b081a94fd7c86821bf0d3aa02ad106db9b8eff24597c488740c6f031",
+    "beam-1m-canary-b-certification-v1": "6072d2d51249e8b48d77166089be385e69ea1972b0fc88075805466fed86a83b"
+  },
+  "source_hashes": {
+    "chats/1M/4/probing_questions/probing_questions.json": "23e4f2bfdb6b2189edecf231d8d8b909c76d1a984c267ac72d1a2b078d57739a",
+    "chats/1M/5/probing_questions/probing_questions.json": "4543ef75d7b7e183ca22fcdc558011ec03e5f7ec50290cc011fb49949d79e812",
+    "chats/1M/6/probing_questions/probing_questions.json": "47a0df103bd156d3b11a08ea9bce9da094134e14cfcfe938ee21d564edd9bbfd",
+    "chats/1M/11/probing_questions/probing_questions.json": "40a9d0720baf79882a9b0455fd948c2ef5e0001512eff860aa9d7645dd1b610d",
+    "chats/1M/13/probing_questions/probing_questions.json": "ca8cde4a6c38e84cbd8b3c4c852e22ab559c3ff3dd2f6605684b7f0a97ea544a",
+    "chats/1M/15/probing_questions/probing_questions.json": "e852b9a64031d0335013679376fedfbc1c922b8561178f47e936f9f74bddf80a",
+    "chats/1M/19/probing_questions/probing_questions.json": "9e2e2336bead1a063112e3f50faf194c1f0fb73f3b8a6f381c9d69cac8429ce6",
+    "chats/1M/20/probing_questions/probing_questions.json": "7f9d121386bed47be754aede8acdf70578880c9f91a4f2a4718424f65a7dbd67",
+    "chats/1M/23/probing_questions/probing_questions.json": "ceafa932d51f3fabf4dd405e53ed834c64e6854cb622034787293c9392a58678",
+    "chats/1M/28/probing_questions/probing_questions.json": "40741124c30aeaaf9e576582edcde7501cb9db415cabffa43e0ef1b49b05892f",
+    "chats/1M/31/probing_questions/probing_questions.json": "db22b6bce15e3d18b987c13f17360e7c8476b8a812a2134311cad1cf08673289",
+    "chats/1M/32/probing_questions/probing_questions.json": "6a6b8a519ad4c6725b4af956ecaf9e6628efa97418345e456d6874a4d1626fec",
+    "chats/1M/33/probing_questions/probing_questions.json": "081dd9ed2a505e1bcf75af42b9d98d369ec21d144efdf18886cdc6e76bd99e95"
+  },
+  "conversation_ids": [
+    4,
+    5,
+    6,
+    11,
+    13,
+    15,
+    19,
+    20,
+    23,
+    28,
+    31,
+    32,
+    33
+  ],
+  "question_keys": [
+    "beam-1m/chat-04/abstention/1",
+    "beam-1m/chat-04/contradiction_resolution/2",
+    "beam-1m/chat-04/event_ordering/1",
+    "beam-1m/chat-04/information_extraction/2",
+    "beam-1m/chat-04/instruction_following/2",
+    "beam-1m/chat-04/temporal_reasoning/2",
+    "beam-1m/chat-05/contradiction_resolution/1",
+    "beam-1m/chat-05/event_ordering/1",
+    "beam-1m/chat-05/multi_session_reasoning/1",
+    "beam-1m/chat-05/preference_following/2",
+    "beam-1m/chat-05/summarization/2",
+    "beam-1m/chat-05/temporal_reasoning/2",
+    "beam-1m/chat-06/abstention/2",
+    "beam-1m/chat-06/contradiction_resolution/2",
+    "beam-1m/chat-06/event_ordering/2",
+    "beam-1m/chat-06/instruction_following/2",
+    "beam-1m/chat-06/knowledge_update/1",
+    "beam-1m/chat-06/multi_session_reasoning/1",
+    "beam-1m/chat-06/multi_session_reasoning/2",
+    "beam-1m/chat-06/preference_following/1",
+    "beam-1m/chat-06/preference_following/2",
+    "beam-1m/chat-06/summarization/1",
+    "beam-1m/chat-06/temporal_reasoning/1",
+    "beam-1m/chat-06/temporal_reasoning/2",
+    "beam-1m/chat-11/abstention/2",
+    "beam-1m/chat-11/contradiction_resolution/1",
+    "beam-1m/chat-11/information_extraction/2",
+    "beam-1m/chat-11/instruction_following/2",
+    "beam-1m/chat-11/temporal_reasoning/2",
+    "beam-1m/chat-13/abstention/1",
+    "beam-1m/chat-13/information_extraction/2",
+    "beam-1m/chat-13/multi_session_reasoning/2",
+    "beam-1m/chat-13/preference_following/2",
+    "beam-1m/chat-13/summarization/2",
+    "beam-1m/chat-15/information_extraction/1",
+    "beam-1m/chat-15/knowledge_update/1",
+    "beam-1m/chat-15/knowledge_update/2",
+    "beam-1m/chat-15/summarization/1",
+    "beam-1m/chat-15/summarization/2",
+    "beam-1m/chat-15/temporal_reasoning/1",
+    "beam-1m/chat-15/temporal_reasoning/2",
+    "beam-1m/chat-19/event_ordering/2",
+    "beam-1m/chat-19/information_extraction/1",
+    "beam-1m/chat-20/abstention/1",
+    "beam-1m/chat-20/abstention/2",
+    "beam-1m/chat-20/contradiction_resolution/2",
+    "beam-1m/chat-20/event_ordering/1",
+    "beam-1m/chat-20/information_extraction/1",
+    "beam-1m/chat-20/instruction_following/2",
+    "beam-1m/chat-20/knowledge_update/2",
+    "beam-1m/chat-23/contradiction_resolution/2",
+    "beam-1m/chat-23/event_ordering/2",
+    "beam-1m/chat-23/knowledge_update/2",
+    "beam-1m/chat-23/multi_session_reasoning/1",
+    "beam-1m/chat-28/abstention/2",
+    "beam-1m/chat-28/event_ordering/2",
+    "beam-1m/chat-28/instruction_following/1",
+    "beam-1m/chat-28/instruction_following/2",
+    "beam-1m/chat-28/knowledge_update/2",
+    "beam-1m/chat-28/summarization/1",
+    "beam-1m/chat-28/summarization/2",
+    "beam-1m/chat-31/information_extraction/1",
+    "beam-1m/chat-31/instruction_following/2",
+    "beam-1m/chat-31/preference_following/1",
+    "beam-1m/chat-31/summarization/2",
+    "beam-1m/chat-32/abstention/2",
+    "beam-1m/chat-32/multi_session_reasoning/2",
+    "beam-1m/chat-32/preference_following/1",
+    "beam-1m/chat-33/contradiction_resolution/1",
+    "beam-1m/chat-33/contradiction_resolution/2",
+    "beam-1m/chat-33/instruction_following/1",
+    "beam-1m/chat-33/knowledge_update/2",
+    "beam-1m/chat-33/multi_session_reasoning/2",
+    "beam-1m/chat-33/preference_following/1",
+    "beam-1m/chat-33/preference_following/2"
+  ],
+  "selection_metadata": [
+    {
+      "id": "beam-1m/chat-04/abstention/1",
+      "conversation_id": 4,
+      "category": "Coding",
+      "ability": "abstention",
+      "difficulty": "hard",
+      "source_pair_count": 0
+    },
+    {
+      "id": "beam-1m/chat-04/contradiction_resolution/2",
+      "conversation_id": 4,
+      "category": "Coding",
+      "ability": "contradiction_resolution",
+      "difficulty": "clear",
+      "source_pair_count": 3
+    },
+    {
+      "id": "beam-1m/chat-04/event_ordering/1",
+      "conversation_id": 4,
+      "category": "Coding",
+      "ability": "event_ordering",
+      "difficulty": "hard",
+      "source_pair_count": 19
+    },
+    {
+      "id": "beam-1m/chat-04/information_extraction/2",
+      "conversation_id": 4,
+      "category": "Coding",
+      "ability": "information_extraction",
+      "difficulty": "hard",
+      "source_pair_count": 2
+    },
+    {
+      "id": "beam-1m/chat-04/instruction_following/2",
+      "conversation_id": 4,
+      "category": "Coding",
+      "ability": "instruction_following",
+      "difficulty": "medium",
+      "source_pair_count": 1
+    },
+    {
+      "id": "beam-1m/chat-04/temporal_reasoning/2",
+      "conversation_id": 4,
+      "category": "Coding",
+      "ability": "temporal_reasoning",
+      "difficulty": "easy",
+      "source_pair_count": 2
+    },
+    {
+      "id": "beam-1m/chat-05/contradiction_resolution/1",
+      "conversation_id": 5,
+      "category": "Coding",
+      "ability": "contradiction_resolution",
+      "difficulty": "clear",
+      "source_pair_count": 6
+    },
+    {
+      "id": "beam-1m/chat-05/event_ordering/1",
+      "conversation_id": 5,
+      "category": "Coding",
+      "ability": "event_ordering",
+      "difficulty": "hard",
+      "source_pair_count": 32
+    },
+    {
+      "id": "beam-1m/chat-05/multi_session_reasoning/1",
+      "conversation_id": 5,
+      "category": "Coding",
+      "ability": "multi_session_reasoning",
+      "difficulty": "easy",
+      "source_pair_count": 3
+    },
+    {
+      "id": "beam-1m/chat-05/preference_following/2",
+      "conversation_id": 5,
+      "category": "Coding",
+      "ability": "preference_following",
+      "difficulty": "medium",
+      "source_pair_count": 4
+    },
+    {
+      "id": "beam-1m/chat-05/summarization/2",
+      "conversation_id": 5,
+      "category": "Coding",
+      "ability": "summarization",
+      "difficulty": "hard",
+      "source_pair_count": 5
+    },
+    {
+      "id": "beam-1m/chat-05/temporal_reasoning/2",
+      "conversation_id": 5,
+      "category": "Coding",
+      "ability": "temporal_reasoning",
+      "difficulty": "medium",
+      "source_pair_count": 2
+    },
+    {
+      "id": "beam-1m/chat-06/abstention/2",
+      "conversation_id": 6,
+      "category": "Math",
+      "ability": "abstention",
+      "difficulty": "medium",
+      "source_pair_count": 0
+    },
+    {
+      "id": "beam-1m/chat-06/contradiction_resolution/2",
+      "conversation_id": 6,
+      "category": "Math",
+      "ability": "contradiction_resolution",
+      "difficulty": "clear",
+      "source_pair_count": 2
+    },
+    {
+      "id": "beam-1m/chat-06/event_ordering/2",
+      "conversation_id": 6,
+      "category": "Math",
+      "ability": "event_ordering",
+      "difficulty": "hard",
+      "source_pair_count": 5
+    },
+    {
+      "id": "beam-1m/chat-06/instruction_following/2",
+      "conversation_id": 6,
+      "category": "Math",
+      "ability": "instruction_following",
+      "difficulty": "medium",
+      "source_pair_count": 2
+    },
+    {
+      "id": "beam-1m/chat-06/knowledge_update/1",
+      "conversation_id": 6,
+      "category": "Math",
+      "ability": "knowledge_update",
+      "difficulty": "easy",
+      "source_pair_count": 2
+    },
+    {
+      "id": "beam-1m/chat-06/multi_session_reasoning/1",
+      "conversation_id": 6,
+      "category": "Math",
+      "ability": "multi_session_reasoning",
+      "difficulty": "easy",
+      "source_pair_count": 2
+    },
+    {
+      "id": "beam-1m/chat-06/multi_session_reasoning/2",
+      "conversation_id": 6,
+      "category": "Math",
+      "ability": "multi_session_reasoning",
+      "difficulty": "easy",
+      "source_pair_count": 2
+    },
+    {
+      "id": "beam-1m/chat-06/preference_following/1",
+      "conversation_id": 6,
+      "category": "Math",
+      "ability": "preference_following",
+      "difficulty": "medium",
+      "source_pair_count": 3
+    },
+    {
+      "id": "beam-1m/chat-06/preference_following/2",
+      "conversation_id": 6,
+      "category": "Math",
+      "ability": "preference_following",
+      "difficulty": "medium",
+      "source_pair_count": 1
+    },
+    {
+      "id": "beam-1m/chat-06/summarization/1",
+      "conversation_id": 6,
+      "category": "Math",
+      "ability": "summarization",
+      "difficulty": "medium",
+      "source_pair_count": 16
+    },
+    {
+      "id": "beam-1m/chat-06/temporal_reasoning/1",
+      "conversation_id": 6,
+      "category": "Math",
+      "ability": "temporal_reasoning",
+      "difficulty": "easy",
+      "source_pair_count": 2
+    },
+    {
+      "id": "beam-1m/chat-06/temporal_reasoning/2",
+      "conversation_id": 6,
+      "category": "Math",
+      "ability": "temporal_reasoning",
+      "difficulty": "medium",
+      "source_pair_count": 6
+    },
+    {
+      "id": "beam-1m/chat-11/abstention/2",
+      "conversation_id": 11,
+      "category": "Career and Professional Development",
+      "ability": "abstention",
+      "difficulty": "easy",
+      "source_pair_count": 0
+    },
+    {
+      "id": "beam-1m/chat-11/contradiction_resolution/1",
+      "conversation_id": 11,
+      "category": "Career and Professional Development",
+      "ability": "contradiction_resolution",
+      "difficulty": "clear",
+      "source_pair_count": 4
+    },
+    {
+      "id": "beam-1m/chat-11/information_extraction/2",
+      "conversation_id": 11,
+      "category": "Career and Professional Development",
+      "ability": "information_extraction",
+      "difficulty": "hard",
+      "source_pair_count": 2
+    },
+    {
+      "id": "beam-1m/chat-11/instruction_following/2",
+      "conversation_id": 11,
+      "category": "Career and Professional Development",
+      "ability": "instruction_following",
+      "difficulty": "medium",
+      "source_pair_count": 1
+    },
+    {
+      "id": "beam-1m/chat-11/temporal_reasoning/2",
+      "conversation_id": 11,
+      "category": "Career and Professional Development",
+      "ability": "temporal_reasoning",
+      "difficulty": "easy",
+      "source_pair_count": 6
+    },
+    {
+      "id": "beam-1m/chat-13/abstention/1",
+      "conversation_id": 13,
+      "category": "Financial Investment",
+      "ability": "abstention",
+      "difficulty": "medium",
+      "source_pair_count": 0
+    },
+    {
+      "id": "beam-1m/chat-13/information_extraction/2",
+      "conversation_id": 13,
+      "category": "Financial Investment",
+      "ability": "information_extraction",
+      "difficulty": "hard",
+      "source_pair_count": 3
+    },
+    {
+      "id": "beam-1m/chat-13/multi_session_reasoning/2",
+      "conversation_id": 13,
+      "category": "Financial Investment",
+      "ability": "multi_session_reasoning",
+      "difficulty": "hard",
+      "source_pair_count": 5
+    },
+    {
+      "id": "beam-1m/chat-13/preference_following/2",
+      "conversation_id": 13,
+      "category": "Financial Investment",
+      "ability": "preference_following",
+      "difficulty": "medium",
+      "source_pair_count": 3
+    },
+    {
+      "id": "beam-1m/chat-13/summarization/2",
+      "conversation_id": 13,
+      "category": "Financial Investment",
+      "ability": "summarization",
+      "difficulty": "hard",
+      "source_pair_count": 24
+    },
+    {
+      "id": "beam-1m/chat-15/information_extraction/1",
+      "conversation_id": 15,
+      "category": "Health & Wellness",
+      "ability": "information_extraction",
+      "difficulty": "easy",
+      "source_pair_count": 1
+    },
+    {
+      "id": "beam-1m/chat-15/knowledge_update/1",
+      "conversation_id": 15,
+      "category": "Health & Wellness",
+      "ability": "knowledge_update",
+      "difficulty": "easy",
+      "source_pair_count": 4
+    },
+    {
+      "id": "beam-1m/chat-15/knowledge_update/2",
+      "conversation_id": 15,
+      "category": "Health & Wellness",
+      "ability": "knowledge_update",
+      "difficulty": "easy",
+      "source_pair_count": 4
+    },
+    {
+      "id": "beam-1m/chat-15/summarization/1",
+      "conversation_id": 15,
+      "category": "Health & Wellness",
+      "ability": "summarization",
+      "difficulty": "medium",
+      "source_pair_count": 27
+    },
+    {
+      "id": "beam-1m/chat-15/summarization/2",
+      "conversation_id": 15,
+      "category": "Health & Wellness",
+      "ability": "summarization",
+      "difficulty": "medium",
+      "source_pair_count": 27
+    },
+    {
+      "id": "beam-1m/chat-15/temporal_reasoning/1",
+      "conversation_id": 15,
+      "category": "Health & Wellness",
+      "ability": "temporal_reasoning",
+      "difficulty": "easy",
+      "source_pair_count": 6
+    },
+    {
+      "id": "beam-1m/chat-15/temporal_reasoning/2",
+      "conversation_id": 15,
+      "category": "Health & Wellness",
+      "ability": "temporal_reasoning",
+      "difficulty": "easy",
+      "source_pair_count": 3
+    },
+    {
+      "id": "beam-1m/chat-19/event_ordering/2",
+      "conversation_id": 19,
+      "category": "Education & Learning",
+      "ability": "event_ordering",
+      "difficulty": "medium",
+      "source_pair_count": 25
+    },
+    {
+      "id": "beam-1m/chat-19/information_extraction/1",
+      "conversation_id": 19,
+      "category": "Education & Learning",
+      "ability": "information_extraction",
+      "difficulty": "medium",
+      "source_pair_count": 1
+    },
+    {
+      "id": "beam-1m/chat-20/abstention/1",
+      "conversation_id": 20,
+      "category": "Home & Real Estate",
+      "ability": "abstention",
+      "difficulty": "medium",
+      "source_pair_count": 0
+    },
+    {
+      "id": "beam-1m/chat-20/abstention/2",
+      "conversation_id": 20,
+      "category": "Home & Real Estate",
+      "ability": "abstention",
+      "difficulty": "easy",
+      "source_pair_count": 0
+    },
+    {
+      "id": "beam-1m/chat-20/contradiction_resolution/2",
+      "conversation_id": 20,
+      "category": "Home & Real Estate",
+      "ability": "contradiction_resolution",
+      "difficulty": "clear",
+      "source_pair_count": 2
+    },
+    {
+      "id": "beam-1m/chat-20/event_ordering/1",
+      "conversation_id": 20,
+      "category": "Home & Real Estate",
+      "ability": "event_ordering",
+      "difficulty": "hard",
+      "source_pair_count": 28
+    },
+    {
+      "id": "beam-1m/chat-20/information_extraction/1",
+      "conversation_id": 20,
+      "category": "Home & Real Estate",
+      "ability": "information_extraction",
+      "difficulty": "easy",
+      "source_pair_count": 1
+    },
+    {
+      "id": "beam-1m/chat-20/instruction_following/2",
+      "conversation_id": 20,
+      "category": "Home & Real Estate",
+      "ability": "instruction_following",
+      "difficulty": "medium",
+      "source_pair_count": 1
+    },
+    {
+      "id": "beam-1m/chat-20/knowledge_update/2",
+      "conversation_id": 20,
+      "category": "Home & Real Estate",
+      "ability": "knowledge_update",
+      "difficulty": "easy",
+      "source_pair_count": 7
+    },
+    {
+      "id": "beam-1m/chat-23/contradiction_resolution/2",
+      "conversation_id": 23,
+      "category": "Cooking",
+      "ability": "contradiction_resolution",
+      "difficulty": "clear",
+      "source_pair_count": 4
+    },
+    {
+      "id": "beam-1m/chat-23/event_ordering/2",
+      "conversation_id": 23,
+      "category": "Cooking",
+      "ability": "event_ordering",
+      "difficulty": "hard",
+      "source_pair_count": 35
+    },
+    {
+      "id": "beam-1m/chat-23/knowledge_update/2",
+      "conversation_id": 23,
+      "category": "Cooking",
+      "ability": "knowledge_update",
+      "difficulty": "easy",
+      "source_pair_count": 4
+    },
+    {
+      "id": "beam-1m/chat-23/multi_session_reasoning/1",
+      "conversation_id": 23,
+      "category": "Cooking",
+      "ability": "multi_session_reasoning",
+      "difficulty": "medium",
+      "source_pair_count": 3
+    },
+    {
+      "id": "beam-1m/chat-28/abstention/2",
+      "conversation_id": 28,
+      "category": "Sport",
+      "ability": "abstention",
+      "difficulty": "easy",
+      "source_pair_count": 0
+    },
+    {
+      "id": "beam-1m/chat-28/event_ordering/2",
+      "conversation_id": 28,
+      "category": "Sport",
+      "ability": "event_ordering",
+      "difficulty": "hard",
+      "source_pair_count": 41
+    },
+    {
+      "id": "beam-1m/chat-28/instruction_following/1",
+      "conversation_id": 28,
+      "category": "Sport",
+      "ability": "instruction_following",
+      "difficulty": "medium",
+      "source_pair_count": 1
+    },
+    {
+      "id": "beam-1m/chat-28/instruction_following/2",
+      "conversation_id": 28,
+      "category": "Sport",
+      "ability": "instruction_following",
+      "difficulty": "medium",
+      "source_pair_count": 1
+    },
+    {
+      "id": "beam-1m/chat-28/knowledge_update/2",
+      "conversation_id": 28,
+      "category": "Sport",
+      "ability": "knowledge_update",
+      "difficulty": "easy",
+      "source_pair_count": 5
+    },
+    {
+      "id": "beam-1m/chat-28/summarization/1",
+      "conversation_id": 28,
+      "category": "Sport",
+      "ability": "summarization",
+      "difficulty": "hard",
+      "source_pair_count": 16
+    },
+    {
+      "id": "beam-1m/chat-28/summarization/2",
+      "conversation_id": 28,
+      "category": "Sport",
+      "ability": "summarization",
+      "difficulty": "hard",
+      "source_pair_count": 22
+    },
+    {
+      "id": "beam-1m/chat-31/information_extraction/1",
+      "conversation_id": 31,
+      "category": "Trip Planning",
+      "ability": "information_extraction",
+      "difficulty": "easy",
+      "source_pair_count": 1
+    },
+    {
+      "id": "beam-1m/chat-31/instruction_following/2",
+      "conversation_id": 31,
+      "category": "Trip Planning",
+      "ability": "instruction_following",
+      "difficulty": "medium",
+      "source_pair_count": 1
+    },
+    {
+      "id": "beam-1m/chat-31/preference_following/1",
+      "conversation_id": 31,
+      "category": "Trip Planning",
+      "ability": "preference_following",
+      "difficulty": "medium",
+      "source_pair_count": 3
+    },
+    {
+      "id": "beam-1m/chat-31/summarization/2",
+      "conversation_id": 31,
+      "category": "Trip Planning",
+      "ability": "summarization",
+      "difficulty": "easy",
+      "source_pair_count": 3
+    },
+    {
+      "id": "beam-1m/chat-32/abstention/2",
+      "conversation_id": 32,
+      "category": "Trip Planning",
+      "ability": "abstention",
+      "difficulty": "hard",
+      "source_pair_count": 0
+    },
+    {
+      "id": "beam-1m/chat-32/multi_session_reasoning/2",
+      "conversation_id": 32,
+      "category": "Trip Planning",
+      "ability": "multi_session_reasoning",
+      "difficulty": "hard",
+      "source_pair_count": 8
+    },
+    {
+      "id": "beam-1m/chat-32/preference_following/1",
+      "conversation_id": 32,
+      "category": "Trip Planning",
+      "ability": "preference_following",
+      "difficulty": "medium",
+      "source_pair_count": 3
+    },
+    {
+      "id": "beam-1m/chat-33/contradiction_resolution/1",
+      "conversation_id": 33,
+      "category": "Event Planning",
+      "ability": "contradiction_resolution",
+      "difficulty": "clear",
+      "source_pair_count": 4
+    },
+    {
+      "id": "beam-1m/chat-33/contradiction_resolution/2",
+      "conversation_id": 33,
+      "category": "Event Planning",
+      "ability": "contradiction_resolution",
+      "difficulty": "clear",
+      "source_pair_count": 4
+    },
+    {
+      "id": "beam-1m/chat-33/instruction_following/1",
+      "conversation_id": 33,
+      "category": "Event Planning",
+      "ability": "instruction_following",
+      "difficulty": "medium",
+      "source_pair_count": 1
+    },
+    {
+      "id": "beam-1m/chat-33/knowledge_update/2",
+      "conversation_id": 33,
+      "category": "Event Planning",
+      "ability": "knowledge_update",
+      "difficulty": "easy",
+      "source_pair_count": 4
+    },
+    {
+      "id": "beam-1m/chat-33/multi_session_reasoning/2",
+      "conversation_id": 33,
+      "category": "Event Planning",
+      "ability": "multi_session_reasoning",
+      "difficulty": "hard",
+      "source_pair_count": 6
+    },
+    {
+      "id": "beam-1m/chat-33/preference_following/1",
+      "conversation_id": 33,
+      "category": "Event Planning",
+      "ability": "preference_following",
+      "difficulty": "medium",
+      "source_pair_count": 3
+    },
+    {
+      "id": "beam-1m/chat-33/preference_following/2",
+      "conversation_id": 33,
+      "category": "Event Planning",
+      "ability": "preference_following",
+      "difficulty": "medium",
+      "source_pair_count": 3
+    }
+  ],
+  "targets": {
+    "abilities": {
+      "summarization": 8,
+      "preference_following": 8,
+      "instruction_following": 8,
+      "abstention": 8,
+      "contradiction_resolution": 8,
+      "knowledge_update": 7,
+      "temporal_reasoning": 7,
+      "multi_session_reasoning": 7,
+      "event_ordering": 7,
+      "information_extraction": 7
+    },
+    "categories": {
+      "Career and Professional Development": 5,
+      "Coding": 12,
+      "Cooking": 4,
+      "Education & Learning": 2,
+      "Event Planning": 7,
+      "Financial Investment": 5,
+      "Health & Wellness": 7,
+      "Home & Real Estate": 7,
+      "Math": 12,
+      "Sport": 7,
+      "Trip Planning": 7
+    },
+    "difficulty": {
+      "clear": 7,
+      "easy": 22,
+      "hard": 18,
+      "medium": 27,
+      "moderate": 1
+    },
+    "evidence": {
+      "mean": 6.7071,
+      "median": 3,
+      "p90": 25,
+      "max": 48,
+      "over_12": 107,
+      "over_20": 82,
+      "over_24": 71
+    }
+  },
+  "observed": {
+    "abilities": {
+      "abstention": 8,
+      "contradiction_resolution": 8,
+      "event_ordering": 7,
+      "information_extraction": 7,
+      "instruction_following": 8,
+      "knowledge_update": 7,
+      "multi_session_reasoning": 7,
+      "preference_following": 8,
+      "summarization": 8,
+      "temporal_reasoning": 7
+    },
+    "categories": {
+      "Career and Professional Development": 5,
+      "Coding": 12,
+      "Cooking": 4,
+      "Education & Learning": 2,
+      "Event Planning": 7,
+      "Financial Investment": 5,
+      "Health & Wellness": 7,
+      "Home & Real Estate": 7,
+      "Math": 12,
+      "Sport": 7,
+      "Trip Planning": 7
+    },
+    "difficulty": {
+      "clear": 8,
+      "easy": 22,
+      "hard": 18,
+      "medium": 27
+    },
+    "histories": {
+      "4": 6,
+      "5": 6,
+      "6": 12,
+      "11": 5,
+      "13": 5,
+      "15": 7,
+      "19": 2,
+      "20": 7,
+      "23": 4,
+      "28": 7,
+      "31": 4,
+      "32": 3,
+      "33": 7
+    },
+    "evidence": {
+      "mean": 6.44,
+      "median": 3,
+      "p90": 22,
+      "max": 41,
+      "over_12": 12,
+      "over_20": 9,
+      "over_24": 7
+    }
+  },
+  "metadata_objective": 7.036900252244896,
+  "missing_topics": [
+    {
+      "category": "Business & Entrepreneurship",
+      "questions": 40
+    },
+    {
+      "category": "Relationship & Family",
+      "questions": 20
+    }
+  ],
+  "metrics": {
+    "retention": "Certified positive-evidence cases only; abstention excluded, unresolved labels quarantined transparently",
+    "abstention": "Separate downstream metric; never vacuous full-evidence success",
+    "old_93p33_not_baseline": true
+  },
+  "readiness": {
+    "oracle_certified": false,
+    "k180_available": false,
+    "jev_run": false
+  },
+  "selection_limitations": [
+    "Metadata balancing cannot guarantee score representativeness or eliminate selection bias.",
+    "The eligible topics cover 640 of the full 700 questions; two topics are absent.",
+    "No individual B or expansion probes read; source contents projected onto metadata only.",
+    "Question counts are clustered within 13 histories.",
+    "Legacy evidence-pair metadata is not a certified evidence oracle."
+  ]
+}

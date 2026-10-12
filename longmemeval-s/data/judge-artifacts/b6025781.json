@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 714.00295800413,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a rubric for desired personalized response, and a response from a model. Please answer yes if the response satisfies the desired response. Otherwise, answer no. The model does not need to reflect all the points in the rubric. The response is correct as long as it recalls and utilizes the user's personal information correctly.\n\nQuestion: I'm planning my meal prep next week, any suggestions for new recipes?\n\nRubric: The user would prefer responses that suggest healthy meal prep recipes, especially those that incorporate quinoa and roasted vegetables, and offer variations in protein sources. They might appreciate suggestions that build upon their existing preferences, such as new twists on chicken Caesar salads or turkey and avocado wraps. The user may not prefer responses that suggest unhealthy or high-calorie meal prep options, or those that deviate significantly from their established healthy eating habits.\n\nModel Response: Build next week around the ingredients and flavors you already use: quinoa, roasted vegetables, sweet potatoes, and fresh rosemary. My best new recipe for you is lentil-mushroom bolognese over quinoa, since you have not tried it before: saut\u00e9 1 chopped onion, 2 minced garlic cloves, 1 chopped carrot, 1 celery stalk, and 2 cups sliced mushrooms; add 1 cup rinsed lentils, a 28-oz can of crushed tomatoes, 1 tsp basil, 1 tsp oregano, salt, and pepper; then simmer covered for 20\u201325 minutes. Pair it with your rosemary sweet potatoes roasted at 425\u00b0F for 20\u201325 minutes. For a second flavor profile, make Mexican chicken-fajita quinoa bowls with lime-garlic-spiced chicken, peppers, onions, quinoa, and the rosemary sweet potatoes, plus chipotle ranch or spicy mayo. A vegetarian variation would be black-bean and sweet-potato enchilada bowls with enchilada sauce and avocado crema. For snacks, add homemade granola customized with rolled oats or quinoa, cinnamon or cardamom, nuts or seeds, and your preferred dried fruit and sweetness. Prep the quinoa and roasted vegetables together, refrigerate the vegetables for up to 5 days, and freeze extra bolognese portions for later.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "b6025781",
+  "request_id": "chatcmpl-E7WHXh7MnDYVfXdPSEcVWPrmFGzIO",
+  "response": "Yes.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 465,
+    "total_tokens": 467
+  }
+}

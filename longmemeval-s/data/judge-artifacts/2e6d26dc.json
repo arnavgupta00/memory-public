@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 1608.692166992114,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many babies were born to friends and family members in the last few months?\n\nCorrect Answer: 5\n\nModel Response: Five distinct babies were born to the user's friends and family in the last few months: Jasper, Max, Charlotte, Ava, and Lily. Aaliyah is described as adopted, not as having been born during this period, so she is not included.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "2e6d26dc",
+  "request_id": "chatcmpl-E7WHUFDVnCt8KF3xZLfvW2W7FDTBG",
+  "response": "Yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 177,
+    "total_tokens": 178
+  }
+}

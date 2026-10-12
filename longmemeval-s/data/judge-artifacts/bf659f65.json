@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 776.6764170082752,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many music albums or EPs have I purchased or downloaded?\n\nCorrect Answer: 3\n\nModel Response: You have purchased or downloaded 2 distinct music releases: Billie Eilish\u2019s \u201cHappier Than Ever\u201d and The Whiskey Wanderers\u2019 \u201cMidnight Sky.\u201d\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "bf659f65",
+  "request_id": "chatcmpl-E7WHW7RnfOD3fozltfda4HCaVeWXD",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 156,
+    "total_tokens": 158
+  }
+}

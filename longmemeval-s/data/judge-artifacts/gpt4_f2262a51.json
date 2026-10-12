@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 759.4627500075148,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many different doctors did I visit?\n\nCorrect Answer: I visited three different doctors: a primary care physician, an ENT specialist, and a dermatologist.\n\nModel Response: You visited 3 different doctors: Dr. Patel, Dr. Lee, and Dr. Smith.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "gpt4_f2262a51",
+  "request_id": "chatcmpl-E7WHWUWAYJjuRUlL2WXGaTJG7ZTOC",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 154,
+    "total_tokens": 156
+  }
+}

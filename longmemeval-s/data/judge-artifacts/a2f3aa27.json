@@ -1,0 +1,17 @@
+{
+  "label": false,
+  "latency_ms": 680.7835829968099,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How many followers do I have on Instagram now?\n\nCorrect Answer: 1300\n\nModel Response: Your exact current Instagram follower count on 2023/06/15 cannot be determined from the available memory. The latest relevant statement says you thought you were close to 1,300 followers on 2023/05/25; an earlier statement gave 1,250.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "a2f3aa27",
+  "request_id": "chatcmpl-E7WHaFZOUC41KdRqNuyB6RPHQsgt1",
+  "response": "No.",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 162,
+    "total_tokens": 164
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 778.9858750038547,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response contains some previous information along with an updated answer, the response should be considered as correct as long as the updated answer is the required answer.\n\nQuestion: How many projects have I completed since starting painting classes?\n\nCorrect Answer: 5\n\nModel Response: You have completed 5 projects since starting painting classes.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "06db6396",
+  "request_id": "chatcmpl-E7WHZKZmZWWBXD917P5ByajkLhq1s",
+  "response": "yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 117,
+    "total_tokens": 118
+  }
+}

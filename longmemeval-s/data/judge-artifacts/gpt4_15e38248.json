@@ -1,0 +1,17 @@
+{
+  "label": true,
+  "latency_ms": 748.1942080048611,
+  "max_tokens": 10,
+  "model": "gpt-4o-2024-08-06",
+  "prompt": "I will give you a question, a correct answer, and a response from a model. Please answer yes if the response contains the correct answer. Otherwise, answer no. If the response is equivalent to the correct answer or contains all the intermediate steps to get the correct answer, you should also answer yes. If the response only contains a subset of the information required by the answer, answer no. \n\nQuestion: How many pieces of furniture did I buy, assemble, sell, or fix in the past few months?\n\nCorrect Answer: 4\n\nModel Response: You handled 4 distinct furniture pieces: bought/ordered a mattress, bought a coffee table, assembled an IKEA bookshelf, and fixed the kitchen table. The coffee table is mentioned multiple times but appears to be the same piece, and no furniture sale is mentioned. Planned throw pillows and a throw blanket are not counted because you did not say you bought them.\n\nIs the model response correct? Answer yes or no only.",
+  "question_id": "gpt4_15e38248",
+  "request_id": "chatcmpl-E7WHVRlBW1PjiGPB7v8fs1LVK7c9f",
+  "response": "Yes",
+  "retry_count": 0,
+  "temperature": 0,
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 202,
+    "total_tokens": 203
+  }
+}
