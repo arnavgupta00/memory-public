@@ -10,7 +10,7 @@ What it does, in order:
 2. writes the public documents: the full package's documents with their references to withheld files rewritten;
 3. removes prompt text from the model-call ledgers (the `caller` and `problems` fields; counts, tokens and costs stay);
 4. writes the commitments for what is withheld (the full package's manifest; per-question pack and plan hashes);
-5. writes the repository front page, the website (docs/, for GitHub Pages) and the images;
+5. writes the repository front page and its images;
 6. refuses to finish if any code file, prompt text or API key value would be published, then runs the verifier.
 
 Usage (private repository root): python3 proof/public/build_public.py [--out ../memory-public]
@@ -252,23 +252,7 @@ assets = OUT / 'assets'; assets.mkdir(parents=True, exist_ok=True)
 for f in sorted((HERE / 'assets').iterdir()):
     if f.is_file(): shutil.copy2(f, assets / f.name)
 (OUT / 'README.md').write_text((HERE / 'templates/README.md').read_text())
-import html as _html
-def term_line(l):
-    e = _html.escape(l)
-    if l.startswith('PASS'): return f'<span class="ok">PASS</span>{e[4:]}'
-    if l.startswith('FAIL'): return f'<span class="bad">FAIL</span>{e[4:]}'
-    return f'<span class="dim">{e}</span>' if l.strip() else ''
-passes = [l for l in out_lines if l.startswith(('PASS', 'FAIL'))]
-aggs = [l for l in out_lines if l.startswith('ALL 700')]   # the page shows the all-700 row; the script prints every run part
-term = '\n'.join(['<span class="pr">$</span> python3 beam-1m/verify/verify.py --deep', ''] + [term_line(l) for l in passes[:11]] + [''] +
-                 [term_line(l) for l in aggs] + [''] + [term_line(l) for l in passes[11:]] + ['', f'<span class="ok">{_html.escape(out_lines[-1])}</span>'])
-site = OUT / 'docs'; site.mkdir(parents=True, exist_ok=True)
-(site / '.nojekyll').write_text('')
-page = (HERE / 'templates/site.html').read_text()
-for k, v in {'__CHART__': (HERE / 'templates/site-chart.html').read_text(), '__TERM__': term, '__ZIP_URL__': ZIP_URL}.items():
-    assert k in page, k; page = page.replace(k, v)
-(site / 'index.html').write_text(page)
-for f in ['beam-1m-by-ability.svg', 'social-card.png']: shutil.copy2(assets / f, site / f)
+# The website lives on arnav.network/research/memory (the portfolio project), not in this repository.
 
 # ---------- 8. the release download: the public package as one zip (kept outside both repositories' history) ----------
 dist = HERE / 'dist'; dist.mkdir(exist_ok=True); (dist / ZIP).unlink(missing_ok=True)

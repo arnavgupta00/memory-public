@@ -5,7 +5,7 @@ Two memory benchmarks, each with every answer, every judge decision, cost and la
 </p>
 
 <p align="center">
-<a href="https://arnavgupta00.github.io/memory-public/"><b>Website</b></a> ·
+<a href="https://arnav.network/research/memory"><b>Research reports</b></a> ·
 <a href="beam-1m/README.md"><b>BEAM-1M proof</b></a> ·
 <a href="longmemeval-s/README.md"><b>LongMemEval-S proof</b></a> ·
 <a href="https://github.com/arnavgupta00/memory-public/releases/latest">Download</a>
@@ -123,7 +123,6 @@ A memory system has two kinds of latency.
 memory-public/
 ├── README.md                   this page
 ├── assets/                     figures for this page
-├── docs/                       the website
 ├── beam-1m/                    BEAM-1M proof package
 │   ├── README.md               start here: the result and how to check it
 │   ├── CLAIMS.md, claims.json  every claimed number, with the check that tests it
