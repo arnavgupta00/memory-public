@@ -21,6 +21,27 @@ Two memory benchmarks, each with every answer, every judge decision, cost and la
 BEAM ran on our October configuration (DeepSeek V4.1 Flash). LongMemEval ran on the July version it grew from
 (gpt-5.6-luna and gpt-5.4-nano).
 
+## Context compression
+
+The answer model never reads the whole history. For each question, the memory hands it only the evidence that bears on
+it: **about 13× less context on BEAM-1M and 27× less on LongMemEval-S**, with the scores above.
+
+| System | Benchmark | Full history | Context per question | Compression | Score |
+|---|---|---:|---:|---:|---:|
+| **This work** | **BEAM-1M** | about 1.06M tokens | **80,798** (median) | **~13×** | **76.83** official |
+| **This work** | **LongMemEval-S** | about 115K tokens | **about 4,182** | **~27×** | **91.40%** |
+| Zep | LongMemEval-S | 115K | 1.6K | ~72× | 71.2% (gpt-4o) |
+| Mastra Observational Memory | LongMemEval-S | about 115K | not stated | 3–6× on text | 94.87% (gpt-5-mini) |
+| Mem0 | LoCoMo | — | about 6,956 vs 25,000+ for full context | ~3.6× | 92.5 |
+| Full history in context | LongMemEval-S | 115K | 115K | 1× | 60.2% (gpt-4o) |
+
+- **At a million tokens, compression is the only option.** A BEAM-1M history does not fit most models' context windows.
+  No other system publishes its context per question at this scale; HydraDB and Hindsight publish none.
+- **On LongMemEval-S**, ours compresses about 5–9× more than Mastra's reported text ratio and scores 20 points above Zep,
+  which compresses more.
+- **Sources.** Zep: arXiv:2501.13956, Table 2. Mastra: mastra.ai/research/observational-memory. Mem0: mem0.ai/research.
+  Competitor figures are self-reported and use different answer models. Ours are medians from the logged calls.
+
 ## Check it yourself in one minute
 
 ```bash
@@ -114,8 +135,6 @@ A memory system has two kinds of latency.
 | Wall clock | 340 questions with their 17 histories in 2 h 56 min | all 500, notes included, in 30.1 min |
 | Throughput limit | 4.8 requests per second to the provider | 256 requests in flight, 1.95 M tokens per minute |
 
-- **Context compression.** The answer step never reads the whole history. On BEAM it reads a median of 80,798 tokens of a
-  history of about 1.06 million (92% smaller); on LongMemEval, about 4,182 of 115,000 (96% smaller).
 - **Details.** See [COSTS.md](beam-1m/COSTS.md) for BEAM and [`longmemeval-s/README.md`](longmemeval-s/README.md) for
   LongMemEval. The verifiers recompute every figure from the logged calls.
 
