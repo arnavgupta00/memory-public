@@ -108,12 +108,14 @@ A memory system has two kinds of latency.
 | Cost and throughput | BEAM-1M (R9) | LongMemEval-S (Architecture 0008) |
 |---|---|---|
 | History per question | about 1,000,000 tokens | about 115,000 tokens |
-| Context the answer step reads | 80,798 tokens median | about 4,182 tokens |
+| Context the answer step reads | 80,798 tokens median: **about 13× less** than the history | about 4,182 tokens: **about 27× less** than the history |
 | Cost per question | **$0.15** billed ($0.26 at list price) | **$0.047** at list price |
 | Whole benchmark | about $102 billed for 700 questions | $23.62 at list price for 500 |
 | Wall clock | 340 questions with their 17 histories in 2 h 56 min | all 500, notes included, in 30.1 min |
 | Throughput limit | 4.8 requests per second to the provider | 256 requests in flight, 1.95 M tokens per minute |
 
+- **Context compression.** The answer step never reads the whole history. On BEAM it reads a median of 80,798 tokens of a
+  history of about 1.06 million (92% smaller); on LongMemEval, about 4,182 of 115,000 (96% smaller).
 - **Details.** See [COSTS.md](beam-1m/COSTS.md) for BEAM and [`longmemeval-s/README.md`](longmemeval-s/README.md) for
   LongMemEval. The verifiers recompute every figure from the logged calls.
 
